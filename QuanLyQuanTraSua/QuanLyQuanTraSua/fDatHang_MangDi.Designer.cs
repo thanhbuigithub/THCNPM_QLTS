@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBenThu3 = new System.Windows.Forms.Button();
-            this.lbSpecial = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnQuan = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -42,69 +39,38 @@
             this.lbTongTien = new System.Windows.Forms.Label();
             this.lbIDDonHang = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.panel3.SuspendLayout();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnQuan = new System.Windows.Forms.Button();
+            this.btnBenThu3 = new System.Windows.Forms.Button();
+            this.lbSpecial = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnBenThu3
+            // panel1
             // 
-            this.btnBenThu3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBenThu3.Location = new System.Drawing.Point(223, 204);
-            this.btnBenThu3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnBenThu3.Name = "btnBenThu3";
-            this.btnBenThu3.Size = new System.Drawing.Size(377, 67);
-            this.btnBenThu3.TabIndex = 3;
-            this.btnBenThu3.Text = "Ship bởi bên thứ 3";
-            this.btnBenThu3.UseVisualStyleBackColor = true;
-            // 
-            // lbSpecial
-            // 
-            this.lbSpecial.AutoSize = true;
-            this.lbSpecial.BackColor = System.Drawing.SystemColors.Control;
-            this.lbSpecial.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSpecial.Location = new System.Drawing.Point(11, 138);
-            this.lbSpecial.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbSpecial.Name = "lbSpecial";
-            this.lbSpecial.Size = new System.Drawing.Size(276, 44);
-            this.lbSpecial.TabIndex = 1;
-            this.lbSpecial.Text = "Hình thức giao";
-            this.lbSpecial.Click += new System.EventHandler(this.lbSpecial_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnQuan);
-            this.panel3.Controls.Add(this.btnBenThu3);
-            this.panel3.Controls.Add(this.lbSpecial);
-            this.panel3.Location = new System.Drawing.Point(9, 10);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(725, 661);
-            this.panel3.TabIndex = 10;
-            // 
-            // btnQuan
-            // 
-            this.btnQuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuan.Location = new System.Drawing.Point(223, 285);
-            this.btnQuan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnQuan.Name = "btnQuan";
-            this.btnQuan.Size = new System.Drawing.Size(377, 67);
-            this.btnQuan.TabIndex = 3;
-            this.btnQuan.Text = "Ship bởi quán";
-            this.btnQuan.UseVisualStyleBackColor = true;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1008, 730);
+            this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.pictureBoxLogo);
-            this.panel2.Location = new System.Drawing.Point(750, 10);
+            this.panel2.Location = new System.Drawing.Point(751, 11);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(247, 661);
-            this.panel2.TabIndex = 11;
+            this.panel2.Size = new System.Drawing.Size(247, 685);
+            this.panel2.TabIndex = 13;
             // 
             // panel5
             // 
@@ -202,33 +168,75 @@
             this.pictureBoxLogo.TabIndex = 1;
             this.pictureBoxLogo.TabStop = false;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnQuan);
+            this.panel3.Controls.Add(this.btnBenThu3);
+            this.panel3.Controls.Add(this.lbSpecial);
+            this.panel3.Location = new System.Drawing.Point(10, 11);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(725, 685);
+            this.panel3.TabIndex = 12;
+            // 
+            // btnQuan
+            // 
+            this.btnQuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuan.Location = new System.Drawing.Point(223, 285);
+            this.btnQuan.Margin = new System.Windows.Forms.Padding(2);
+            this.btnQuan.Name = "btnQuan";
+            this.btnQuan.Size = new System.Drawing.Size(377, 67);
+            this.btnQuan.TabIndex = 3;
+            this.btnQuan.Text = "Ship bởi quán";
+            this.btnQuan.UseVisualStyleBackColor = true;
+            // 
+            // btnBenThu3
+            // 
+            this.btnBenThu3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBenThu3.Location = new System.Drawing.Point(223, 204);
+            this.btnBenThu3.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBenThu3.Name = "btnBenThu3";
+            this.btnBenThu3.Size = new System.Drawing.Size(377, 67);
+            this.btnBenThu3.TabIndex = 3;
+            this.btnBenThu3.Text = "Ship bởi bên thứ 3";
+            this.btnBenThu3.UseVisualStyleBackColor = true;
+            // 
+            // lbSpecial
+            // 
+            this.lbSpecial.AutoSize = true;
+            this.lbSpecial.BackColor = System.Drawing.SystemColors.Control;
+            this.lbSpecial.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSpecial.Location = new System.Drawing.Point(11, 138);
+            this.lbSpecial.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbSpecial.Name = "lbSpecial";
+            this.lbSpecial.Size = new System.Drawing.Size(276, 44);
+            this.lbSpecial.TabIndex = 1;
+            this.lbSpecial.Text = "Hình thức giao";
+            // 
             // fDatHang_MangDi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 730);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fDatHang_MangDi";
             this.Text = "fDatHang_MangDi";
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnBenThu3;
-        private System.Windows.Forms.Label lbSpecial;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnQuan;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnXoa;
@@ -239,5 +247,10 @@
         private System.Windows.Forms.Label lbTongTien;
         private System.Windows.Forms.Label lbIDDonHang;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnQuan;
+        private System.Windows.Forms.Button btnBenThu3;
+        private System.Windows.Forms.Label lbSpecial;
+
     }
 }

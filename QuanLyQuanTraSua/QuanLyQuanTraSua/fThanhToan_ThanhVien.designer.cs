@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.rbtnNo = new System.Windows.Forms.RadioButton();
             this.rbtnYes = new System.Windows.Forms.RadioButton();
             this.lbUseAccumulatedPoints = new System.Windows.Forms.Label();
@@ -40,32 +45,78 @@
             this.lbPhone = new System.Windows.Forms.Label();
             this.txtbName = new System.Windows.Forms.TextBox();
             this.lbName = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnNext = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.rbtnNo);
-            this.panel1.Controls.Add(this.rbtnYes);
-            this.panel1.Controls.Add(this.lbUseAccumulatedPoints);
-            this.panel1.Controls.Add(this.txtbAccumulatedPointsReceived);
-            this.panel1.Controls.Add(this.lbAccumulatedPointsReceived);
-            this.panel1.Controls.Add(this.txtbAccumulatedPoints);
-            this.panel1.Controls.Add(this.lbAccumulatedPoints);
-            this.panel1.Controls.Add(this.txtbPhone);
-            this.panel1.Controls.Add(this.lbPhone);
-            this.panel1.Controls.Add(this.txtbName);
-            this.panel1.Controls.Add(this.lbName);
-            this.panel1.Location = new System.Drawing.Point(23, 69);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(699, 514);
-            this.panel1.TabIndex = 16;
+            this.panel1.Size = new System.Drawing.Size(752, 662);
+            this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnNext);
+            this.panel2.Location = new System.Drawing.Point(533, 587);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(193, 75);
+            this.panel2.TabIndex = 36;
+            // 
+            // btnNext
+            // 
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Location = new System.Drawing.Point(67, 22);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(124, 40);
+            this.btnNext.TabIndex = 16;
+            this.btnNext.Text = "Tiếp";
+            this.btnNext.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnBack);
+            this.panel3.Location = new System.Drawing.Point(27, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(185, 61);
+            this.panel3.TabIndex = 35;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(7, 9);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(124, 40);
+            this.btnBack.TabIndex = 17;
+            this.btnBack.Text = "Quay lại";
+            this.btnBack.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.rbtnNo);
+            this.panel4.Controls.Add(this.rbtnYes);
+            this.panel4.Controls.Add(this.lbUseAccumulatedPoints);
+            this.panel4.Controls.Add(this.txtbAccumulatedPointsReceived);
+            this.panel4.Controls.Add(this.lbAccumulatedPointsReceived);
+            this.panel4.Controls.Add(this.txtbAccumulatedPoints);
+            this.panel4.Controls.Add(this.lbAccumulatedPoints);
+            this.panel4.Controls.Add(this.txtbPhone);
+            this.panel4.Controls.Add(this.lbPhone);
+            this.panel4.Controls.Add(this.txtbName);
+            this.panel4.Controls.Add(this.lbName);
+            this.panel4.Location = new System.Drawing.Point(27, 67);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(699, 514);
+            this.panel4.TabIndex = 34;
             // 
             // rbtnNo
             // 
@@ -188,59 +239,20 @@
             this.lbName.TabIndex = 15;
             this.lbName.Text = "Tên:";
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnBack);
-            this.panel3.Location = new System.Drawing.Point(23, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(185, 61);
-            this.panel3.TabIndex = 32;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(7, 9);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(124, 40);
-            this.btnBack.TabIndex = 17;
-            this.btnBack.Text = "Quay lại";
-            this.btnBack.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnNext);
-            this.panel2.Location = new System.Drawing.Point(529, 589);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(193, 75);
-            this.panel2.TabIndex = 33;
-            // 
-            // btnNext
-            // 
-            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(67, 22);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(2);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(124, 40);
-            this.btnNext.TabIndex = 16;
-            this.btnNext.Text = "Tiếp";
-            this.btnNext.UseVisualStyleBackColor = true;
-            // 
             // fThanhToan_ThanhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(752, 662);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "fThanhToan_ThanhVien";
             this.Text = "fThanhToan_ThanhVien";
             this.Load += new System.EventHandler(this.fThanhToan_ThanhVien_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -248,6 +260,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.RadioButton rbtnNo;
         private System.Windows.Forms.RadioButton rbtnYes;
         private System.Windows.Forms.Label lbUseAccumulatedPoints;
@@ -259,9 +276,6 @@
         private System.Windows.Forms.Label lbPhone;
         private System.Windows.Forms.TextBox txtbName;
         private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnNext;
+
     }
 }

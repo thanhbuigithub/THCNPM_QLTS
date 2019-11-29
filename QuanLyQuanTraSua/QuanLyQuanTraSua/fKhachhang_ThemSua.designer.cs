@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnDone = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.txtbAccumulatedPoints = new System.Windows.Forms.TextBox();
             this.lbAccumulatedPoints = new System.Windows.Forms.Label();
             this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
@@ -39,31 +44,77 @@
             this.lbPhone = new System.Windows.Forms.Label();
             this.txtbName = new System.Windows.Forms.TextBox();
             this.lbName = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnDone = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txtbAccumulatedPoints);
-            this.panel1.Controls.Add(this.lbAccumulatedPoints);
-            this.panel1.Controls.Add(this.dtpDateOfBirth);
-            this.panel1.Controls.Add(this.lbDateOfBirth);
-            this.panel1.Controls.Add(this.txtbMail);
-            this.panel1.Controls.Add(this.lbMail);
-            this.panel1.Controls.Add(this.txtbPhone);
-            this.panel1.Controls.Add(this.lbPhone);
-            this.panel1.Controls.Add(this.txtbName);
-            this.panel1.Controls.Add(this.lbName);
-            this.panel1.Location = new System.Drawing.Point(12, 65);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(974, 502);
-            this.panel1.TabIndex = 18;
+            this.panel1.Size = new System.Drawing.Size(1008, 730);
+            this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnDone);
+            this.panel2.Location = new System.Drawing.Point(791, 634);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 69);
+            this.panel2.TabIndex = 37;
+            // 
+            // btnDone
+            // 
+            this.btnDone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDone.Location = new System.Drawing.Point(74, 18);
+            this.btnDone.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDone.Name = "btnDone";
+            this.btnDone.Size = new System.Drawing.Size(124, 40);
+            this.btnDone.TabIndex = 5;
+            this.btnDone.Text = "Xong";
+            this.btnDone.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnBack);
+            this.panel3.Location = new System.Drawing.Point(17, 28);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(185, 61);
+            this.panel3.TabIndex = 36;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(7, 9);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(124, 40);
+            this.btnBack.TabIndex = 17;
+            this.btnBack.Text = "Quay lại";
+            this.btnBack.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.txtbAccumulatedPoints);
+            this.panel4.Controls.Add(this.lbAccumulatedPoints);
+            this.panel4.Controls.Add(this.dtpDateOfBirth);
+            this.panel4.Controls.Add(this.lbDateOfBirth);
+            this.panel4.Controls.Add(this.txtbMail);
+            this.panel4.Controls.Add(this.lbMail);
+            this.panel4.Controls.Add(this.txtbPhone);
+            this.panel4.Controls.Add(this.lbPhone);
+            this.panel4.Controls.Add(this.txtbName);
+            this.panel4.Controls.Add(this.lbName);
+            this.panel4.Location = new System.Drawing.Point(17, 95);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(974, 502);
+            this.panel4.TabIndex = 35;
             // 
             // txtbAccumulatedPoints
             // 
@@ -170,59 +221,20 @@
             this.lbName.TabIndex = 18;
             this.lbName.Text = "Tên:";
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnBack);
-            this.panel3.Location = new System.Drawing.Point(12, -2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(185, 61);
-            this.panel3.TabIndex = 33;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(7, 9);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(124, 40);
-            this.btnBack.TabIndex = 17;
-            this.btnBack.Text = "Quay lại";
-            this.btnBack.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnDone);
-            this.panel2.Location = new System.Drawing.Point(786, 604);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 69);
-            this.panel2.TabIndex = 34;
-            // 
-            // btnDone
-            // 
-            this.btnDone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDone.Location = new System.Drawing.Point(74, 18);
-            this.btnDone.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDone.Name = "btnDone";
-            this.btnDone.Size = new System.Drawing.Size(124, 40);
-            this.btnDone.TabIndex = 5;
-            this.btnDone.Text = "Xong";
-            this.btnDone.UseVisualStyleBackColor = true;
-            // 
             // fKhachhang_ThemSua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 730);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "fKhachhang_ThemSua";
             this.Text = "fKhachhang_ThemSua";
             this.Load += new System.EventHandler(this.fKhachhang_ThemSua_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -230,6 +242,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnDone;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txtbAccumulatedPoints;
         private System.Windows.Forms.Label lbAccumulatedPoints;
         private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
@@ -240,9 +257,6 @@
         private System.Windows.Forms.Label lbPhone;
         private System.Windows.Forms.TextBox txtbName;
         private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnDone;
+
     }
 }

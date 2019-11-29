@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnTiep = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
@@ -48,30 +49,43 @@
             this.lbSmell = new System.Windows.Forms.Label();
             this.lbAmount = new System.Windows.Forms.Label();
             this.lbShopShip = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(752, 662);
+            this.panel1.TabIndex = 0;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.btnTiep);
             this.panel4.Controls.Add(this.btnHuy);
-            this.panel4.Location = new System.Drawing.Point(8, 616);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Location = new System.Drawing.Point(11, 617);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(733, 45);
-            this.panel4.TabIndex = 7;
+            this.panel4.TabIndex = 11;
             // 
             // btnTiep
             // 
             this.btnTiep.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTiep.Location = new System.Drawing.Point(596, 2);
-            this.btnTiep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTiep.Margin = new System.Windows.Forms.Padding(2);
             this.btnTiep.Name = "btnTiep";
             this.btnTiep.Size = new System.Drawing.Size(124, 40);
             this.btnTiep.TabIndex = 0;
@@ -82,7 +96,7 @@
             // 
             this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.Location = new System.Drawing.Point(0, 2);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(124, 40);
             this.btnHuy.TabIndex = 0;
@@ -101,17 +115,17 @@
             this.panel3.Controls.Add(this.lbTopping);
             this.panel3.Controls.Add(this.lbSugar);
             this.panel3.Controls.Add(this.lbIce);
-            this.panel3.Location = new System.Drawing.Point(9, 218);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(10, 231);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(732, 380);
-            this.panel3.TabIndex = 6;
+            this.panel3.TabIndex = 10;
             // 
             // txtbSDTNguoiGiao
             // 
             this.txtbSDTNguoiGiao.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbSDTNguoiGiao.Location = new System.Drawing.Point(444, 154);
-            this.txtbSDTNguoiGiao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbSDTNguoiGiao.Location = new System.Drawing.Point(455, 163);
+            this.txtbSDTNguoiGiao.Margin = new System.Windows.Forms.Padding(2);
             this.txtbSDTNguoiGiao.Name = "txtbSDTNguoiGiao";
             this.txtbSDTNguoiGiao.Size = new System.Drawing.Size(273, 32);
             this.txtbSDTNguoiGiao.TabIndex = 4;
@@ -119,8 +133,8 @@
             // txtbNguoiGiao
             // 
             this.txtbNguoiGiao.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbNguoiGiao.Location = new System.Drawing.Point(126, 154);
-            this.txtbNguoiGiao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbNguoiGiao.Location = new System.Drawing.Point(137, 163);
+            this.txtbNguoiGiao.Margin = new System.Windows.Forms.Padding(2);
             this.txtbNguoiGiao.Name = "txtbNguoiGiao";
             this.txtbNguoiGiao.Size = new System.Drawing.Size(223, 32);
             this.txtbNguoiGiao.TabIndex = 4;
@@ -128,8 +142,8 @@
             // txtbDiaChi
             // 
             this.txtbDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbDiaChi.Location = new System.Drawing.Point(126, 77);
-            this.txtbDiaChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbDiaChi.Location = new System.Drawing.Point(137, 86);
+            this.txtbDiaChi.Margin = new System.Windows.Forms.Padding(2);
             this.txtbDiaChi.Name = "txtbDiaChi";
             this.txtbDiaChi.Size = new System.Drawing.Size(591, 32);
             this.txtbDiaChi.TabIndex = 4;
@@ -137,16 +151,16 @@
             // txtbSDTNguoiNhan
             // 
             this.txtbSDTNguoiNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbSDTNguoiNhan.Location = new System.Drawing.Point(128, 2);
-            this.txtbSDTNguoiNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbSDTNguoiNhan.Location = new System.Drawing.Point(139, 11);
+            this.txtbSDTNguoiNhan.Margin = new System.Windows.Forms.Padding(2);
             this.txtbSDTNguoiNhan.Name = "txtbSDTNguoiNhan";
             this.txtbSDTNguoiNhan.Size = new System.Drawing.Size(591, 32);
             this.txtbSDTNguoiNhan.TabIndex = 4;
             // 
             // txtbNote
             // 
-            this.txtbNote.Location = new System.Drawing.Point(125, 221);
-            this.txtbNote.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbNote.Location = new System.Drawing.Point(136, 230);
+            this.txtbNote.Margin = new System.Windows.Forms.Padding(2);
             this.txtbNote.Multiline = true;
             this.txtbNote.Name = "txtbNote";
             this.txtbNote.Size = new System.Drawing.Size(591, 133);
@@ -156,7 +170,7 @@
             // 
             this.lbNote.AutoSize = true;
             this.lbNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNote.Location = new System.Drawing.Point(-1, 221);
+            this.lbNote.Location = new System.Drawing.Point(10, 230);
             this.lbNote.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNote.Name = "lbNote";
             this.lbNote.Size = new System.Drawing.Size(98, 26);
@@ -167,7 +181,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(365, 159);
+            this.label1.Location = new System.Drawing.Point(376, 168);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 26);
@@ -178,7 +192,7 @@
             // 
             this.lbTopping.AutoSize = true;
             this.lbTopping.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTopping.Location = new System.Drawing.Point(0, 159);
+            this.lbTopping.Location = new System.Drawing.Point(11, 168);
             this.lbTopping.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTopping.Name = "lbTopping";
             this.lbTopping.Size = new System.Drawing.Size(122, 26);
@@ -189,7 +203,7 @@
             // 
             this.lbSugar.AutoSize = true;
             this.lbSugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSugar.Location = new System.Drawing.Point(0, 82);
+            this.lbSugar.Location = new System.Drawing.Point(11, 91);
             this.lbSugar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbSugar.Name = "lbSugar";
             this.lbSugar.Size = new System.Drawing.Size(132, 26);
@@ -200,7 +214,7 @@
             // 
             this.lbIce.AutoSize = true;
             this.lbIce.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIce.Location = new System.Drawing.Point(2, 7);
+            this.lbIce.Location = new System.Drawing.Point(13, 16);
             this.lbIce.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbIce.Name = "lbIce";
             this.lbIce.Size = new System.Drawing.Size(61, 26);
@@ -215,17 +229,17 @@
             this.panel2.Controls.Add(this.lbSmell);
             this.panel2.Controls.Add(this.lbAmount);
             this.panel2.Controls.Add(this.lbShopShip);
-            this.panel2.Location = new System.Drawing.Point(201, -24);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(202, 23);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(542, 203);
-            this.panel2.TabIndex = 5;
+            this.panel2.TabIndex = 9;
             // 
             // txtbNguoiNhan
             // 
             this.txtbNguoiNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbNguoiNhan.Location = new System.Drawing.Point(169, 126);
-            this.txtbNguoiNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbNguoiNhan.Margin = new System.Windows.Forms.Padding(2);
             this.txtbNguoiNhan.Name = "txtbNguoiNhan";
             this.txtbNguoiNhan.Size = new System.Drawing.Size(358, 32);
             this.txtbNguoiNhan.TabIndex = 4;
@@ -240,7 +254,6 @@
             this.lbIDHoaDon.Size = new System.Drawing.Size(70, 26);
             this.lbIDHoaDon.TabIndex = 3;
             this.lbIDHoaDon.Text = "label1";
-            this.lbIDHoaDon.Click += new System.EventHandler(this.lbIDHoaDon_Click);
             // 
             // lbSmell
             // 
@@ -263,7 +276,6 @@
             this.lbAmount.Size = new System.Drawing.Size(100, 26);
             this.lbAmount.TabIndex = 0;
             this.lbAmount.Text = "Hoá đơn:";
-            this.lbAmount.Click += new System.EventHandler(this.lbAmount_Click);
             // 
             // lbShopShip
             // 
@@ -277,19 +289,19 @@
             this.lbShopShip.TabIndex = 0;
             this.lbShopShip.Text = "Shop Ship";
             // 
-            // panel1
+            // panel5
             // 
-            this.panel1.Controls.Add(this.pictureBoxLogo);
-            this.panel1.Location = new System.Drawing.Point(9, 10);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(188, 203);
-            this.panel1.TabIndex = 4;
+            this.panel5.Controls.Add(this.pictureBoxLogo);
+            this.panel5.Location = new System.Drawing.Point(10, 23);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(188, 203);
+            this.panel5.TabIndex = 8;
             // 
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.Location = new System.Drawing.Point(21, 16);
-            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(150, 162);
             this.pictureBoxLogo.TabIndex = 0;
@@ -300,19 +312,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(752, 662);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fDatHang_MangDi_ShopShip";
             this.Text = "fDatHang_MangDi_ShopShip";
+            this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
@@ -320,27 +330,29 @@
 
         #endregion
 
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnTiep;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtbNote;
-        private System.Windows.Forms.Label lbNote;
-        private System.Windows.Forms.Label lbTopping;
-        private System.Windows.Forms.Label lbSugar;
-        private System.Windows.Forms.Label lbIce;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lbSmell;
-        private System.Windows.Forms.Label lbAmount;
-        private System.Windows.Forms.Label lbShopShip;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBoxLogo;
-        private System.Windows.Forms.Label lbIDHoaDon;
         private System.Windows.Forms.TextBox txtbSDTNguoiGiao;
         private System.Windows.Forms.TextBox txtbNguoiGiao;
         private System.Windows.Forms.TextBox txtbDiaChi;
         private System.Windows.Forms.TextBox txtbSDTNguoiNhan;
+        private System.Windows.Forms.TextBox txtbNote;
+        private System.Windows.Forms.Label lbNote;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbTopping;
+        private System.Windows.Forms.Label lbSugar;
+        private System.Windows.Forms.Label lbIce;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtbNguoiNhan;
+        private System.Windows.Forms.Label lbIDHoaDon;
+        private System.Windows.Forms.Label lbSmell;
+        private System.Windows.Forms.Label lbAmount;
+        private System.Windows.Forms.Label lbShopShip;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+
     }
 }
