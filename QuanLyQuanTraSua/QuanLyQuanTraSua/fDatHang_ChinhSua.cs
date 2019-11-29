@@ -31,5 +31,15 @@ namespace QuanLyQuanTraSua
         {
 
         }
+
+        private void fDatHang_ChinhSua_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbNote_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
