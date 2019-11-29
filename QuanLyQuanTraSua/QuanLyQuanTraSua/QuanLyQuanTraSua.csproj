@@ -45,11 +45,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDatHang.Designer.cs">
+      <DependentUpon>fDatHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="fDatHang_ChinhSua.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fDatHang_ChinhSua.Designer.cs">
       <DependentUpon>fDatHang_ChinhSua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDatHang_MangDi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDatHang_MangDi.Designer.cs">
+      <DependentUpon>fDatHang_MangDi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDatHang_MangDi_BenThu3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDatHang_MangDi_BenThu3.Designer.cs">
+      <DependentUpon>fDatHang_MangDi_BenThu3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDatHang_MangDi_ShopShip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDatHang_MangDi_ShopShip.Designer.cs">
+      <DependentUpon>fDatHang_MangDi_ShopShip.cs</DependentUpon>
     </Compile>
     <Compile Include="fTrangChu.cs">
       <SubType>Form</SubType>
@@ -59,8 +83,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fDatHang.resx">
+      <DependentUpon>fDatHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fDatHang_ChinhSua.resx">
       <DependentUpon>fDatHang_ChinhSua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDatHang_MangDi.resx">
+      <DependentUpon>fDatHang_MangDi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDatHang_MangDi_BenThu3.resx">
+      <DependentUpon>fDatHang_MangDi_BenThu3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDatHang_MangDi_ShopShip.resx">
+      <DependentUpon>fDatHang_MangDi_ShopShip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTrangChu.resx">
       <DependentUpon>fTrangChu.cs</DependentUpon>

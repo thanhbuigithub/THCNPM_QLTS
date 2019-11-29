@@ -33,19 +33,28 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.btnReport = new System.Windows.Forms.Button();
+            this.btnProduct = new System.Windows.Forms.Button();
+            this.btnCustomer = new System.Windows.Forms.Button();
+            this.btnOrder = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lbOtherMenu = new System.Windows.Forms.Label();
             this.lbBestSeller = new System.Windows.Forms.Label();
             this.lbSpecial = new System.Windows.Forms.Label();
-            this.lbOtherMenu = new System.Windows.Forms.Label();
-            this.btnOrder = new System.Windows.Forms.Button();
-            this.btnCustomer = new System.Windows.Forms.Button();
-            this.btnProduct = new System.Windows.Forms.Button();
-            this.btnReport = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lvSpecial = new System.Windows.Forms.ListView();
+            this.btnSpecNext = new System.Windows.Forms.Button();
+            this.btnSpecPrevious = new System.Windows.Forms.Button();
+            this.lvBestSeller = new System.Windows.Forms.ListView();
+            this.btnBSNext = new System.Windows.Forms.Button();
+            this.btnBSPrevious = new System.Windows.Forms.Button();
+            this.lvOther = new System.Windows.Forms.ListView();
+            this.btnOtherNext = new System.Windows.Forms.Button();
+            this.btnOtherPrevious = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbTimkiem
@@ -88,7 +97,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.pictureBoxLogo);
             this.panel2.Controls.Add(this.btnReport);
             this.panel2.Controls.Add(this.btnProduct);
             this.panel2.Controls.Add(this.btnCustomer);
@@ -98,8 +107,69 @@
             this.panel2.Size = new System.Drawing.Size(319, 697);
             this.panel2.TabIndex = 3;
             // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(313, 203);
+            this.pictureBoxLogo.TabIndex = 1;
+            this.pictureBoxLogo.TabStop = false;
+            // 
+            // btnReport
+            // 
+            this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.Location = new System.Drawing.Point(0, 525);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(319, 81);
+            this.btnReport.TabIndex = 0;
+            this.btnReport.Text = "Báo Cáo";
+            this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnProduct
+            // 
+            this.btnProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProduct.Location = new System.Drawing.Point(0, 418);
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.Size = new System.Drawing.Size(319, 81);
+            this.btnProduct.TabIndex = 0;
+            this.btnProduct.Text = "Sản phẩm";
+            this.btnProduct.UseVisualStyleBackColor = true;
+            this.btnProduct.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnCustomer
+            // 
+            this.btnCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomer.Location = new System.Drawing.Point(0, 314);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.Size = new System.Drawing.Size(319, 81);
+            this.btnCustomer.TabIndex = 0;
+            this.btnCustomer.Text = "Khách hàng";
+            this.btnCustomer.UseVisualStyleBackColor = true;
+            this.btnCustomer.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnOrder
+            // 
+            this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrder.Location = new System.Drawing.Point(0, 212);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(319, 81);
+            this.btnOrder.TabIndex = 0;
+            this.btnOrder.Text = "Đặt hàng";
+            this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.button1_Click);
+            // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btnOtherPrevious);
+            this.panel3.Controls.Add(this.btnBSPrevious);
+            this.panel3.Controls.Add(this.btnSpecPrevious);
+            this.panel3.Controls.Add(this.btnOtherNext);
+            this.panel3.Controls.Add(this.btnBSNext);
+            this.panel3.Controls.Add(this.btnSpecNext);
+            this.panel3.Controls.Add(this.lvOther);
+            this.panel3.Controls.Add(this.lvBestSeller);
+            this.panel3.Controls.Add(this.lvSpecial);
             this.panel3.Controls.Add(this.lbOtherMenu);
             this.panel3.Controls.Add(this.lbBestSeller);
             this.panel3.Controls.Add(this.lbSpecial);
@@ -107,6 +177,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(657, 592);
             this.panel3.TabIndex = 4;
+            // 
+            // lbOtherMenu
+            // 
+            this.lbOtherMenu.AutoSize = true;
+            this.lbOtherMenu.BackColor = System.Drawing.SystemColors.Control;
+            this.lbOtherMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbOtherMenu.Location = new System.Drawing.Point(24, 394);
+            this.lbOtherMenu.Name = "lbOtherMenu";
+            this.lbOtherMenu.Size = new System.Drawing.Size(166, 36);
+            this.lbOtherMenu.TabIndex = 1;
+            this.lbOtherMenu.Text = "Menu Khác";
+            this.lbOtherMenu.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbBestSeller
             // 
@@ -132,69 +214,83 @@
             this.lbSpecial.Text = "Đặc biệt tuần này";
             this.lbSpecial.Click += new System.EventHandler(this.label1_Click);
             // 
-            // lbOtherMenu
+            // lvSpecial
             // 
-            this.lbOtherMenu.AutoSize = true;
-            this.lbOtherMenu.BackColor = System.Drawing.SystemColors.Control;
-            this.lbOtherMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbOtherMenu.Location = new System.Drawing.Point(24, 394);
-            this.lbOtherMenu.Name = "lbOtherMenu";
-            this.lbOtherMenu.Size = new System.Drawing.Size(166, 36);
-            this.lbOtherMenu.TabIndex = 1;
-            this.lbOtherMenu.Text = "Menu Khác";
-            this.lbOtherMenu.Click += new System.EventHandler(this.label1_Click);
+            this.lvSpecial.Location = new System.Drawing.Point(74, 55);
+            this.lvSpecial.Name = "lvSpecial";
+            this.lvSpecial.Size = new System.Drawing.Size(509, 135);
+            this.lvSpecial.TabIndex = 2;
+            this.lvSpecial.UseCompatibleStateImageBehavior = false;
             // 
-            // btnOrder
+            // btnSpecNext
             // 
-            this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrder.Location = new System.Drawing.Point(0, 212);
-            this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(319, 81);
-            this.btnOrder.TabIndex = 0;
-            this.btnOrder.Text = "Đặt hàng";
-            this.btnOrder.UseVisualStyleBackColor = true;
-            this.btnOrder.Click += new System.EventHandler(this.button1_Click);
+            this.btnSpecNext.Location = new System.Drawing.Point(590, 70);
+            this.btnSpecNext.Name = "btnSpecNext";
+            this.btnSpecNext.Size = new System.Drawing.Size(64, 97);
+            this.btnSpecNext.TabIndex = 3;
+            this.btnSpecNext.Text = "button1";
+            this.btnSpecNext.UseVisualStyleBackColor = true;
             // 
-            // btnCustomer
+            // btnSpecPrevious
             // 
-            this.btnCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomer.Location = new System.Drawing.Point(0, 314);
-            this.btnCustomer.Name = "btnCustomer";
-            this.btnCustomer.Size = new System.Drawing.Size(319, 81);
-            this.btnCustomer.TabIndex = 0;
-            this.btnCustomer.Text = "Khách hàng";
-            this.btnCustomer.UseVisualStyleBackColor = true;
-            this.btnCustomer.Click += new System.EventHandler(this.button1_Click);
+            this.btnSpecPrevious.Location = new System.Drawing.Point(3, 70);
+            this.btnSpecPrevious.Name = "btnSpecPrevious";
+            this.btnSpecPrevious.Size = new System.Drawing.Size(64, 97);
+            this.btnSpecPrevious.TabIndex = 3;
+            this.btnSpecPrevious.Text = "button1";
+            this.btnSpecPrevious.UseVisualStyleBackColor = true;
             // 
-            // btnProduct
+            // lvBestSeller
             // 
-            this.btnProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProduct.Location = new System.Drawing.Point(0, 418);
-            this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Size = new System.Drawing.Size(319, 81);
-            this.btnProduct.TabIndex = 0;
-            this.btnProduct.Text = "Sản phẩm";
-            this.btnProduct.UseVisualStyleBackColor = true;
-            this.btnProduct.Click += new System.EventHandler(this.button1_Click);
+            this.lvBestSeller.Location = new System.Drawing.Point(74, 241);
+            this.lvBestSeller.Name = "lvBestSeller";
+            this.lvBestSeller.Size = new System.Drawing.Size(509, 135);
+            this.lvBestSeller.TabIndex = 2;
+            this.lvBestSeller.UseCompatibleStateImageBehavior = false;
             // 
-            // btnReport
+            // btnBSNext
             // 
-            this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReport.Location = new System.Drawing.Point(0, 525);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(319, 81);
-            this.btnReport.TabIndex = 0;
-            this.btnReport.Text = "Báo Cáo";
-            this.btnReport.UseVisualStyleBackColor = true;
-            this.btnReport.Click += new System.EventHandler(this.button1_Click);
+            this.btnBSNext.Location = new System.Drawing.Point(590, 256);
+            this.btnBSNext.Name = "btnBSNext";
+            this.btnBSNext.Size = new System.Drawing.Size(64, 97);
+            this.btnBSNext.TabIndex = 3;
+            this.btnBSNext.Text = "button1";
+            this.btnBSNext.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // btnBSPrevious
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(313, 203);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.btnBSPrevious.Location = new System.Drawing.Point(3, 256);
+            this.btnBSPrevious.Name = "btnBSPrevious";
+            this.btnBSPrevious.Size = new System.Drawing.Size(64, 97);
+            this.btnBSPrevious.TabIndex = 3;
+            this.btnBSPrevious.Text = "button1";
+            this.btnBSPrevious.UseVisualStyleBackColor = true;
+            // 
+            // lvOther
+            // 
+            this.lvOther.Location = new System.Drawing.Point(74, 442);
+            this.lvOther.Name = "lvOther";
+            this.lvOther.Size = new System.Drawing.Size(509, 135);
+            this.lvOther.TabIndex = 2;
+            this.lvOther.UseCompatibleStateImageBehavior = false;
+            // 
+            // btnOtherNext
+            // 
+            this.btnOtherNext.Location = new System.Drawing.Point(590, 457);
+            this.btnOtherNext.Name = "btnOtherNext";
+            this.btnOtherNext.Size = new System.Drawing.Size(64, 97);
+            this.btnOtherNext.TabIndex = 3;
+            this.btnOtherNext.Text = "button1";
+            this.btnOtherNext.UseVisualStyleBackColor = true;
+            // 
+            // btnOtherPrevious
+            // 
+            this.btnOtherPrevious.Location = new System.Drawing.Point(3, 457);
+            this.btnOtherPrevious.Name = "btnOtherPrevious";
+            this.btnOtherPrevious.Size = new System.Drawing.Size(64, 97);
+            this.btnOtherPrevious.TabIndex = 3;
+            this.btnOtherPrevious.Text = "button1";
+            this.btnOtherPrevious.UseVisualStyleBackColor = true;
             // 
             // fTrangChu
             // 
@@ -210,9 +306,9 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -232,7 +328,16 @@
         private System.Windows.Forms.Button btnReport;
         private System.Windows.Forms.Button btnProduct;
         private System.Windows.Forms.Button btnCustomer;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Button btnSpecPrevious;
+        private System.Windows.Forms.Button btnSpecNext;
+        private System.Windows.Forms.ListView lvSpecial;
+        private System.Windows.Forms.Button btnOtherPrevious;
+        private System.Windows.Forms.Button btnBSPrevious;
+        private System.Windows.Forms.Button btnOtherNext;
+        private System.Windows.Forms.Button btnBSNext;
+        private System.Windows.Forms.ListView lvOther;
+        private System.Windows.Forms.ListView lvBestSeller;
     }
 }
 
