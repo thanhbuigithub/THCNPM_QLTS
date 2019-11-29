@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnBack = new System.Windows.Forms.Button();
             this.lbListCLoseCustomer = new System.Windows.Forms.Label();
@@ -41,17 +43,33 @@
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 145);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.Location = new System.Drawing.Point(16, 163);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(677, 323);
+            this.dataGridView1.Size = new System.Drawing.Size(980, 544);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.Location = new System.Drawing.Point(12, 11);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(124, 40);
             this.btnBack.TabIndex = 17;
@@ -62,12 +80,13 @@
             // 
             this.lbListCLoseCustomer.AutoSize = true;
             this.lbListCLoseCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbListCLoseCustomer.Location = new System.Drawing.Point(146, 57);
+            this.lbListCLoseCustomer.Location = new System.Drawing.Point(298, 38);
             this.lbListCLoseCustomer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbListCLoseCustomer.Name = "lbListCLoseCustomer";
             this.lbListCLoseCustomer.Size = new System.Drawing.Size(426, 31);
             this.lbListCLoseCustomer.TabIndex = 19;
             this.lbListCLoseCustomer.Text = "Danh sách thành viên thân thiết";
+            this.lbListCLoseCustomer.Click += new System.EventHandler(this.lbListCLoseCustomer_Click);
             // 
             // directorySearcher1
             // 
@@ -88,7 +107,7 @@
             this.txtbSeach.Margin = new System.Windows.Forms.Padding(2);
             this.txtbSeach.Multiline = true;
             this.txtbSeach.Name = "txtbSeach";
-            this.txtbSeach.Size = new System.Drawing.Size(416, 34);
+            this.txtbSeach.Size = new System.Drawing.Size(430, 34);
             this.txtbSeach.TabIndex = 21;
             this.txtbSeach.TextChanged += new System.EventHandler(this.txtbName_TextChanged);
             // 
@@ -106,7 +125,7 @@
             // btnAddCloseCustomer
             // 
             this.btnAddCloseCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCloseCustomer.Location = new System.Drawing.Point(570, 100);
+            this.btnAddCloseCustomer.Location = new System.Drawing.Point(853, 100);
             this.btnAddCloseCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddCloseCustomer.Name = "btnAddCloseCustomer";
             this.btnAddCloseCustomer.Size = new System.Drawing.Size(124, 40);
@@ -118,7 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 480);
+            this.ClientSize = new System.Drawing.Size(1008, 730);
             this.Controls.Add(this.btnAddCloseCustomer);
             this.Controls.Add(this.txtbSeach);
             this.Controls.Add(this.lbSearch);

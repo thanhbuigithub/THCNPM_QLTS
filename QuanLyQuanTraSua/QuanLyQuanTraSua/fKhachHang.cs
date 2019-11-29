@@ -26,5 +26,10 @@ namespace QuanLyQuanTraSua
         {
 
         }
+
+        private void lbListCLoseCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

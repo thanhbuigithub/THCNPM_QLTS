@@ -26,5 +26,10 @@ namespace QuanLyQuanTraSua
         {
 
         }
+
+        private void fKhachhang_ThemSua_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

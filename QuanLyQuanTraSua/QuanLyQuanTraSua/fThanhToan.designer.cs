@@ -50,7 +50,7 @@
             // 
             this.lbCustomerType.AutoSize = true;
             this.lbCustomerType.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCustomerType.Location = new System.Drawing.Point(11, 160);
+            this.lbCustomerType.Location = new System.Drawing.Point(14, 276);
             this.lbCustomerType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbCustomerType.Name = "lbCustomerType";
             this.lbCustomerType.Size = new System.Drawing.Size(209, 29);
@@ -61,7 +61,7 @@
             // 
             this.rbtnNormalCustomer.AutoSize = true;
             this.rbtnNormalCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.rbtnNormalCustomer.Location = new System.Drawing.Point(247, 160);
+            this.rbtnNormalCustomer.Location = new System.Drawing.Point(250, 276);
             this.rbtnNormalCustomer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.rbtnNormalCustomer.Name = "rbtnNormalCustomer";
             this.rbtnNormalCustomer.Size = new System.Drawing.Size(218, 30);
@@ -75,7 +75,7 @@
             // 
             this.rbtnCloseCustomer.AutoSize = true;
             this.rbtnCloseCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.rbtnCloseCustomer.Location = new System.Drawing.Point(247, 204);
+            this.rbtnCloseCustomer.Location = new System.Drawing.Point(250, 320);
             this.rbtnCloseCustomer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.rbtnCloseCustomer.Name = "rbtnCloseCustomer";
             this.rbtnCloseCustomer.Size = new System.Drawing.Size(252, 30);
@@ -88,7 +88,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 466);
+            this.ClientSize = new System.Drawing.Size(752, 662);
             this.Controls.Add(this.rbtnCloseCustomer);
             this.Controls.Add(this.rbtnNormalCustomer);
             this.Controls.Add(this.lbCustomerType);

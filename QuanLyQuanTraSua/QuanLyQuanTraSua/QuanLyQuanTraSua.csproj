@@ -90,7 +90,7 @@
     <Compile Include="fSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fSanPham.Designer.cs">
+    <Compile Include="fSanPham.designer.cs">
       <DependentUpon>fSanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="fThanhToan.cs">

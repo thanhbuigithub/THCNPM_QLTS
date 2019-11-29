@@ -57,11 +57,11 @@
             // txtbName
             // 
             this.txtbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.txtbName.Location = new System.Drawing.Point(134, 81);
+            this.txtbName.Location = new System.Drawing.Point(134, 132);
             this.txtbName.Margin = new System.Windows.Forms.Padding(2);
             this.txtbName.Multiline = true;
             this.txtbName.Name = "txtbName";
-            this.txtbName.Size = new System.Drawing.Size(416, 34);
+            this.txtbName.Size = new System.Drawing.Size(607, 34);
             this.txtbName.TabIndex = 5;
             this.txtbName.TextChanged += new System.EventHandler(this.txtbName_TextChanged);
             // 
@@ -69,7 +69,7 @@
             // 
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(11, 89);
+            this.lbName.Location = new System.Drawing.Point(11, 140);
             this.lbName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(54, 26);
@@ -80,18 +80,18 @@
             // txtbPhone
             // 
             this.txtbPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.txtbPhone.Location = new System.Drawing.Point(134, 141);
+            this.txtbPhone.Location = new System.Drawing.Point(134, 202);
             this.txtbPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtbPhone.Multiline = true;
             this.txtbPhone.Name = "txtbPhone";
-            this.txtbPhone.Size = new System.Drawing.Size(416, 34);
+            this.txtbPhone.Size = new System.Drawing.Size(607, 34);
             this.txtbPhone.TabIndex = 7;
             // 
             // lbPhone
             // 
             this.lbPhone.AutoSize = true;
             this.lbPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPhone.Location = new System.Drawing.Point(11, 149);
+            this.lbPhone.Location = new System.Drawing.Point(11, 210);
             this.lbPhone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPhone.Name = "lbPhone";
             this.lbPhone.Size = new System.Drawing.Size(61, 26);
@@ -101,18 +101,18 @@
             // txtbAccumulatedPoints
             // 
             this.txtbAccumulatedPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.txtbAccumulatedPoints.Location = new System.Drawing.Point(241, 202);
+            this.txtbAccumulatedPoints.Location = new System.Drawing.Point(241, 278);
             this.txtbAccumulatedPoints.Margin = new System.Windows.Forms.Padding(2);
             this.txtbAccumulatedPoints.Multiline = true;
             this.txtbAccumulatedPoints.Name = "txtbAccumulatedPoints";
-            this.txtbAccumulatedPoints.Size = new System.Drawing.Size(309, 34);
+            this.txtbAccumulatedPoints.Size = new System.Drawing.Size(500, 34);
             this.txtbAccumulatedPoints.TabIndex = 9;
             // 
             // lbAccumulatedPoints
             // 
             this.lbAccumulatedPoints.AutoSize = true;
             this.lbAccumulatedPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAccumulatedPoints.Location = new System.Drawing.Point(11, 210);
+            this.lbAccumulatedPoints.Location = new System.Drawing.Point(11, 286);
             this.lbAccumulatedPoints.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAccumulatedPoints.Name = "lbAccumulatedPoints";
             this.lbAccumulatedPoints.Size = new System.Drawing.Size(226, 26);
@@ -122,18 +122,18 @@
             // txtbAccumulatedPointsReceived
             // 
             this.txtbAccumulatedPointsReceived.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.txtbAccumulatedPointsReceived.Location = new System.Drawing.Point(241, 265);
+            this.txtbAccumulatedPointsReceived.Location = new System.Drawing.Point(241, 353);
             this.txtbAccumulatedPointsReceived.Margin = new System.Windows.Forms.Padding(2);
             this.txtbAccumulatedPointsReceived.Multiline = true;
             this.txtbAccumulatedPointsReceived.Name = "txtbAccumulatedPointsReceived";
-            this.txtbAccumulatedPointsReceived.Size = new System.Drawing.Size(309, 34);
+            this.txtbAccumulatedPointsReceived.Size = new System.Drawing.Size(500, 34);
             this.txtbAccumulatedPointsReceived.TabIndex = 11;
             // 
             // lbAccumulatedPointsReceived
             // 
             this.lbAccumulatedPointsReceived.AutoSize = true;
             this.lbAccumulatedPointsReceived.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAccumulatedPointsReceived.Location = new System.Drawing.Point(11, 273);
+            this.lbAccumulatedPointsReceived.Location = new System.Drawing.Point(11, 361);
             this.lbAccumulatedPointsReceived.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAccumulatedPointsReceived.Name = "lbAccumulatedPointsReceived";
             this.lbAccumulatedPointsReceived.Size = new System.Drawing.Size(226, 26);
@@ -144,7 +144,7 @@
             // 
             this.lbUseAccumulatedPoints.AutoSize = true;
             this.lbUseAccumulatedPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUseAccumulatedPoints.Location = new System.Drawing.Point(11, 325);
+            this.lbUseAccumulatedPoints.Location = new System.Drawing.Point(11, 431);
             this.lbUseAccumulatedPoints.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbUseAccumulatedPoints.Name = "lbUseAccumulatedPoints";
             this.lbUseAccumulatedPoints.Size = new System.Drawing.Size(159, 26);
@@ -155,7 +155,7 @@
             // 
             this.rbtnNo.AutoSize = true;
             this.rbtnNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.rbtnNo.Location = new System.Drawing.Point(241, 367);
+            this.rbtnNo.Location = new System.Drawing.Point(241, 473);
             this.rbtnNo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.rbtnNo.Name = "rbtnNo";
             this.rbtnNo.Size = new System.Drawing.Size(93, 30);
@@ -169,7 +169,7 @@
             // 
             this.rbtnYes.AutoSize = true;
             this.rbtnYes.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.rbtnYes.Location = new System.Drawing.Point(241, 323);
+            this.rbtnYes.Location = new System.Drawing.Point(241, 429);
             this.rbtnYes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.rbtnYes.Name = "rbtnYes";
             this.rbtnYes.Size = new System.Drawing.Size(58, 30);
@@ -182,7 +182,7 @@
             // btnNext
             // 
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(426, 478);
+            this.btnNext.Location = new System.Drawing.Point(617, 611);
             this.btnNext.Margin = new System.Windows.Forms.Padding(2);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(124, 40);
@@ -194,7 +194,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 529);
+            this.ClientSize = new System.Drawing.Size(752, 662);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.rbtnNo);
             this.Controls.Add(this.rbtnYes);
