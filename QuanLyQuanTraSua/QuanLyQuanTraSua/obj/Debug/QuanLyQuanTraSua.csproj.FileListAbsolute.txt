@@ -1,13 +1,1 @@
 E:\Hoc_Tap\Nam_3\CNPM\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.pdb
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csprojResolveAssemblyReference.cache
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fBaocao.resources
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_ChinhSua.resources
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fTinhTrangKho.resources
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fTrangChu.resources
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.Properties.Resources.resources
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csproj.GenerateResource.Cache
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.exe
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.pdb
