@@ -26,10 +26,5 @@ namespace QuanLyQuanTraSua
         {
 
         }
-
-        private void fTrangChu_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
