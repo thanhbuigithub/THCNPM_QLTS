@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanTraSua
 {
-    public partial class fTrangChu : Form
+    public partial class fDatHang_MangDi : Form
     {
-        public fTrangChu()
+        public fDatHang_MangDi()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fTrangChu_Load(object sender, EventArgs e)
+        private void lbSpecial_Click(object sender, EventArgs e)
         {
 
         }

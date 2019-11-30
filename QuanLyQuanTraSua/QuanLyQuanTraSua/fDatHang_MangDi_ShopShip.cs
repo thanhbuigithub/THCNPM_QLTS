@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanTraSua
 {
-    public partial class fTrangChu : Form
+    public partial class fDatHang_MangDi_ShopShip : Form
     {
-        public fTrangChu()
+        public fDatHang_MangDi_ShopShip()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void lbAmount_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fTrangChu_Load(object sender, EventArgs e)
+        private void lbIDHoaDon_Click(object sender, EventArgs e)
         {
 
         }

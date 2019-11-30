@@ -1,6 +1,6 @@
 ﻿namespace QuanLyQuanTraSua
 {
-    partial class fTrangChu
+    partial class fDatHang
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnThanhToan = new System.Windows.Forms.Button();
+            this.btnMangDi = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lvDonHang = new System.Windows.Forms.ListView();
+            this.lbTongTien = new System.Windows.Forms.Label();
+            this.lbIDDonHang = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.lbTimkiem = new System.Windows.Forms.Label();
             this.txtbSearch = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.btnReport = new System.Windows.Forms.Button();
-            this.btnProduct = new System.Windows.Forms.Button();
-            this.btnCustomer = new System.Windows.Forms.Button();
-            this.btnOrder = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnOtherPrevious = new System.Windows.Forms.Button();
             this.btnBSPrevious = new System.Windows.Forms.Button();
@@ -51,11 +55,130 @@
             this.lbOtherMenu = new System.Windows.Forms.Label();
             this.lbBestSeller = new System.Windows.Forms.Label();
             this.lbSpecial = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Location = new System.Drawing.Point(2, 2);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(75, 54);
+            this.pictureBoxLogo.TabIndex = 1;
+            this.pictureBoxLogo.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.pictureBoxLogo);
+            this.panel2.Location = new System.Drawing.Point(758, 10);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(247, 661);
+            this.panel2.TabIndex = 6;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btnXoa);
+            this.panel5.Controls.Add(this.btnThanhToan);
+            this.panel5.Controls.Add(this.btnMangDi);
+            this.panel5.Location = new System.Drawing.Point(10, 524);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(235, 135);
+            this.panel5.TabIndex = 3;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(0, 105);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(112, 28);
+            this.btnXoa.TabIndex = 0;
+            this.btnXoa.Text = "Xoá";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnThanhToan
+            // 
+            this.btnThanhToan.Location = new System.Drawing.Point(2, 48);
+            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(166, 28);
+            this.btnThanhToan.TabIndex = 0;
+            this.btnThanhToan.Text = "Thanh toán";
+            this.btnThanhToan.UseVisualStyleBackColor = true;
+            // 
+            // btnMangDi
+            // 
+            this.btnMangDi.Location = new System.Drawing.Point(2, 15);
+            this.btnMangDi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMangDi.Name = "btnMangDi";
+            this.btnMangDi.Size = new System.Drawing.Size(166, 28);
+            this.btnMangDi.TabIndex = 0;
+            this.btnMangDi.Text = "Mang đi";
+            this.btnMangDi.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lvDonHang);
+            this.panel4.Controls.Add(this.lbTongTien);
+            this.panel4.Controls.Add(this.lbIDDonHang);
+            this.panel4.Location = new System.Drawing.Point(2, 62);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(235, 458);
+            this.panel4.TabIndex = 2;
+            // 
+            // lvDonHang
+            // 
+            this.lvDonHang.Location = new System.Drawing.Point(0, 49);
+            this.lvDonHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lvDonHang.Name = "lvDonHang";
+            this.lvDonHang.Size = new System.Drawing.Size(231, 360);
+            this.lvDonHang.TabIndex = 1;
+            this.lvDonHang.UseCompatibleStateImageBehavior = false;
+            // 
+            // lbTongTien
+            // 
+            this.lbTongTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbTongTien.AutoSize = true;
+            this.lbTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTongTien.Location = new System.Drawing.Point(76, 409);
+            this.lbTongTien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTongTien.Name = "lbTongTien";
+            this.lbTongTien.Size = new System.Drawing.Size(100, 37);
+            this.lbTongTien.TabIndex = 0;
+            this.lbTongTien.Text = "label1";
+            this.lbTongTien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbIDDonHang
+            // 
+            this.lbIDDonHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbIDDonHang.AutoSize = true;
+            this.lbIDDonHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIDDonHang.Location = new System.Drawing.Point(67, 10);
+            this.lbIDDonHang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbIDDonHang.Name = "lbIDDonHang";
+            this.lbIDDonHang.Size = new System.Drawing.Size(100, 37);
+            this.lbIDDonHang.TabIndex = 0;
+            this.lbIDDonHang.Text = "label1";
+            this.lbIDDonHang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(663, 5);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(76, 54);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // lbTimkiem
             // 
@@ -86,88 +209,8 @@
             this.panel1.Location = new System.Drawing.Point(9, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(734, 80);
-            this.panel1.TabIndex = 2;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(651, 15);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(76, 54);
-            this.btnSearch.TabIndex = 2;
-            this.btnSearch.Text = "Tìm kiếm";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBoxLogo);
-            this.panel2.Controls.Add(this.btnReport);
-            this.panel2.Controls.Add(this.btnProduct);
-            this.panel2.Controls.Add(this.btnCustomer);
-            this.panel2.Controls.Add(this.btnOrder);
-            this.panel2.Location = new System.Drawing.Point(747, 10);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 660);
-            this.panel2.TabIndex = 3;
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Location = new System.Drawing.Point(2, 2);
-            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(235, 165);
-            this.pictureBoxLogo.TabIndex = 1;
-            this.pictureBoxLogo.TabStop = false;
-            // 
-            // btnReport
-            // 
-            this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReport.Location = new System.Drawing.Point(0, 427);
-            this.btnReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(239, 66);
-            this.btnReport.TabIndex = 0;
-            this.btnReport.Text = "Báo Cáo";
-            this.btnReport.UseVisualStyleBackColor = true;
-            this.btnReport.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnProduct
-            // 
-            this.btnProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProduct.Location = new System.Drawing.Point(0, 340);
-            this.btnProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Size = new System.Drawing.Size(239, 66);
-            this.btnProduct.TabIndex = 0;
-            this.btnProduct.Text = "Sản phẩm";
-            this.btnProduct.UseVisualStyleBackColor = true;
-            this.btnProduct.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnCustomer
-            // 
-            this.btnCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomer.Location = new System.Drawing.Point(0, 255);
-            this.btnCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnCustomer.Name = "btnCustomer";
-            this.btnCustomer.Size = new System.Drawing.Size(239, 66);
-            this.btnCustomer.TabIndex = 0;
-            this.btnCustomer.Text = "Khách hàng";
-            this.btnCustomer.UseVisualStyleBackColor = true;
-            this.btnCustomer.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnOrder
-            // 
-            this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrder.Location = new System.Drawing.Point(0, 172);
-            this.btnOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(239, 66);
-            this.btnOrder.TabIndex = 0;
-            this.btnOrder.Text = "Đặt hàng";
-            this.btnOrder.UseVisualStyleBackColor = true;
-            this.btnOrder.Click += new System.EventHandler(this.button1_Click);
+            this.panel1.Size = new System.Drawing.Size(745, 80);
+            this.panel1.TabIndex = 5;
             // 
             // panel3
             // 
@@ -183,11 +226,11 @@
             this.panel3.Controls.Add(this.lbOtherMenu);
             this.panel3.Controls.Add(this.lbBestSeller);
             this.panel3.Controls.Add(this.lbSpecial);
-            this.panel3.Location = new System.Drawing.Point(6, 94);
+            this.panel3.Location = new System.Drawing.Point(9, 81);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(739, 596);
-            this.panel3.TabIndex = 6;
+            this.panel3.TabIndex = 7;
             // 
             // btnOtherPrevious
             // 
@@ -312,7 +355,7 @@
             this.lbSpecial.TabIndex = 1;
             this.lbSpecial.Text = "Đặc biệt tuần này";
             // 
-            // fTrangChu
+            // fDatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -321,14 +364,15 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "fTrangChu";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Trang Chủ";
-            this.Load += new System.EventHandler(this.fTrangChu_Load);
+            this.Name = "fDatHang";
+            this.Text = "fDatHang";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -337,16 +381,20 @@
 
         #endregion
 
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label lbTimkiem;
         private System.Windows.Forms.TextBox txtbSearch;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.Button btnOrder;
-        private System.Windows.Forms.Button btnReport;
-        private System.Windows.Forms.Button btnProduct;
-        private System.Windows.Forms.Button btnCustomer;
-        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnThanhToan;
+        private System.Windows.Forms.Button btnMangDi;
+        private System.Windows.Forms.ListView lvDonHang;
+        private System.Windows.Forms.Label lbTongTien;
+        private System.Windows.Forms.Label lbIDDonHang;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnOtherPrevious;
         private System.Windows.Forms.Button btnBSPrevious;
@@ -362,4 +410,3 @@
         private System.Windows.Forms.Label lbSpecial;
     }
 }
-

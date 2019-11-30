@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanTraSua
 {
-    public partial class fTrangChu : Form
+    public partial class fKhachHang : Form
     {
-        public fTrangChu()
+        public fKhachHang()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void txtbName_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void fTrangChu_Load(object sender, EventArgs e)
+        private void lbListCLoseCustomer_Click(object sender, EventArgs e)
         {
 
         }
