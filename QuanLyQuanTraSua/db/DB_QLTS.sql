@@ -122,7 +122,8 @@ INSERT INTO NGUYENLIEU VALUES
 ('NL_005',N'Thạch trái cây',N'HCM,Việt Nam','2019-02-03',N'Còn hàng')
 
 INSERT INTO MON VALUES
-('M_001',N'Trà sữa chocolate',20000,0,0)
+('M_001',N'Trà sữa chocolate',20000,0,0),
+('M_002',N'Trà sữa truyền thống',15000,0,0)
 
 INSERT INTO CHITIETMON VALUES
 ('M_001','NL_001'),
@@ -138,3 +139,8 @@ INSERT INTO SHIP VALUES
 INSERT INTO CHITIETHOADON VALUES
 ('M_001','HD_001',2,NULL,'M')
 
+CREATE PROC USP_GetDrinkByName @name_drink nvarchar(50)
+AS
+BEGIN
+SELECT * FROM MON WHERE @name_drink=TenMon
+END
