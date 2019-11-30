@@ -1,4 +1,5 @@
 E:\Hoc_Tap\Nam_3\CNPM\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
+<<<<<<< HEAD
 C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
 C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe
 C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.pdb
@@ -24,3 +25,5 @@ C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\De
 C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csproj.CoreCompileInputs.cache
 C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.exe
 C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.pdb
+=======
+>>>>>>> 153236f8f27b80c496b1070dac3dd4bca9a03369
