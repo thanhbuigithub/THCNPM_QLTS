@@ -1,1 +1,11 @@
 E:\Hoc_Tap\Nam_3\CNPM\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.pdb
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csprojResolveAssemblyReference.cache
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_ChinhSua.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fTrangChu.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.Properties.Resources.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csproj.GenerateResource.Cache
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.exe
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.pdb
