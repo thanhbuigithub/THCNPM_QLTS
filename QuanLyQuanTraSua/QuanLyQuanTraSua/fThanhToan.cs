@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanTraSua
 {
-    public partial class fTrangChu : Form
+    public partial class fThanhToan : Form
     {
-        public fTrangChu()
+        public fThanhToan()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fTrangChu_Load(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

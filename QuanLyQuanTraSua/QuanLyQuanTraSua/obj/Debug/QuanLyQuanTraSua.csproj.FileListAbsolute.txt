@@ -1,29 +1,22 @@
 E:\Hoc_Tap\Nam_3\CNPM\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
-<<<<<<< HEAD
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.pdb
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csprojResolveAssemblyReference.cache
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fBaocao.resources
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_ChinhSua.resources
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fTinhTrangKho.resources
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fTrangChu.resources
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.Properties.Resources.resources
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csproj.GenerateResource.Cache
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.exe
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.pdb
-C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
-C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe
-C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.pdb
-C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csprojAssemblyReference.cache
-C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fBaocao.resources
-C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_ChinhSua.resources
-C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fTinhTrangKho.resources
-C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fTrangChu.resources
-C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.Properties.Resources.resources
-C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csproj.GenerateResource.cache
-C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csproj.CoreCompileInputs.cache
-C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.exe
-C:\Users\HA DUY TAN\Desktop\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.pdb
-=======
->>>>>>> 153236f8f27b80c496b1070dac3dd4bca9a03369
+E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.pdb
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csprojResolveAssemblyReference.cache
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_ChinhSua.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_MangDi.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_MangDi_BenThu3.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_MangDi_ShopShip.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fKhachHang.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fKhachhang_ThemSua.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fSanPham.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fThanhToan.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fThanhToan_ThanhVien.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fThanhToan_Thuong.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fTrangChu.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.Properties.Resources.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csproj.GenerateResource.Cache
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.exe
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.pdb

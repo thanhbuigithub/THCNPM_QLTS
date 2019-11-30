@@ -45,21 +45,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="DAO\DataProvider.cs" />
-    <Compile Include="fBaocao.cs">
+    <Compile Include="fDatHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fBaocao.Designer.cs">
-      <DependentUpon>fBaocao.cs</DependentUpon>
+    <Compile Include="fDatHang.Designer.cs">
+      <DependentUpon>fDatHang.cs</DependentUpon>
     </Compile>
-=======
->>>>>>> 153236f8f27b80c496b1070dac3dd4bca9a03369
     <Compile Include="fDatHang_ChinhSua.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fDatHang_ChinhSua.Designer.cs">
       <DependentUpon>fDatHang_ChinhSua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDatHang_MangDi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDatHang_MangDi.Designer.cs">
+      <DependentUpon>fDatHang_MangDi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDatHang_MangDi_BenThu3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDatHang_MangDi_BenThu3.Designer.cs">
+      <DependentUpon>fDatHang_MangDi_BenThu3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDatHang_MangDi_ShopShip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDatHang_MangDi_ShopShip.Designer.cs">
+      <DependentUpon>fDatHang_MangDi_ShopShip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKhachHang.designer.cs">
+      <DependentUpon>fKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fKhachhang_ThemSua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKhachhang_ThemSua.designer.cs">
+      <DependentUpon>fKhachhang_ThemSua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSanPham.designer.cs">
+      <DependentUpon>fSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThanhToan.designer.cs">
+      <DependentUpon>fThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThanhToan_ThanhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThanhToan_ThanhVien.designer.cs">
+      <DependentUpon>fThanhToan_ThanhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThanhToan_Thuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThanhToan_Thuong.designer.cs">
+      <DependentUpon>fThanhToan_Thuong.cs</DependentUpon>
     </Compile>
     <Compile Include="fTrangChu.cs">
       <SubType>Form</SubType>
@@ -69,8 +119,38 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fDatHang.resx">
+      <DependentUpon>fDatHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fDatHang_ChinhSua.resx">
       <DependentUpon>fDatHang_ChinhSua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDatHang_MangDi.resx">
+      <DependentUpon>fDatHang_MangDi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDatHang_MangDi_BenThu3.resx">
+      <DependentUpon>fDatHang_MangDi_BenThu3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDatHang_MangDi_ShopShip.resx">
+      <DependentUpon>fDatHang_MangDi_ShopShip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fKhachHang.resx">
+      <DependentUpon>fKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fKhachhang_ThemSua.resx">
+      <DependentUpon>fKhachhang_ThemSua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSanPham.resx">
+      <DependentUpon>fSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThanhToan.resx">
+      <DependentUpon>fThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThanhToan_ThanhVien.resx">
+      <DependentUpon>fThanhToan_ThanhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThanhToan_Thuong.resx">
+      <DependentUpon>fThanhToan_Thuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTrangChu.resx">
       <DependentUpon>fTrangChu.cs</DependentUpon>
@@ -96,9 +176,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
