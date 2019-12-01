@@ -75,6 +75,12 @@
     <Compile Include="fDatHang_MangDi_ShopShip.Designer.cs">
       <DependentUpon>fDatHang_MangDi_ShopShip.cs</DependentUpon>
     </Compile>
+    <Compile Include="fGiaoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGiaoHang.Designer.cs">
+      <DependentUpon>fGiaoHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="fKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,12 @@
     <Compile Include="fThanhToan_Thuong.designer.cs">
       <DependentUpon>fThanhToan_Thuong.cs</DependentUpon>
     </Compile>
+    <Compile Include="fTinhTrangKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTinhTrangKho.Designer.cs">
+      <DependentUpon>fTinhTrangKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="fTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +146,9 @@
     <EmbeddedResource Include="fDatHang_MangDi_ShopShip.resx">
       <DependentUpon>fDatHang_MangDi_ShopShip.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fGiaoHang.resx">
+      <DependentUpon>fGiaoHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fKhachHang.resx">
       <DependentUpon>fKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fThanhToan_Thuong.resx">
       <DependentUpon>fThanhToan_Thuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTinhTrangKho.resx">
+      <DependentUpon>fTinhTrangKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTrangChu.resx">
       <DependentUpon>fTrangChu.cs</DependentUpon>

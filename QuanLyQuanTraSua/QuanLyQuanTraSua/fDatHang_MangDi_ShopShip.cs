@@ -17,14 +17,15 @@ namespace QuanLyQuanTraSua
             InitializeComponent();
         }
 
-        private void lbAmount_Click(object sender, EventArgs e)
+        private void btnTiep_Click(object sender, EventArgs e)
         {
-
+            fTrangChu.Finish = true;
+            this.Close();
         }
 
-        private void lbIDHoaDon_Click(object sender, EventArgs e)
+        private void btnHuy_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

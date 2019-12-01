@@ -17,9 +17,40 @@ namespace QuanLyQuanTraSua
             InitializeComponent();
         }
 
-        private void lbSpecial_Click(object sender, EventArgs e)
+        private void fDatHang_MangDi_Load(object sender, EventArgs e)
         {
+            btnMangDi.Enabled = false;
 
+        }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            fThanhToan fThanhToan = new fThanhToan();
+            this.Close();
+            fThanhToan.ShowDialog();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBenThu3_Click(object sender, EventArgs e)
+        {
+            fDatHang_MangDi_BenThu3 fDatHangMangDiBenThu3 = new fDatHang_MangDi_BenThu3();
+            fDatHangMangDiBenThu3.ShowDialog();
+        }
+
+        private void btnQuan_Click(object sender, EventArgs e)
+        {
+            fDatHang_MangDi_ShopShip fDatHangMangDiShopShip = new fDatHang_MangDi_ShopShip();
+            fDatHangMangDiShopShip.ShowDialog();
+        }
+
+        private void fDatHang_MangDi_Activated(object sender, EventArgs e)
+        {
+            if (fTrangChu.Finish)
+                this.Close();
         }
     }
 }

@@ -16,30 +16,5 @@ namespace QuanLyQuanTraSua
         {
             InitializeComponent();
         }
-
-        private void lbAccumulatedPoints_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtbAccumulatedPoints_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbAccumulatedPoints_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtbAccumulatedPoints_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rbtnNo_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

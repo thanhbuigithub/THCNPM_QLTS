@@ -17,19 +17,19 @@ namespace QuanLyQuanTraSua
             InitializeComponent();
         }
 
-        private void lbAccumulatedPoints_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtbAccumulatedPoints_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void fKhachhang_ThemSua_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnDone_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

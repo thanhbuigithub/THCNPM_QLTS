@@ -16,5 +16,16 @@ namespace QuanLyQuanTraSua
         {
             InitializeComponent();
         }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnTiep_Click(object sender, EventArgs e)
+        {
+            fTrangChu.Finish = true;
+            this.Close();
+        }
     }
 }

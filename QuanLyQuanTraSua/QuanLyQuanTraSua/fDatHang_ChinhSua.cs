@@ -17,19 +17,14 @@ namespace QuanLyQuanTraSua
             InitializeComponent();
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

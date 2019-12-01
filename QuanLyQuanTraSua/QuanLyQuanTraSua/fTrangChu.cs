@@ -12,24 +12,44 @@ namespace QuanLyQuanTraSua
 {
     public partial class fTrangChu : Form
     {
+        public static Boolean Finish = false;
         public fTrangChu()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void fTrangChu_Load(object sender, EventArgs e)
         {
+            Finish = false;
+        }
 
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            fDatHang fDatHang = new fDatHang();
+            this.Hide();
+            fDatHang.ShowDialog();
+            this.Show();
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            fKhachHang fKhachHang = new fKhachHang();
+            this.Hide();
+            fKhachHang.ShowDialog();
+            this.Show();
+        }
+
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+            fSanPham fSanPham = new fSanPham();
+            this.Hide();
+            fSanPham.ShowDialog();
+            this.Show();
+        }
+
+        private void fTrangChu_Activated(object sender, EventArgs e)
+        {
+            Finish = false;
         }
     }
 }
