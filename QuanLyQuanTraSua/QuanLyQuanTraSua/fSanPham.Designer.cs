@@ -243,6 +243,7 @@
             this.btnStatusProduct.TabIndex = 0;
             this.btnStatusProduct.Text = "Tình trạng";
             this.btnStatusProduct.UseVisualStyleBackColor = true;
+            this.btnStatusProduct.Click += new System.EventHandler(this.btnStatusProduct_Click);
             // 
             // btnFixProduct
             // 

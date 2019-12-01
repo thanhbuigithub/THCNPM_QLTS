@@ -104,6 +104,7 @@
             this.rbtnNormalCustomer.TabStop = true;
             this.rbtnNormalCustomer.Text = "Khách hàng thường";
             this.rbtnNormalCustomer.UseVisualStyleBackColor = true;
+            this.rbtnNormalCustomer.CheckedChanged += new System.EventHandler(this.rbtnNormalCustomer_CheckedChanged);
             // 
             // lbCustomerType
             // 

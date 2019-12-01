@@ -51,5 +51,23 @@ namespace QuanLyQuanTraSua
         {
             Finish = false;
         }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            fBaocao fBaocao = new fBaocao();
+            this.Hide();
+            fBaocao.ShowDialog();
+            this.Show();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBoxLogo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -123,6 +123,7 @@
             this.btnNext.TabIndex = 29;
             this.btnNext.Text = "Tiếp";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // panel4
             // 

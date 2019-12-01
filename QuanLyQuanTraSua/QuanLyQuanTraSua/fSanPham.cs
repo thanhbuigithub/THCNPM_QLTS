@@ -21,5 +21,13 @@ namespace QuanLyQuanTraSua
         {
 
         }
+
+        private void btnStatusProduct_Click(object sender, EventArgs e)
+        {
+            fTinhTrangKho fTinhtrangkho = new fTinhTrangKho();
+            this.Hide();
+            fTinhtrangkho.ShowDialog();
+            this.Show();
+        }
     }
 }
