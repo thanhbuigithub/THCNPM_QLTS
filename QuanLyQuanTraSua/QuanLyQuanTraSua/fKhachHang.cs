@@ -21,5 +21,13 @@ namespace QuanLyQuanTraSua
         {
             this.Close();
         }
+
+        private void btnAddCloseCustomer_Click(object sender, EventArgs e)
+        {
+            fKhachhang_ThemSua fKhachHang_themsua = new fKhachhang_ThemSua();
+            this.Hide();
+            fKhachHang_themsua.ShowDialog();
+            this.Show();
+        }
     }
 }

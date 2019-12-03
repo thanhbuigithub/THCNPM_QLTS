@@ -41,5 +41,11 @@ namespace QuanLyQuanTraSua
         {
 
         }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            fTrangChu.Finish = true;
+            this.Close();
+        }
     }
 }

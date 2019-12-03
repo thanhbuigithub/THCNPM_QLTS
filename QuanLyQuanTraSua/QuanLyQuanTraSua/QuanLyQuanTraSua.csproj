@@ -46,6 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataProvider.cs" />
+<Compile Include="fBaocao.cs">
+  <SubType>Form</SubType>
+</Compile>
+<Compile Include="fBaocao.designer.cs">
+  <DependentUpon>fBaocao.cs</DependentUpon>
+</Compile>
     <Compile Include="fDatHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fBaocao.resx">
+      <DependentUpon>fBaocao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fDatHang.resx">
       <DependentUpon>fDatHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,7 +216,7 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
