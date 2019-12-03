@@ -26,5 +26,9 @@ namespace QuanLyQuanTraSua
         {
             this.Close();
         }
+
+        private void fDatHang_ChinhSua_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

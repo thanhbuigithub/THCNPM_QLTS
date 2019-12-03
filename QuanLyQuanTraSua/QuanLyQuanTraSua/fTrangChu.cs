@@ -13,7 +13,8 @@ namespace QuanLyQuanTraSua
     public partial class fTrangChu : Form
     {
         public static Boolean Finish = false;
-        public fTrangChu()
+        public static Int16 mProductID;
+            public fTrangChu()
         {
             InitializeComponent();
         }
@@ -21,6 +22,7 @@ namespace QuanLyQuanTraSua
         private void fTrangChu_Load(object sender, EventArgs e)
         {
             Finish = false;
+            populateItem();
         }
 
         private void btnOrder_Click(object sender, EventArgs e)
@@ -50,6 +52,23 @@ namespace QuanLyQuanTraSua
         private void fTrangChu_Activated(object sender, EventArgs e)
         {
             Finish = false;
+        }
+
+        private void btnSpecNext_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void populateItem()
+        {
+            Product[] product = new Product[20];
+            for (int i = 0; i < product.Length; i++)
+            {
+                product[i] = new Product();
+                product[i].ProductName = "TSAFDASDAD";
+                product[i].Image = Image.FromFile(@"E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\img\" + "pic.png");
+                fLPSpecial.Controls.Add(product[i]);
+            }
         }
     }
 }
