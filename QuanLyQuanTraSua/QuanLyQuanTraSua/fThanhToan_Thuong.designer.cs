@@ -93,7 +93,7 @@
             this.btnBack.TabIndex = 17;
             this.btnBack.Text = "Quay lại";
             this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+//            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // panel2
             // 
@@ -287,7 +287,7 @@
             this.btnXoa.TabIndex = 0;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            //this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThanhToan
             // 
@@ -298,7 +298,7 @@
             this.btnThanhToan.TabIndex = 0;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.UseVisualStyleBackColor = true;
-            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
+           // this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // btnMangDi
             // 
@@ -309,7 +309,7 @@
             this.btnMangDi.TabIndex = 0;
             this.btnMangDi.Text = "Mang đi";
             this.btnMangDi.UseVisualStyleBackColor = true;
-            this.btnMangDi.Click += new System.EventHandler(this.btnMangDi_Click);
+           // this.btnMangDi.Click += new System.EventHandler(this.btnMangDi_Click);
             // 
             // panel8
             // 
@@ -375,9 +375,9 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Name = "fThanhToan_Thuong";
-            this.Text = "fThanhToan_Thuong";
-            this.Activated += new System.EventHandler(this.fThanhToan_Thuong_Activated);
-            this.Load += new System.EventHandler(this.fThanhToan_Thuong_Load);
+            this.Text = "fThanhToan_Thuong"; 
+            //this.Activated += new System.EventHandler(this.fThanhToan_Thuong_Activated);
+         //   this.Load += new System.EventHandler(this.fThanhToan_Thuong_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

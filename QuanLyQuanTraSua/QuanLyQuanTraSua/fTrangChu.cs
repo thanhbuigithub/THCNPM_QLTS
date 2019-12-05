@@ -31,7 +31,6 @@ namespace QuanLyQuanTraSua
             this.Hide();
             fDatHang.ShowDialog();
             this.Show();
-            this.Close(); 
         }
 
         private void btnCustomer_Click(object sender, EventArgs e)
@@ -66,16 +65,9 @@ namespace QuanLyQuanTraSua
             fBaocao.ShowDialog();
             this.Show();
         }
-private void btnReport_Click(object sender, EventArgs e)
-{
-    fBaocao fBaocao = new fBaocao();
-    this.Hide();
-    fBaocao.ShowDialog();
-    this.Show();
-}
 
 
-private void panel2_Paint(object sender, PaintEventArgs e)
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

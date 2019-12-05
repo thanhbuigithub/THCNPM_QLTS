@@ -123,7 +123,6 @@
             this.btnReport.TabIndex = 0;
             this.btnReport.Text = "Báo Cáo";
             this.btnReport.UseVisualStyleBackColor = true;
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // btnProduct
             // 
@@ -252,23 +251,23 @@
             // 
             // lvOther
             // 
-            this.lvOther.HideSelection = false;
-            this.lvOther.Location = new System.Drawing.Point(54, 442);
-            this.lvOther.Margin = new System.Windows.Forms.Padding(2);
-            this.lvOther.Name = "lvOther";
-            this.lvOther.Size = new System.Drawing.Size(625, 138);
-            this.lvOther.TabIndex = 2;
-            this.lvOther.UseCompatibleStateImageBehavior = false;
+            //this.lvOther.HideSelection = false;
+            //this.lvOther.Location = new System.Drawing.Point(54, 442);
+            //this.lvOther.Margin = new System.Windows.Forms.Padding(2);
+            //this.lvOther.Name = "lvOther";
+            //this.lvOther.Size = new System.Drawing.Size(625, 138);
+            //this.lvOther.TabIndex = 2;
+            //this.lvOther.UseCompatibleStateImageBehavior = false;
             // 
             // lvBestSeller
             // 
-            this.lvBestSeller.HideSelection = false;
-            this.lvBestSeller.Location = new System.Drawing.Point(54, 246);
-            this.lvBestSeller.Margin = new System.Windows.Forms.Padding(2);
-            this.lvBestSeller.Name = "lvBestSeller";
-            this.lvBestSeller.Size = new System.Drawing.Size(625, 145);
-            this.lvBestSeller.TabIndex = 2;
-            this.lvBestSeller.UseCompatibleStateImageBehavior = false;
+            //this.lvBestSeller.HideSelection = false;
+            //this.lvBestSeller.Location = new System.Drawing.Point(54, 246);
+            //this.lvBestSeller.Margin = new System.Windows.Forms.Padding(2);
+            //this.lvBestSeller.Name = "lvBestSeller";
+            //this.lvBestSeller.Size = new System.Drawing.Size(625, 145);
+            //this.lvBestSeller.TabIndex = 2;
+            //this.lvBestSeller.UseCompatibleStateImageBehavior = false;
             // 
             // lbOtherMenu
             // 

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnTiep = new System.Windows.Forms.Button();
+        //    this.btnTiep = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -57,7 +57,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnTiep);
+          //  this.panel1.Controls.Add(this.btnTiep);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -67,15 +67,15 @@
             // 
             // btnTiep
             // 
-            this.btnTiep.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTiep.Location = new System.Drawing.Point(672, 607);
-            this.btnTiep.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTiep.Name = "btnTiep";
-            this.btnTiep.Size = new System.Drawing.Size(69, 44);
-            this.btnTiep.TabIndex = 8;
-            this.btnTiep.Text = "Tiếp";
-            this.btnTiep.UseVisualStyleBackColor = true;
-            this.btnTiep.Click += new System.EventHandler(this.btnTiep_Click);
+            //this.btnTiep.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //this.btnTiep.Location = new System.Drawing.Point(672, 607);
+            //this.btnTiep.Margin = new System.Windows.Forms.Padding(2);
+            //this.btnTiep.Name = "btnTiep";
+            //this.btnTiep.Size = new System.Drawing.Size(69, 44);
+            //this.btnTiep.TabIndex = 8;
+            //this.btnTiep.Text = "Tiếp";
+            //this.btnTiep.UseVisualStyleBackColor = true;
+            //this.btnTiep.Click += new System.EventHandler(this.btnTiep_Click);
             // 
             // panel3
             // 
@@ -117,7 +117,7 @@
             this.btnNormalCustomer.TabIndex = 7;
             this.btnNormalCustomer.Text = "Khách hàng thường";
             this.btnNormalCustomer.UseVisualStyleBackColor = true;
-            this.btnNormalCustomer.Click += new System.EventHandler(this.btnNormalCustomer_Click);
+           // this.btnNormalCustomer.Click += new System.EventHandler(this.btnNormalCustomer_Click);
             // 
             // btnCloseCuctomer
             // 

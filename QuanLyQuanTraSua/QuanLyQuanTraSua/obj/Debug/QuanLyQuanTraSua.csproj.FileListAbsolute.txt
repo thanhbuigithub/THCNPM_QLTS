@@ -72,3 +72,5 @@ D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTra
 D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fTinhTrangKho.resources
 D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.Product.resources
 D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fSanPham_ChinhSua_Them.resources
+E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fBaocao.resources
+E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fSanPham_ChinhSua_Them.resources
