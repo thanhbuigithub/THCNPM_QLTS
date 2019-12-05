@@ -40,6 +40,7 @@
             this.lbIDDonHang = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.btnQuan = new System.Windows.Forms.Button();
             this.btnBenThu3 = new System.Windows.Forms.Button();
             this.lbSpecial = new System.Windows.Forms.Label();
@@ -67,9 +68,9 @@
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.pictureBoxLogo);
             this.panel2.Location = new System.Drawing.Point(751, 11);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(247, 685);
+            this.panel2.Size = new System.Drawing.Size(246, 717);
             this.panel2.TabIndex = 13;
             // 
             // panel5
@@ -78,25 +79,26 @@
             this.panel5.Controls.Add(this.btnThanhToan);
             this.panel5.Controls.Add(this.btnMangDi);
             this.panel5.Location = new System.Drawing.Point(10, 524);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(235, 135);
+            this.panel5.Size = new System.Drawing.Size(236, 184);
             this.panel5.TabIndex = 3;
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(0, 105);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Location = new System.Drawing.Point(2, 154);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(112, 28);
             this.btnXoa.TabIndex = 0;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click_1);
             // 
             // btnThanhToan
             // 
             this.btnThanhToan.Location = new System.Drawing.Point(2, 48);
-            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(2);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(166, 28);
             this.btnThanhToan.TabIndex = 0;
@@ -107,12 +109,13 @@
             // btnMangDi
             // 
             this.btnMangDi.Location = new System.Drawing.Point(2, 15);
-            this.btnMangDi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMangDi.Margin = new System.Windows.Forms.Padding(2);
             this.btnMangDi.Name = "btnMangDi";
             this.btnMangDi.Size = new System.Drawing.Size(166, 28);
             this.btnMangDi.TabIndex = 0;
             this.btnMangDi.Text = "Mang đi";
             this.btnMangDi.UseVisualStyleBackColor = true;
+            this.btnMangDi.Click += new System.EventHandler(this.btnMangDi_Click);
             // 
             // panel4
             // 
@@ -120,7 +123,7 @@
             this.panel4.Controls.Add(this.lbTongTien);
             this.panel4.Controls.Add(this.lbIDDonHang);
             this.panel4.Location = new System.Drawing.Point(2, 62);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(235, 458);
             this.panel4.TabIndex = 2;
@@ -129,7 +132,7 @@
             // 
             this.lvDonHang.HideSelection = false;
             this.lvDonHang.Location = new System.Drawing.Point(0, 49);
-            this.lvDonHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lvDonHang.Margin = new System.Windows.Forms.Padding(2);
             this.lvDonHang.Name = "lvDonHang";
             this.lvDonHang.Size = new System.Drawing.Size(231, 360);
             this.lvDonHang.TabIndex = 1;
@@ -164,7 +167,7 @@
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.Location = new System.Drawing.Point(2, 2);
-            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(75, 54);
             this.pictureBoxLogo.TabIndex = 1;
@@ -172,21 +175,33 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btnBack);
             this.panel3.Controls.Add(this.btnQuan);
             this.panel3.Controls.Add(this.btnBenThu3);
             this.panel3.Controls.Add(this.lbSpecial);
             this.panel3.Location = new System.Drawing.Point(10, 11);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(725, 685);
+            this.panel3.Size = new System.Drawing.Size(737, 719);
             this.panel3.TabIndex = 12;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
+            this.btnBack.Location = new System.Drawing.Point(19, 13);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(154, 43);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "QUAY LẠI";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.button7_Click);
             // 
             // btnQuan
             // 
             this.btnQuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuan.Location = new System.Drawing.Point(223, 285);
-            this.btnQuan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQuan.Margin = new System.Windows.Forms.Padding(2);
             this.btnQuan.Name = "btnQuan";
             this.btnQuan.Size = new System.Drawing.Size(377, 67);
             this.btnQuan.TabIndex = 3;
@@ -198,7 +213,7 @@
             // 
             this.btnBenThu3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBenThu3.Location = new System.Drawing.Point(223, 204);
-            this.btnBenThu3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBenThu3.Margin = new System.Windows.Forms.Padding(2);
             this.btnBenThu3.Name = "btnBenThu3";
             this.btnBenThu3.Size = new System.Drawing.Size(377, 67);
             this.btnBenThu3.TabIndex = 3;
@@ -224,7 +239,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 730);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fDatHang_MangDi";
             this.Text = "fDatHang_MangDi";
             this.Activated += new System.EventHandler(this.fDatHang_MangDi_Activated);
@@ -258,6 +273,7 @@
         private System.Windows.Forms.Button btnQuan;
         private System.Windows.Forms.Button btnBenThu3;
         private System.Windows.Forms.Label lbSpecial;
+        private System.Windows.Forms.Button btnBack;
 
     }
 }

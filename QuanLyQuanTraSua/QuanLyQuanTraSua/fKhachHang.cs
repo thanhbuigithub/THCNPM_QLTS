@@ -29,5 +29,10 @@ namespace QuanLyQuanTraSua
             fKhachHang_themsua.ShowDialog();
             this.Show();
         }
+
+        private void fKhachHang_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

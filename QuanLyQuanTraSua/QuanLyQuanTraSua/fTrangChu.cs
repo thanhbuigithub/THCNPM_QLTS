@@ -31,6 +31,7 @@ namespace QuanLyQuanTraSua
             this.Hide();
             fDatHang.ShowDialog();
             this.Show();
+            this.Close(); 
         }
 
         private void btnCustomer_Click(object sender, EventArgs e)
@@ -54,7 +55,10 @@ namespace QuanLyQuanTraSua
             Finish = false;
         }
 
-        private void btnSpecNext_Click(object sender, EventArgs e)
+        private void btnSpecNext_Click(object sender, EventArgs e){
+
+        }
+
 private void btnReport_Click(object sender, EventArgs e)
 {
     fBaocao fBaocao = new fBaocao();
@@ -63,21 +67,23 @@ private void btnReport_Click(object sender, EventArgs e)
     this.Show();
 }
 
+
 private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void populateItem()
-        {
-            Product[] product = new Product[20];
-            for (int i = 0; i < product.Length; i++)
-            {
-                product[i] = new Product();
-                product[i].ProductName = "TSAFDASDAD";
-                product[i].Image = Image.FromFile(@"E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\img\" + "pic.png");
-                fLPSpecial.Controls.Add(product[i]);
-            }
+private void populateItem()
+{
+    Product[] product = new Product[20];
+    for (int i = 0; i < product.Length; i++)
+    {
+        product[i] = new Product();
+        product[i].ProductName = "TSAFDASDAD";
+        product[i].Image = Image.FromFile(@"E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\img\" + "pic.png");
+        fLPSpecial.Controls.Add(product[i]);
+    }
+}
 private void pictureBoxLogo_Click(object sender, EventArgs e)
 {
         }

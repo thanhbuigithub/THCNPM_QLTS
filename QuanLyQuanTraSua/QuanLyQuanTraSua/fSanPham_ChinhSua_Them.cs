@@ -10,16 +10,46 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanTraSua
 {
-    public partial class fSanPham : Form
+    public partial class fSanPham_ChinhSua_Them : Form
     {
-        public fSanPham()
+        public fSanPham_ChinhSua_Them()
         {
             InitializeComponent();
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void lbSize_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void rbBestSeller_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdSpecial_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbNormal_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBackMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void btnStatusProduct_Click(object sender, EventArgs e)
@@ -35,17 +65,9 @@ namespace QuanLyQuanTraSua
             this.Close();
         }
 
-        private void pictureBoxLogo_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            fSanPham_ChinhSua_Them fSanPham_ChinhSua_Them = new fSanPham_ChinhSua_Them();
-            this.Hide();
-            fSanPham_ChinhSua_Them.ShowDialog();
-            this.Show();
+
         }
     }
 }

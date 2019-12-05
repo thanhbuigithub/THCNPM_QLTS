@@ -46,12 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataProvider.cs" />
-<Compile Include="fBaocao.cs">
-  <SubType>Form</SubType>
-</Compile>
-<Compile Include="fBaocao.designer.cs">
-  <DependentUpon>fBaocao.cs</DependentUpon>
-</Compile>
+    <Compile Include="fBaocao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBaocao.designer.cs">
+      <DependentUpon>fBaocao.cs</DependentUpon>
+    </Compile>
     <Compile Include="fDatHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +105,12 @@
     </Compile>
     <Compile Include="fSanPham.designer.cs">
       <DependentUpon>fSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fSanPham_ChinhSua_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSanPham_ChinhSua_Them.Designer.cs">
+      <DependentUpon>fSanPham_ChinhSua_Them.cs</DependentUpon>
     </Compile>
     <Compile Include="fThanhToan.cs">
       <SubType>Form</SubType>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fSanPham.resx">
       <DependentUpon>fSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSanPham_ChinhSua_Them.resx">
+      <DependentUpon>fSanPham_ChinhSua_Them.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fThanhToan.resx">
       <DependentUpon>fThanhToan.cs</DependentUpon>

@@ -19,8 +19,44 @@ namespace QuanLyQuanTraSua
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            fTrangChu.Finish = true;
+            fDatHang fDatHang = new fDatHang();
+            this.Hide();
+            fDatHang.ShowDialog();
             this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMangDi_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            fTrangChu fTrangChu = new fTrangChu();
+            this.Hide();
+            fTrangChu.ShowDialog();
+            fTrangChu.Finish = true; 
+            this.Close(); //
+        }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fThanhToan_Thuong_Load(object sender, EventArgs e)
+        {
+            btnThanhToan.Enabled = false;
+        }
+
+        private void fThanhToan_Thuong_Activated(object sender, EventArgs e)
+        {
+            if (fTrangChu.Finish)
+                this.Close();
         }
     }
 }
