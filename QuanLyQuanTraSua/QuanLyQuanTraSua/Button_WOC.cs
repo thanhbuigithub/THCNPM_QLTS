@@ -8,22 +8,20 @@ using System.ComponentModel;
 namespace ePOSOne.btnProduct
 {
    
-    class ButtonModified : System.Windows.Forms.Button
+public class ButtonModified : System.Windows.Forms.Button
     {
         //we can use this to modify the color of the border 
         public Color BorderColor = Color.White;
         //we can use this to modify the border size
-        public int BorderSize = 4;
+        public int BorderSize = 3;
         public ButtonModified()
         {
             FlatStyle = FlatStyle.Flat;
-            BackColor = Color.PaleTurquoise;
+            BackColor = Color.DeepSkyBlue;
             FlatAppearance.BorderColor = BorderColor;
             FlatAppearance.BorderSize = BorderSize;
             Font = new System.Drawing.Font("VAGRounded-Light",
             30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-        //    ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))),
-          //          ((int)(((byte)(33)))), ((int)(((byte)(107)))));
 
         }
 
@@ -38,7 +36,7 @@ namespace ePOSOne.btnProduct
             // to draw the control using base OnPaint
             base.OnPaint(pevent);
             //to modify the corner radius
-            int CornerRadius = 20;
+            int CornerRadius = 23;
 
             Pen DrawPen = new Pen(BorderColor);
             GraphicsPath gfxPath_mod = new GraphicsPath();
@@ -81,7 +79,7 @@ namespace ePOSOne.btnProduct
 public class RoundLabel : Label
 {
     [Browsable(true)]
-    public Color _BackColor { get; set; }
+    public Color _BackColor = Color.DeepSkyBlue;
 
     public RoundLabel()
     {
@@ -100,10 +98,18 @@ public class RoundLabel : Label
                 e.Graphics.DrawPath(pen, graphicsPath);
             TextRenderer.DrawText(e.Graphics, Text, this.Font, this.ClientRectangle, this.ForeColor);
         }
+
+        ControlPaint.DrawBorder(e.Graphics, ClientRectangle,
+                                    Color.White, 3, ButtonBorderStyle.Solid,
+                                    Color.White, 3, ButtonBorderStyle.Solid,
+                                    Color.White, 3, ButtonBorderStyle.Solid,
+                                    Color.White, 3, ButtonBorderStyle.Solid);
+
     }
 
     private GraphicsPath _getRoundRectangle(Rectangle rectangle)
     {
+
         int cornerRadius = 20; // change this value according to your needs
         int diminisher = 1;
         GraphicsPath path = new GraphicsPath();
