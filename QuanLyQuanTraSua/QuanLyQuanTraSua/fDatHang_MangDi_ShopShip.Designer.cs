@@ -441,6 +441,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fDatHang_MangDi_ShopShip";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fDatHang_MangDi_ShopShip";
             this.Activated += new System.EventHandler(this.fDatHang_MangDi_ShopShip_Activated);
             this.Load += new System.EventHandler(this.fDatHang_MangDi_ShopShip_Load);

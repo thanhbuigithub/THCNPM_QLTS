@@ -12,6 +12,7 @@ namespace QuanLyQuanTraSua
 {
     public partial class fThanhToan : Form
     {
+        bool normalCustomer;
         public fThanhToan()
         {
             InitializeComponent();
@@ -29,10 +30,7 @@ namespace QuanLyQuanTraSua
 
         private void rbtnNormalCustomer_CheckedChanged(object sender, EventArgs e)
         {
-            fThanhToan_Thuong fThanhToan_Thuong = new fThanhToan_Thuong();
-            this.Hide();
-            fThanhToan_Thuong.ShowDialog();
-            this.Show();
+            normalCustomer = true;
         }
 
         private void btnCloseCuctomer_Click(object sender, EventArgs e)
@@ -50,7 +48,29 @@ namespace QuanLyQuanTraSua
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
+        }
 
+        private void rbtnNormalCustomer_CheckedChanged_1(object sender, EventArgs e)
+        {
+            normalCustomer = false;
+        }
+
+        private void btnTiep_Click(object sender, EventArgs e)
+        {
+            if (normalCustomer)
+            {
+                fThanhToan_Thuong fThanhToan_thuong = new fThanhToan_Thuong();
+                this.Close();
+                fThanhToan_thuong.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                fThanhToan_ThanhVien fThanhToan_thanhvien = new fThanhToan_ThanhVien();
+                this.Close();
+                fThanhToan_thanhvien.ShowDialog();
+                this.Show();
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -60,14 +80,6 @@ namespace QuanLyQuanTraSua
             fTrangChu.ShowDialog();
             fTrangChu.Finish = true; 
             this.Close(); //
-        }
-
-        private void btnNormalCustomer_Click(object sender, EventArgs e)
-        {
-            fThanhToan_Thuong fThanhToan_Thuong = new fThanhToan_Thuong();
-            this.Hide();
-            fThanhToan_Thuong.ShowDialog();
-            this.Show();
         }
 
         private void fThanhToan_Load(object sender, EventArgs e)

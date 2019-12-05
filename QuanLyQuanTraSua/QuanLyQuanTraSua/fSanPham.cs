@@ -29,11 +29,10 @@ namespace QuanLyQuanTraSua
             fTinhtrangkho.ShowDialog();
             this.Show();
         }
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
+        }   
 
         private void pictureBoxLogo_Click(object sender, EventArgs e)
         {

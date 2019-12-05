@@ -59,7 +59,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1008, 730);
+            this.panel1.Size = new System.Drawing.Size(1008, 729);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -237,10 +237,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 730);
+            this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fDatHang_MangDi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fDatHang_MangDi";
             this.Activated += new System.EventHandler(this.fDatHang_MangDi_Activated);
             this.Load += new System.EventHandler(this.fDatHang_MangDi_Load);

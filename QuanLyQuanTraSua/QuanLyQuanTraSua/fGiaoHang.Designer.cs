@@ -145,6 +145,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button7);
             this.Name = "fGiaoHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fGiaoHang";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

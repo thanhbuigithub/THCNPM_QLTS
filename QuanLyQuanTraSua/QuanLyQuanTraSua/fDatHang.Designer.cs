@@ -200,7 +200,7 @@
             this.panel1.Controls.Add(this.txtbSearch);
             this.panel1.Location = new System.Drawing.Point(9, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel1.Name = "panel1";
+            this.panel1.Name     = "panel1";
             this.panel1.Size = new System.Drawing.Size(745, 67);
             this.panel1.TabIndex = 5;
             // 
@@ -360,6 +360,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fDatHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fDatHang";
             this.Activated += new System.EventHandler(this.fDatHang_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();

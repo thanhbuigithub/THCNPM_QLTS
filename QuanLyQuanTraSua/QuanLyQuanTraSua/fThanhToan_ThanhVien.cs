@@ -12,6 +12,7 @@ namespace QuanLyQuanTraSua
 {
     public partial class fThanhToan_ThanhVien : Form
     {
+        bool Point = true;
         public fThanhToan_ThanhVien()
         {
             InitializeComponent();
@@ -34,44 +35,28 @@ namespace QuanLyQuanTraSua
 
         private void fThanhToan_ThanhVien_Load(object sender, EventArgs e)
         {
-            btnThanhToan.Enabled = false;
-        }
-
-        private void rbtnYes_CheckedChanged(object sender, EventArgs e)
-        {
 
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            fThanhToan_Thuong fThanhToan_Thuong = new fThanhToan_Thuong();
-            this.Hide();
-            fThanhToan_Thuong.ShowDialog();
-            this.Show();
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            fTrangChu fTrangChu = new fTrangChu();
-            this.Hide();
-            fTrangChu.ShowDialog();
-            fTrangChu.Finish = true; 
-            this.Close(); //
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
+            fTrangChu.Finish = true;
             this.Close();
         }
 
-        private void btnMangDi_Click(object sender, EventArgs e)
+        private void rbtnYes_CheckedChanged_1(object sender, EventArgs e)
         {
+            Point = true;
         }
 
-        private void fThanhToan_ThanhVien_Activated(object sender, EventArgs e)
+        private void rbtnNo_CheckedChanged(object sender, EventArgs e)
         {
-            if (fTrangChu.Finish)
-                this.Close();
+            Point = false;
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -215,6 +215,7 @@
             this.btnVato.TabIndex = 5;
             this.btnVato.Text = "Vato";
             this.btnVato.UseVisualStyleBackColor = true;
+            this.btnVato.Click += new System.EventHandler(this.btnVato_Click);
             // 
             // panel2
             // 
@@ -247,6 +248,7 @@
             this.btnBeamin.TabIndex = 5;
             this.btnBeamin.Text = "Beamin";
             this.btnBeamin.UseVisualStyleBackColor = true;
+            this.btnBeamin.Click += new System.EventHandler(this.btnBeamin_Click);
             // 
             // btnGoViet
             // 
@@ -258,6 +260,7 @@
             this.btnGoViet.TabIndex = 5;
             this.btnGoViet.Text = "GoViet";
             this.btnGoViet.UseVisualStyleBackColor = true;
+            this.btnGoViet.Click += new System.EventHandler(this.btnGoViet_Click);
             // 
             // btnGrab
             // 
@@ -269,6 +272,7 @@
             this.btnGrab.TabIndex = 5;
             this.btnGrab.Text = "Grab";
             this.btnGrab.UseVisualStyleBackColor = true;
+            this.btnGrab.Click += new System.EventHandler(this.btnGrab_Click);
             // 
             // lbSpecial
             // 
@@ -290,6 +294,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fDatHang_MangDi_BenThu3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fDatHang_MangDi_BenThu3";
             this.Activated += new System.EventHandler(this.fDatHang_MangDi_BenThu3_Activated);
             this.Load += new System.EventHandler(this.fDatHang_MangDi_BenThu3_Load);

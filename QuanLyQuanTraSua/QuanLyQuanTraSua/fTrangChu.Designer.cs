@@ -47,12 +47,11 @@
             this.btnOtherNext = new System.Windows.Forms.Button();
             this.btnBSNext = new System.Windows.Forms.Button();
             this.btnSpecNext = new System.Windows.Forms.Button();
-            this.lvOther = new System.Windows.Forms.ListView();
-            this.lvBestSeller = new System.Windows.Forms.ListView();
             this.lbOtherMenu = new System.Windows.Forms.Label();
             this.lbBestSeller = new System.Windows.Forms.Label();
             this.lbSpecial = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -171,8 +170,6 @@
             this.panel3.Controls.Add(this.btnOtherNext);
             this.panel3.Controls.Add(this.btnBSNext);
             this.panel3.Controls.Add(this.btnSpecNext);
-            this.panel3.Controls.Add(this.lvOther);
-            this.panel3.Controls.Add(this.lvBestSeller);
             this.panel3.Controls.Add(this.lbOtherMenu);
             this.panel3.Controls.Add(this.lbBestSeller);
             this.panel3.Controls.Add(this.lbSpecial);
@@ -302,7 +299,7 @@
             this.lbSpecial.AutoSize = true;
             this.lbSpecial.BackColor = System.Drawing.Color.MintCream;
             this.lbSpecial.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSpecial.Location = new System.Drawing.Point(18, 13);
+            this.lbSpecial.Location = new System.Drawing.Point(18, -2);
             this.lbSpecial.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbSpecial.Name = "lbSpecial";
             this.lbSpecial.Padding = new System.Windows.Forms.Padding(10);
@@ -328,7 +325,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 730);
+            this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -366,12 +363,11 @@
         private System.Windows.Forms.Button btnOtherNext;
         private System.Windows.Forms.Button btnBSNext;
         private System.Windows.Forms.Button btnSpecNext;
-        private System.Windows.Forms.ListView lvOther;
-        private System.Windows.Forms.ListView lvBestSeller;
         private System.Windows.Forms.Label lbOtherMenu;
         private System.Windows.Forms.Label lbBestSeller;
         private System.Windows.Forms.Label lbSpecial;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.FlowLayoutPanel fLPSpecial;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
