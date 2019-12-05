@@ -33,7 +33,6 @@
             this.lbTimkiem = new System.Windows.Forms.Label();
             this.txtbSearch = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.btnReport = new System.Windows.Forms.Button();
@@ -74,7 +73,7 @@
             // txtbSearch
             // 
             this.txtbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbSearch.Location = new System.Drawing.Point(106, 24);
+            this.txtbSearch.Location = new System.Drawing.Point(132, 21);
             this.txtbSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtbSearch.Name = "txtbSearch";
             this.txtbSearch.Size = new System.Drawing.Size(280, 35);
@@ -82,7 +81,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.lbTimkiem);
             this.panel1.Controls.Add(this.txtbSearch);
             this.panel1.Location = new System.Drawing.Point(9, 10);
@@ -90,16 +88,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(734, 80);
             this.panel1.TabIndex = 2;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(651, 15);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(76, 54);
-            this.btnSearch.TabIndex = 2;
-            this.btnSearch.Text = "Tìm kiếm";
-            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -175,7 +163,6 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.flowLayoutPanel1);
             this.panel3.Controls.Add(this.fLPSpecial);
             this.panel3.Controls.Add(this.btnOtherPrevious);
             this.panel3.Controls.Add(this.btnBSPrevious);
@@ -195,13 +182,12 @@
             // fLPSpecial
             // 
             this.fLPSpecial.BackColor = System.Drawing.SystemColors.Control;
-            this.fLPSpecial.Location = new System.Drawing.Point(55, 443);
+            this.fLPSpecial.Location = new System.Drawing.Point(55, 54);
             this.fLPSpecial.Name = "fLPSpecial";
             this.fLPSpecial.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.fLPSpecial.Size = new System.Drawing.Size(625, 145);
+            this.fLPSpecial.Size = new System.Drawing.Size(622, 153);
             this.fLPSpecial.TabIndex = 4;
             this.fLPSpecial.WrapContents = false;
-            this.fLPSpecial.Paint += new System.Windows.Forms.PaintEventHandler(this.fLPSpecial_Paint);
             // 
             // btnOtherPrevious
             // 
@@ -225,7 +211,7 @@
             // 
             // btnSpecPrevious
             // 
-            this.btnSpecPrevious.Location = new System.Drawing.Point(2, 77);
+            this.btnSpecPrevious.Location = new System.Drawing.Point(2, 57);
             this.btnSpecPrevious.Margin = new System.Windows.Forms.Padding(2);
             this.btnSpecPrevious.Name = "btnSpecPrevious";
             this.btnSpecPrevious.Size = new System.Drawing.Size(48, 100);
@@ -255,7 +241,7 @@
             // 
             // btnSpecNext
             // 
-            this.btnSpecNext.Location = new System.Drawing.Point(682, 77);
+            this.btnSpecNext.Location = new System.Drawing.Point(682, 54);
             this.btnSpecNext.Margin = new System.Windows.Forms.Padding(2);
             this.btnSpecNext.Name = "btnSpecNext";
             this.btnSpecNext.Size = new System.Drawing.Size(48, 103);
@@ -263,6 +249,26 @@
             this.btnSpecNext.Text = "button1";
             this.btnSpecNext.UseVisualStyleBackColor = true;
             this.btnSpecNext.Click += new System.EventHandler(this.btnSpecNext_Click);
+            // 
+            // lvOther
+            // 
+            this.lvOther.HideSelection = false;
+            this.lvOther.Location = new System.Drawing.Point(54, 442);
+            this.lvOther.Margin = new System.Windows.Forms.Padding(2);
+            this.lvOther.Name = "lvOther";
+            this.lvOther.Size = new System.Drawing.Size(625, 138);
+            this.lvOther.TabIndex = 2;
+            this.lvOther.UseCompatibleStateImageBehavior = false;
+            // 
+            // lvBestSeller
+            // 
+            this.lvBestSeller.HideSelection = false;
+            this.lvBestSeller.Location = new System.Drawing.Point(54, 246);
+            this.lvBestSeller.Margin = new System.Windows.Forms.Padding(2);
+            this.lvBestSeller.Name = "lvBestSeller";
+            this.lvBestSeller.Size = new System.Drawing.Size(625, 145);
+            this.lvBestSeller.TabIndex = 2;
+            this.lvBestSeller.UseCompatibleStateImageBehavior = false;
             // 
             // lbOtherMenu
             // 
@@ -291,7 +297,7 @@
             // lbSpecial
             // 
             this.lbSpecial.AutoSize = true;
-            this.lbSpecial.BackColor = System.Drawing.Color.Aqua;
+            this.lbSpecial.BackColor = System.Drawing.Color.MintCream;
             this.lbSpecial.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSpecial.Location = new System.Drawing.Point(18, -2);
             this.lbSpecial.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -314,16 +320,6 @@
             this.imageList1.Images.SetKeyName(6, "Master_Emblem.png");
             this.imageList1.Images.SetKeyName(7, "Platinum_Emblem.png");
             this.imageList1.Images.SetKeyName(8, "Silver_Emblem.png");
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(52, 242);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(625, 145);
-            this.flowLayoutPanel1.TabIndex = 5;
-            this.flowLayoutPanel1.WrapContents = false;
             // 
             // fTrangChu
             // 
@@ -355,7 +351,6 @@
         private System.Windows.Forms.TextBox txtbSearch;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnOrder;
         private System.Windows.Forms.Button btnReport;
         private System.Windows.Forms.Button btnProduct;

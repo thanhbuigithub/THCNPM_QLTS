@@ -45,12 +45,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.btnStatusProduct = new System.Windows.Forms.Button();
-            this.btnFixProduct = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.lbTimkiem = new System.Windows.Forms.Label();
             this.txtbSearch = new System.Windows.Forms.TextBox();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -86,7 +85,7 @@
             this.panel3.Location = new System.Drawing.Point(11, 109);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(739, 596);
+            this.panel3.Size = new System.Drawing.Size(741, 619);
             this.panel3.TabIndex = 8;
             // 
             // btnOtherPrevious
@@ -214,14 +213,14 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnBack);
             this.panel2.Controls.Add(this.pictureBoxLogo);
             this.panel2.Controls.Add(this.btnStatusProduct);
-            this.panel2.Controls.Add(this.btnFixProduct);
             this.panel2.Controls.Add(this.btnAddProduct);
-            this.panel2.Location = new System.Drawing.Point(754, 25);
+            this.panel2.Location = new System.Drawing.Point(756, 25);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(243, 680);
+            this.panel2.Size = new System.Drawing.Size(241, 703);
             this.panel2.TabIndex = 10;
             // 
             // pictureBoxLogo
@@ -232,6 +231,7 @@
             this.pictureBoxLogo.Size = new System.Drawing.Size(235, 165);
             this.pictureBoxLogo.TabIndex = 2;
             this.pictureBoxLogo.TabStop = false;
+            this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBoxLogo_Click);
             // 
             // btnStatusProduct
             // 
@@ -245,21 +245,10 @@
             this.btnStatusProduct.UseVisualStyleBackColor = true;
             this.btnStatusProduct.Click += new System.EventHandler(this.btnStatusProduct_Click);
             // 
-            // btnFixProduct
-            // 
-            this.btnFixProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFixProduct.Location = new System.Drawing.Point(2, 315);
-            this.btnFixProduct.Margin = new System.Windows.Forms.Padding(2);
-            this.btnFixProduct.Name = "btnFixProduct";
-            this.btnFixProduct.Size = new System.Drawing.Size(239, 66);
-            this.btnFixProduct.TabIndex = 0;
-            this.btnFixProduct.Text = "Sửa";
-            this.btnFixProduct.UseVisualStyleBackColor = true;
-            // 
             // btnAddProduct
             // 
             this.btnAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddProduct.Location = new System.Drawing.Point(2, 232);
+            this.btnAddProduct.Location = new System.Drawing.Point(2, 315);
             this.btnAddProduct.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(239, 66);
@@ -270,24 +259,13 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.btnSearch);
             this.panel4.Controls.Add(this.lbTimkiem);
             this.panel4.Controls.Add(this.txtbSearch);
             this.panel4.Location = new System.Drawing.Point(11, 25);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(730, 80);
+            this.panel4.Size = new System.Drawing.Size(741, 80);
             this.panel4.TabIndex = 9;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(638, 15);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(76, 54);
-            this.btnSearch.TabIndex = 2;
-            this.btnSearch.Text = "Tìm kiếm";
-            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // lbTimkiem
             // 
@@ -309,6 +287,18 @@
             this.txtbSearch.Name = "txtbSearch";
             this.txtbSearch.Size = new System.Drawing.Size(267, 35);
             this.txtbSearch.TabIndex = 1;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(0, 485);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(239, 66);
+            this.btnBack.TabIndex = 3;
+            this.btnBack.Text = "Quay lại";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // fSanPham
             // 
@@ -348,12 +338,11 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Button btnStatusProduct;
-        private System.Windows.Forms.Button btnFixProduct;
         private System.Windows.Forms.Button btnAddProduct;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label lbTimkiem;
         private System.Windows.Forms.TextBox txtbSearch;
+        private System.Windows.Forms.Button btnBack;
 
     }
 }

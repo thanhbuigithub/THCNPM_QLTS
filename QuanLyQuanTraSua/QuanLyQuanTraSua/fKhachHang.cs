@@ -30,7 +30,7 @@ namespace QuanLyQuanTraSua
             this.Show();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void fKhachHang_Load(object sender, EventArgs e)
         {
 
         }

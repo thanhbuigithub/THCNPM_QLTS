@@ -250,6 +250,7 @@
             this.ClientSize = new System.Drawing.Size(752, 661);
             this.Controls.Add(this.panel1);
             this.Name = "fThanhToan_ThanhVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fThanhToan_ThanhVien";
             this.Load += new System.EventHandler(this.fThanhToan_ThanhVien_Load);
             this.panel1.ResumeLayout(false);

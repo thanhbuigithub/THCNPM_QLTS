@@ -44,6 +44,7 @@
             this.lbPhone = new System.Windows.Forms.Label();
             this.txtbName = new System.Windows.Forms.TextBox();
             this.lbName = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -58,21 +59,22 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1008, 729);
+            this.panel1.Size = new System.Drawing.Size(1008, 717);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnDone);
-            this.panel2.Location = new System.Drawing.Point(791, 634);
+            this.panel2.Location = new System.Drawing.Point(0, 636);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 69);
+            this.panel2.Size = new System.Drawing.Size(1005, 67);
             this.panel2.TabIndex = 37;
             // 
             // btnDone
             // 
             this.btnDone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDone.Location = new System.Drawing.Point(74, 18);
+            this.btnDone.Location = new System.Drawing.Point(879, 13);
             this.btnDone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDone.Name = "btnDone";
             this.btnDone.Size = new System.Drawing.Size(124, 40);
@@ -84,7 +86,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.btnBack);
-            this.panel3.Location = new System.Drawing.Point(17, 28);
+            this.panel3.Location = new System.Drawing.Point(0, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(185, 61);
             this.panel3.TabIndex = 36;
@@ -115,7 +117,7 @@
             this.panel4.Controls.Add(this.lbName);
             this.panel4.Location = new System.Drawing.Point(17, 95);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(974, 502);
+            this.panel4.Size = new System.Drawing.Size(986, 535);
             this.panel4.TabIndex = 35;
             // 
             // txtbAccumulatedPoints
@@ -223,11 +225,23 @@
             this.lbName.TabIndex = 18;
             this.lbName.Text = "Tên:";
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(2, 13);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(124, 40);
+            this.btnDelete.TabIndex = 6;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // fKhachhang_ThemSua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1008, 717);
             this.Controls.Add(this.panel1);
             this.Name = "fKhachhang_ThemSua";
             this.Text = "fKhachhang_ThemSua";
@@ -259,6 +273,7 @@
         private System.Windows.Forms.Label lbPhone;
         private System.Windows.Forms.TextBox txtbName;
         private System.Windows.Forms.Label lbName;
+        private System.Windows.Forms.Button btnDelete;
 
     }
 }

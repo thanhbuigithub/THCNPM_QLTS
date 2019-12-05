@@ -17,7 +17,7 @@ namespace QuanLyQuanTraSua
             InitializeComponent();
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -29,6 +29,38 @@ namespace QuanLyQuanTraSua
 
         private void fDatHang_ChinhSua_Load(object sender, EventArgs e)
         {
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            fTrangChu fTrangChu = new fTrangChu();
+            this.Hide();
+            fTrangChu.ShowDialog();
+            fTrangChu.Finish = true; //
+            this.Close(); //
+        }
+
+        private void btnMangDi_Click(object sender, EventArgs e)
+        {
+            fDatHang_MangDi fDatHangMangDi = new fDatHang_MangDi();
+            this.Hide();
+            fDatHangMangDi.ShowDialog();
+            this.Show();
+           
+        }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            fThanhToan fThanhToan = new fThanhToan();
+            this.Hide();
+            fThanhToan.ShowDialog();
+            this.Show();
+        }
+
+        private void fDatHang_ChinhSua_Activated(object sender, EventArgs e)
+        {
+            if (fTrangChu.Finish)
+                this.Close();
         }
     }
 }

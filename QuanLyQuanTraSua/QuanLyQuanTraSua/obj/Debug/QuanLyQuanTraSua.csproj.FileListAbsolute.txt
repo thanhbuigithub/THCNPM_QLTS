@@ -67,3 +67,8 @@ C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuan
 C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csproj.GenerateResource.Cache
 C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe
 C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.pdb
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fBaocao.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fGiaoHang.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fTinhTrangKho.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.Product.resources
+D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fSanPham_ChinhSua_Them.resources
