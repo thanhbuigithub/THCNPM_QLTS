@@ -266,6 +266,7 @@
             this.btnAddProduct.TabIndex = 0;
             this.btnAddProduct.Text = "Thêm";
             this.btnAddProduct.UseVisualStyleBackColor = true;
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // panel4
             // 

@@ -29,5 +29,10 @@ namespace QuanLyQuanTraSua
             fKhachHang_themsua.ShowDialog();
             this.Show();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

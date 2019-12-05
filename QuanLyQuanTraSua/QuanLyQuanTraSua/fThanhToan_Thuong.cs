@@ -12,6 +12,7 @@ namespace QuanLyQuanTraSua
 {
     public partial class fThanhToan_Thuong : Form
     {
+        bool thanhtoanThe = true;
         public fThanhToan_Thuong()
         {
             InitializeComponent();
@@ -19,8 +20,15 @@ namespace QuanLyQuanTraSua
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+
             fTrangChu.Finish = true;
             this.Close();
         }
+
+        private void rbtnCast_CheckedChanged(object sender, EventArgs e)
+        {
+            thanhtoanThe = false;
+        }
+
     }
 }

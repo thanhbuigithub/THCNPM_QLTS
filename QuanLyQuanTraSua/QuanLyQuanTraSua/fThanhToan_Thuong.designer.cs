@@ -153,6 +153,7 @@
             this.rbtnCast.TabStop = true;
             this.rbtnCast.Text = "Tiền mặt";
             this.rbtnCast.UseVisualStyleBackColor = true;
+            this.rbtnCast.CheckedChanged += new System.EventHandler(this.rbtnCast_CheckedChanged);
             // 
             // rbtnCard
             // 

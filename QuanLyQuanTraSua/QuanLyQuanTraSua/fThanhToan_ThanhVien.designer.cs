@@ -59,7 +59,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(752, 662);
+            this.panel1.Size = new System.Drawing.Size(752, 661);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -118,6 +118,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(699, 514);
             this.panel4.TabIndex = 34;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // rbtnNo
             // 
@@ -131,6 +132,7 @@
             this.rbtnNo.TabStop = true;
             this.rbtnNo.Text = "Không";
             this.rbtnNo.UseVisualStyleBackColor = true;
+            this.rbtnNo.CheckedChanged += new System.EventHandler(this.rbtnNo_CheckedChanged);
             // 
             // rbtnYes
             // 
@@ -144,6 +146,7 @@
             this.rbtnYes.TabStop = true;
             this.rbtnYes.Text = "Có";
             this.rbtnYes.UseVisualStyleBackColor = true;
+            this.rbtnYes.CheckedChanged += new System.EventHandler(this.rbtnYes_CheckedChanged_1);
             // 
             // lbUseAccumulatedPoints
             // 
@@ -159,7 +162,7 @@
             // txtbAccumulatedPointsReceived
             // 
             this.txtbAccumulatedPointsReceived.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.txtbAccumulatedPointsReceived.Location = new System.Drawing.Point(242, 290);
+            this.txtbAccumulatedPointsReceived.Location = new System.Drawing.Point(242, 295);
             this.txtbAccumulatedPointsReceived.Margin = new System.Windows.Forms.Padding(2);
             this.txtbAccumulatedPointsReceived.Multiline = true;
             this.txtbAccumulatedPointsReceived.Name = "txtbAccumulatedPointsReceived";
@@ -180,7 +183,7 @@
             // txtbAccumulatedPoints
             // 
             this.txtbAccumulatedPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.txtbAccumulatedPoints.Location = new System.Drawing.Point(242, 215);
+            this.txtbAccumulatedPoints.Location = new System.Drawing.Point(242, 220);
             this.txtbAccumulatedPoints.Margin = new System.Windows.Forms.Padding(2);
             this.txtbAccumulatedPoints.Multiline = true;
             this.txtbAccumulatedPoints.Name = "txtbAccumulatedPoints";
@@ -201,7 +204,7 @@
             // txtbPhone
             // 
             this.txtbPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.txtbPhone.Location = new System.Drawing.Point(135, 139);
+            this.txtbPhone.Location = new System.Drawing.Point(135, 147);
             this.txtbPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtbPhone.Multiline = true;
             this.txtbPhone.Name = "txtbPhone";
@@ -222,7 +225,7 @@
             // txtbName
             // 
             this.txtbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.txtbName.Location = new System.Drawing.Point(135, 69);
+            this.txtbName.Location = new System.Drawing.Point(135, 77);
             this.txtbName.Margin = new System.Windows.Forms.Padding(2);
             this.txtbName.Multiline = true;
             this.txtbName.Name = "txtbName";
@@ -244,7 +247,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 662);
+            this.ClientSize = new System.Drawing.Size(752, 661);
             this.Controls.Add(this.panel1);
             this.Name = "fThanhToan_ThanhVien";
             this.Text = "fThanhToan_ThanhVien";

@@ -14,7 +14,7 @@ namespace QuanLyQuanTraSua
     {
         public static Boolean Finish = false;
         public static Int16 mProductID;
-            public fTrangChu()
+        public fTrangChu()
         {
             InitializeComponent();
         }
@@ -55,15 +55,18 @@ namespace QuanLyQuanTraSua
         }
 
         private void btnSpecNext_Click(object sender, EventArgs e)
-private void btnReport_Click(object sender, EventArgs e)
-{
-    fBaocao fBaocao = new fBaocao();
-    this.Hide();
-    fBaocao.ShowDialog();
-    this.Show();
-}
+        {
 
-private void panel2_Paint(object sender, PaintEventArgs e)
+        }
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            fBaocao fBaocao = new fBaocao();
+            this.Hide();
+            fBaocao.ShowDialog();
+            this.Show();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -75,11 +78,18 @@ private void panel2_Paint(object sender, PaintEventArgs e)
             {
                 product[i] = new Product();
                 product[i].ProductName = "TSAFDASDAD";
-                product[i].Image = Image.FromFile(@"E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\img\" + "pic.png");
+                //product[i].Image = Image.FromFile(@"E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\img\" + "pic.png");
                 fLPSpecial.Controls.Add(product[i]);
             }
-private void pictureBoxLogo_Click(object sender, EventArgs e)
-{
+        }
+        private void pictureBoxLogo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fLPSpecial_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

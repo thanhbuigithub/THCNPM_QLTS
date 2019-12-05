@@ -29,5 +29,10 @@ namespace QuanLyQuanTraSua
             fTinhtrangkho.ShowDialog();
             this.Show();
         }
+
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

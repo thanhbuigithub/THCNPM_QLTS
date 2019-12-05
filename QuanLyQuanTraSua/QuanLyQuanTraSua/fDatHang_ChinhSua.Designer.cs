@@ -68,28 +68,27 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1003, 815);
+            this.panel1.Size = new System.Drawing.Size(752, 661);
             this.panel1.TabIndex = 0;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.btnAdd);
             this.panel4.Controls.Add(this.btnDelete);
-            this.panel4.Location = new System.Drawing.Point(21, 751);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Location = new System.Drawing.Point(16, 610);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(960, 55);
+            this.panel4.Size = new System.Drawing.Size(720, 45);
             this.panel4.TabIndex = 7;
             // 
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(788, 4);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAdd.Location = new System.Drawing.Point(591, 3);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(165, 49);
+            this.btnAdd.Size = new System.Drawing.Size(124, 40);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -99,9 +98,9 @@
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(0, 2);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(165, 49);
+            this.btnDelete.Size = new System.Drawing.Size(124, 40);
             this.btnDelete.TabIndex = 0;
             this.btnDelete.Text = "Xoá";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -117,19 +116,19 @@
             this.panel3.Controls.Add(this.lbSugar);
             this.panel3.Controls.Add(this.cboBoxToppingIce);
             this.panel3.Controls.Add(this.lbIce);
-            this.panel3.Location = new System.Drawing.Point(21, 266);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(16, 216);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(956, 438);
+            this.panel3.Size = new System.Drawing.Size(717, 356);
             this.panel3.TabIndex = 6;
             // 
             // txtbNote
             // 
-            this.txtbNote.Location = new System.Drawing.Point(171, 245);
-            this.txtbNote.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtbNote.Location = new System.Drawing.Point(128, 199);
+            this.txtbNote.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtbNote.Multiline = true;
             this.txtbNote.Name = "txtbNote";
-            this.txtbNote.Size = new System.Drawing.Size(781, 102);
+            this.txtbNote.Size = new System.Drawing.Size(587, 84);
             this.txtbNote.TabIndex = 3;
             // 
             // cboBoxTopping
@@ -142,10 +141,10 @@
             "50%",
             "75%",
             "100%"});
-            this.cboBoxTopping.Location = new System.Drawing.Point(171, 162);
-            this.cboBoxTopping.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboBoxTopping.Location = new System.Drawing.Point(128, 132);
+            this.cboBoxTopping.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboBoxTopping.Name = "cboBoxTopping";
-            this.cboBoxTopping.Size = new System.Drawing.Size(781, 39);
+            this.cboBoxTopping.Size = new System.Drawing.Size(587, 34);
             this.cboBoxTopping.TabIndex = 2;
             // 
             // cboBoxToppingSugar
@@ -158,19 +157,20 @@
             "50%",
             "75%",
             "100%"});
-            this.cboBoxToppingSugar.Location = new System.Drawing.Point(171, 82);
-            this.cboBoxToppingSugar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboBoxToppingSugar.Location = new System.Drawing.Point(128, 67);
+            this.cboBoxToppingSugar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboBoxToppingSugar.Name = "cboBoxToppingSugar";
-            this.cboBoxToppingSugar.Size = new System.Drawing.Size(781, 39);
+            this.cboBoxToppingSugar.Size = new System.Drawing.Size(587, 34);
             this.cboBoxToppingSugar.TabIndex = 2;
             // 
             // lbNote
             // 
             this.lbNote.AutoSize = true;
             this.lbNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNote.Location = new System.Drawing.Point(3, 245);
+            this.lbNote.Location = new System.Drawing.Point(2, 199);
+            this.lbNote.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNote.Name = "lbNote";
-            this.lbNote.Size = new System.Drawing.Size(127, 32);
+            this.lbNote.Size = new System.Drawing.Size(98, 26);
             this.lbNote.TabIndex = 0;
             this.lbNote.Text = "Ghi Chú:";
             // 
@@ -178,9 +178,10 @@
             // 
             this.lbTopping.AutoSize = true;
             this.lbTopping.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTopping.Location = new System.Drawing.Point(3, 166);
+            this.lbTopping.Location = new System.Drawing.Point(2, 135);
+            this.lbTopping.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTopping.Name = "lbTopping";
-            this.lbTopping.Size = new System.Drawing.Size(127, 32);
+            this.lbTopping.Size = new System.Drawing.Size(95, 26);
             this.lbTopping.TabIndex = 0;
             this.lbTopping.Text = "Topping:";
             // 
@@ -188,9 +189,10 @@
             // 
             this.lbSugar.AutoSize = true;
             this.lbSugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSugar.Location = new System.Drawing.Point(3, 86);
+            this.lbSugar.Location = new System.Drawing.Point(2, 70);
+            this.lbSugar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbSugar.Name = "lbSugar";
-            this.lbSugar.Size = new System.Drawing.Size(107, 32);
+            this.lbSugar.Size = new System.Drawing.Size(82, 26);
             this.lbSugar.TabIndex = 0;
             this.lbSugar.Text = "Đường:";
             // 
@@ -204,19 +206,20 @@
             "50%",
             "75%",
             "100%"});
-            this.cboBoxToppingIce.Location = new System.Drawing.Point(171, 6);
-            this.cboBoxToppingIce.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboBoxToppingIce.Location = new System.Drawing.Point(128, 5);
+            this.cboBoxToppingIce.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboBoxToppingIce.Name = "cboBoxToppingIce";
-            this.cboBoxToppingIce.Size = new System.Drawing.Size(781, 39);
+            this.cboBoxToppingIce.Size = new System.Drawing.Size(587, 34);
             this.cboBoxToppingIce.TabIndex = 2;
             // 
             // lbIce
             // 
             this.lbIce.AutoSize = true;
             this.lbIce.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIce.Location = new System.Drawing.Point(3, 9);
+            this.lbIce.Location = new System.Drawing.Point(2, 7);
+            this.lbIce.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbIce.Name = "lbIce";
-            this.lbIce.Size = new System.Drawing.Size(59, 32);
+            this.lbIce.Size = new System.Drawing.Size(46, 26);
             this.lbIce.TabIndex = 0;
             this.lbIce.Text = "Đá:";
             // 
@@ -229,10 +232,10 @@
             this.panel2.Controls.Add(this.lbSize);
             this.panel2.Controls.Add(this.lbAmount);
             this.panel2.Controls.Add(this.lbProductName);
-            this.panel2.Location = new System.Drawing.Point(297, 10);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(223, 8);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(684, 239);
+            this.panel2.Size = new System.Drawing.Size(513, 194);
             this.panel2.TabIndex = 5;
             // 
             // cboBoxSmell
@@ -243,10 +246,10 @@
             "S",
             "M",
             "L"});
-            this.cboBoxSmell.Location = new System.Drawing.Point(171, 193);
-            this.cboBoxSmell.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboBoxSmell.Location = new System.Drawing.Point(128, 157);
+            this.cboBoxSmell.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboBoxSmell.Name = "cboBoxSmell";
-            this.cboBoxSmell.Size = new System.Drawing.Size(509, 39);
+            this.cboBoxSmell.Size = new System.Drawing.Size(383, 34);
             this.cboBoxSmell.TabIndex = 2;
             // 
             // cboBoxSize
@@ -257,28 +260,29 @@
             "S",
             "M",
             "L"});
-            this.cboBoxSize.Location = new System.Drawing.Point(171, 135);
-            this.cboBoxSize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboBoxSize.Location = new System.Drawing.Point(128, 110);
+            this.cboBoxSize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboBoxSize.Name = "cboBoxSize";
-            this.cboBoxSize.Size = new System.Drawing.Size(509, 39);
+            this.cboBoxSize.Size = new System.Drawing.Size(383, 34);
             this.cboBoxSize.TabIndex = 2;
             // 
             // numericAmount
             // 
             this.numericAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericAmount.Location = new System.Drawing.Point(171, 82);
-            this.numericAmount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.numericAmount.Location = new System.Drawing.Point(128, 67);
+            this.numericAmount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericAmount.Name = "numericAmount";
-            this.numericAmount.Size = new System.Drawing.Size(509, 38);
+            this.numericAmount.Size = new System.Drawing.Size(382, 32);
             this.numericAmount.TabIndex = 1;
             // 
             // lbSmell
             // 
             this.lbSmell.AutoSize = true;
             this.lbSmell.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSmell.Location = new System.Drawing.Point(4, 196);
+            this.lbSmell.Location = new System.Drawing.Point(3, 159);
+            this.lbSmell.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbSmell.Name = "lbSmell";
-            this.lbSmell.Size = new System.Drawing.Size(135, 32);
+            this.lbSmell.Size = new System.Drawing.Size(104, 26);
             this.lbSmell.TabIndex = 0;
             this.lbSmell.Text = "Hương vị:";
             // 
@@ -286,9 +290,10 @@
             // 
             this.lbSize.AutoSize = true;
             this.lbSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSize.Location = new System.Drawing.Point(4, 142);
+            this.lbSize.Location = new System.Drawing.Point(3, 115);
+            this.lbSize.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbSize.Name = "lbSize";
-            this.lbSize.Size = new System.Drawing.Size(79, 32);
+            this.lbSize.Size = new System.Drawing.Size(61, 26);
             this.lbSize.TabIndex = 0;
             this.lbSize.Text = "Size:";
             // 
@@ -296,9 +301,10 @@
             // 
             this.lbAmount.AutoSize = true;
             this.lbAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAmount.Location = new System.Drawing.Point(4, 89);
+            this.lbAmount.Location = new System.Drawing.Point(3, 72);
+            this.lbAmount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAmount.Name = "lbAmount";
-            this.lbAmount.Size = new System.Drawing.Size(136, 32);
+            this.lbAmount.Size = new System.Drawing.Size(104, 26);
             this.lbAmount.TabIndex = 0;
             this.lbAmount.Text = "Số lượng:";
             // 
@@ -306,37 +312,38 @@
             // 
             this.lbProductName.AutoSize = true;
             this.lbProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProductName.Location = new System.Drawing.Point(3, 20);
+            this.lbProductName.Location = new System.Drawing.Point(2, 16);
+            this.lbProductName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbProductName.Name = "lbProductName";
-            this.lbProductName.Size = new System.Drawing.Size(152, 38);
+            this.lbProductName.Size = new System.Drawing.Size(127, 31);
             this.lbProductName.TabIndex = 0;
             this.lbProductName.Text = "Tên món";
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.pictureBoxProduct);
-            this.panel5.Location = new System.Drawing.Point(21, 10);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Location = new System.Drawing.Point(16, 8);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(251, 250);
+            this.panel5.Size = new System.Drawing.Size(188, 203);
             this.panel5.TabIndex = 4;
             // 
             // pictureBoxProduct
             // 
-            this.pictureBoxProduct.Location = new System.Drawing.Point(28, 20);
-            this.pictureBoxProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxProduct.Location = new System.Drawing.Point(21, 16);
+            this.pictureBoxProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxProduct.Name = "pictureBoxProduct";
-            this.pictureBoxProduct.Size = new System.Drawing.Size(200, 199);
+            this.pictureBoxProduct.Size = new System.Drawing.Size(150, 162);
             this.pictureBoxProduct.TabIndex = 0;
             this.pictureBoxProduct.TabStop = false;
             // 
             // fDatHang_ChinhSua
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1003, 815);
+            this.ClientSize = new System.Drawing.Size(752, 661);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fDatHang_ChinhSua";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đặt hàng Chỉnh Sửa";

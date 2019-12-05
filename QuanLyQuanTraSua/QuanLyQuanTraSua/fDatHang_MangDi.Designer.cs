@@ -58,7 +58,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1008, 730);
+            this.panel1.Size = new System.Drawing.Size(1008, 729);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -67,7 +67,7 @@
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.pictureBoxLogo);
             this.panel2.Location = new System.Drawing.Point(751, 11);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(247, 685);
             this.panel2.TabIndex = 13;
@@ -78,7 +78,7 @@
             this.panel5.Controls.Add(this.btnThanhToan);
             this.panel5.Controls.Add(this.btnMangDi);
             this.panel5.Location = new System.Drawing.Point(10, 524);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(235, 135);
             this.panel5.TabIndex = 3;
@@ -86,7 +86,7 @@
             // btnXoa
             // 
             this.btnXoa.Location = new System.Drawing.Point(0, 105);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(112, 28);
             this.btnXoa.TabIndex = 0;
@@ -96,7 +96,7 @@
             // btnThanhToan
             // 
             this.btnThanhToan.Location = new System.Drawing.Point(2, 48);
-            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(2);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(166, 28);
             this.btnThanhToan.TabIndex = 0;
@@ -107,7 +107,7 @@
             // btnMangDi
             // 
             this.btnMangDi.Location = new System.Drawing.Point(2, 15);
-            this.btnMangDi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMangDi.Margin = new System.Windows.Forms.Padding(2);
             this.btnMangDi.Name = "btnMangDi";
             this.btnMangDi.Size = new System.Drawing.Size(166, 28);
             this.btnMangDi.TabIndex = 0;
@@ -120,7 +120,7 @@
             this.panel4.Controls.Add(this.lbTongTien);
             this.panel4.Controls.Add(this.lbIDDonHang);
             this.panel4.Location = new System.Drawing.Point(2, 62);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(235, 458);
             this.panel4.TabIndex = 2;
@@ -129,7 +129,7 @@
             // 
             this.lvDonHang.HideSelection = false;
             this.lvDonHang.Location = new System.Drawing.Point(0, 49);
-            this.lvDonHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lvDonHang.Margin = new System.Windows.Forms.Padding(2);
             this.lvDonHang.Name = "lvDonHang";
             this.lvDonHang.Size = new System.Drawing.Size(231, 360);
             this.lvDonHang.TabIndex = 1;
@@ -164,7 +164,7 @@
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.Location = new System.Drawing.Point(2, 2);
-            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(75, 54);
             this.pictureBoxLogo.TabIndex = 1;
@@ -176,7 +176,7 @@
             this.panel3.Controls.Add(this.btnBenThu3);
             this.panel3.Controls.Add(this.lbSpecial);
             this.panel3.Location = new System.Drawing.Point(10, 11);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(725, 685);
             this.panel3.TabIndex = 12;
@@ -186,7 +186,7 @@
             // 
             this.btnQuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuan.Location = new System.Drawing.Point(223, 285);
-            this.btnQuan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQuan.Margin = new System.Windows.Forms.Padding(2);
             this.btnQuan.Name = "btnQuan";
             this.btnQuan.Size = new System.Drawing.Size(377, 67);
             this.btnQuan.TabIndex = 3;
@@ -198,7 +198,7 @@
             // 
             this.btnBenThu3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBenThu3.Location = new System.Drawing.Point(223, 204);
-            this.btnBenThu3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBenThu3.Margin = new System.Windows.Forms.Padding(2);
             this.btnBenThu3.Name = "btnBenThu3";
             this.btnBenThu3.Size = new System.Drawing.Size(377, 67);
             this.btnBenThu3.TabIndex = 3;
@@ -222,10 +222,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 730);
+            this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fDatHang_MangDi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fDatHang_MangDi";
             this.Activated += new System.EventHandler(this.fDatHang_MangDi_Activated);
             this.Load += new System.EventHandler(this.fDatHang_MangDi_Load);

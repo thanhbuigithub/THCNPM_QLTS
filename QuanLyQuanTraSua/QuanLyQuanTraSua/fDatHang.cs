@@ -28,7 +28,6 @@ namespace QuanLyQuanTraSua
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
             fThanhToan fThanhToan = new fThanhToan();
-            this.Hide();
             fThanhToan.ShowDialog();
             this.Show();
         }

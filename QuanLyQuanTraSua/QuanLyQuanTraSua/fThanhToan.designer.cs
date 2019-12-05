@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTiep = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -42,13 +43,26 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnTiep);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(752, 662);
+            this.panel1.Size = new System.Drawing.Size(752, 661);
             this.panel1.TabIndex = 0;
+            // 
+            // btnTiep
+            // 
+            this.btnTiep.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTiep.Location = new System.Drawing.Point(672, 607);
+            this.btnTiep.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTiep.Name = "btnTiep";
+            this.btnTiep.Size = new System.Drawing.Size(69, 44);
+            this.btnTiep.TabIndex = 8;
+            this.btnTiep.Text = "Tiếp";
+            this.btnTiep.UseVisualStyleBackColor = true;
+            this.btnTiep.Click += new System.EventHandler(this.btnTiep_Click);
             // 
             // panel3
             // 
@@ -68,6 +82,7 @@
             this.btnBack.TabIndex = 17;
             this.btnBack.Text = "Quay lại";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // panel2
             // 
@@ -104,7 +119,7 @@
             this.rbtnNormalCustomer.TabStop = true;
             this.rbtnNormalCustomer.Text = "Khách hàng thường";
             this.rbtnNormalCustomer.UseVisualStyleBackColor = true;
-            this.rbtnNormalCustomer.CheckedChanged += new System.EventHandler(this.rbtnNormalCustomer_CheckedChanged);
+            this.rbtnNormalCustomer.CheckedChanged += new System.EventHandler(this.rbtnNormalCustomer_CheckedChanged_1);
             // 
             // lbCustomerType
             // 
@@ -121,9 +136,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 662);
+            this.ClientSize = new System.Drawing.Size(752, 661);
             this.Controls.Add(this.panel1);
             this.Name = "fThanhToan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fThanhToan";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -142,6 +158,7 @@
         private System.Windows.Forms.RadioButton rbtnCloseCustomer;
         private System.Windows.Forms.RadioButton rbtnNormalCustomer;
         private System.Windows.Forms.Label lbCustomerType;
+        private System.Windows.Forms.Button btnTiep;
 
     }
 }
