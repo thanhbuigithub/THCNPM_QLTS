@@ -46,5 +46,13 @@ namespace QuanLyQuanTraSua
             fSanPham_ChinhSua_Them.ShowDialog();
             this.Show();
         }
+
+        private void fSanPham_Activated(object sender, EventArgs e)
+        {
+            if (fTrangChu.Finish == true)
+            {
+                this.Close();
+            }
+        }
     }
 }

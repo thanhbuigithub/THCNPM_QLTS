@@ -23,6 +23,10 @@ namespace QuanLyQuanTraSua
         {
             Finish = false;
             populateItem();
+            int vertScrollWidth = SystemInformation.VerticalScrollBarWidth;
+            int hozScrollHeight = SystemInformation.HorizontalScrollBarHeight;
+            panel4.Height = panel4.Height - hozScrollHeight;
+            panel4.Width = panel4.Width - vertScrollWidth;
         }
 
         private void btnOrder_Click(object sender, EventArgs e)
@@ -56,6 +60,13 @@ namespace QuanLyQuanTraSua
 
         private void btnSpecNext_Click(object sender, EventArgs e)
         {
+            int change = fLPSpecial.HorizontalScroll.Value + fLPSpecial.HorizontalScroll.SmallChange * 20;
+            fLPSpecial.AutoScrollPosition = new Point(change, 0);
+        }
+        private void btnSpecPrevious_Click(object sender, EventArgs e)
+        {
+            int change = fLPSpecial.HorizontalScroll.Value - fLPSpecial.HorizontalScroll.SmallChange * 20;
+            fLPSpecial.AutoScrollPosition = new Point(change, 0);
 
         }
         private void btnReport_Click(object sender, EventArgs e)
@@ -78,8 +89,8 @@ namespace QuanLyQuanTraSua
             for (int i = 0; i < product.Length; i++)
             {
                 product[i] = new Product();
-                product[i].ProductName = "TSAFDASDAD";
-                //product[i].Image = Image.FromFile(@"E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\img\" + "pic.png");
+                product[i].ProductName = "SP " + i.ToString();
+                product[i].Image = Image.FromFile(@"E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\img\" + "pic.png");
                 fLPSpecial.Controls.Add(product[i]);
             }
         }
@@ -91,6 +102,11 @@ namespace QuanLyQuanTraSua
         private void fLPSpecial_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }

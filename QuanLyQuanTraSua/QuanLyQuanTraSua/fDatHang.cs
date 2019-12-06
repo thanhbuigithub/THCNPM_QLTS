@@ -34,9 +34,7 @@ namespace QuanLyQuanTraSua
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            fTrangChu fTrangChu = new fTrangChu();
-            this.Hide();
-            fTrangChu.ShowDialog();
+
             this.Close(); //
         }
 
@@ -44,6 +42,11 @@ namespace QuanLyQuanTraSua
         {
             if (fTrangChu.Finish)
                 this.Close();
+        }
+
+        private void fDatHang_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

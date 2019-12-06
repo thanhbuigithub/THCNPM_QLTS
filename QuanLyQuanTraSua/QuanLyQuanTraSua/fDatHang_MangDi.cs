@@ -66,9 +66,7 @@ namespace QuanLyQuanTraSua
 
         private void btnXoa_Click_1(object sender, EventArgs e)
         {
-            fTrangChu fTrangChu = new fTrangChu();
-            this.Hide();
-            fTrangChu.ShowDialog();
+
             fTrangChu.Finish = true; //
             this.Close(); //
 
