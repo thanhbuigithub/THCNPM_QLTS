@@ -74,3 +74,29 @@ D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTra
 D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fSanPham_ChinhSua_Them.resources
 E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fBaocao.resources
 E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fSanPham_ChinhSua_Them.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.pdb
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fBaocao.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_ChinhSua.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_MangDi.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_MangDi_BenThu3.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_MangDi_ShopShip.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fGiaoHang.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fKhachHang.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fKhachhang_ThemSua.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fSanPham.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fSanPham_ChinhSua_Them.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fThanhToan.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fThanhToan_ThanhVien.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fThanhToan_Thuong.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fTinhTrangKho.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fTrangChu.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.Product.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.Properties.Resources.resources
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csproj.GenerateResource.cache
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csproj.CoreCompileInputs.cache
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.exe
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.pdb
+C:\Users\HA DUY TAN\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fThemNguyenLieu.resources

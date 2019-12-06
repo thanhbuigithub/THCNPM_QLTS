@@ -45,7 +45,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataProvider.cs" />
+    <Compile Include="DataAO\DAOBaoCao.cs" />
+    <Compile Include="DataAO\DAOChiTietHoaDon.cs" />
+    <Compile Include="DataAO\DAOHoaDon.cs" />
+    <Compile Include="DataAO\DAOKhachHang.cs" />
+    <Compile Include="DataAO\DAOSanPham.cs" />
+    <Compile Include="DataAO\DAOTinhTrangKho.cs" />
+    <Compile Include="DataAO\DAOTrangChu.cs" />
+    <Compile Include="DataAO\DataProvider.cs" />
+    <Compile Include="DataTO\DTOBaoCao.cs" />
+    <Compile Include="DataTO\DTOKhachHang.cs" />
+    <Compile Include="DataTO\DTOSanPham.cs" />
+    <Compile Include="DataTO\DTOTinhTrangKho.cs" />
+    <Compile Include="DataTO\DTOTrangChu.cs" />
     <Compile Include="fBaocao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +142,12 @@
     <Compile Include="fThanhToan_Thuong.designer.cs">
       <DependentUpon>fThanhToan_Thuong.cs</DependentUpon>
     </Compile>
+    <Compile Include="fThemNguyenLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThemNguyenLieu.Designer.cs">
+      <DependentUpon>fThemNguyenLieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="fTinhTrangKho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fThanhToan_Thuong.resx">
       <DependentUpon>fThanhToan_Thuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThemNguyenLieu.resx">
+      <DependentUpon>fThemNguyenLieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTinhTrangKho.resx">
       <DependentUpon>fTinhTrangKho.cs</DependentUpon>

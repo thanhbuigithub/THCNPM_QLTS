@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyQuanTraSua.DataA0;
+using QuanLyQuanTraSua.DataTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,11 +16,50 @@ namespace QuanLyQuanTraSua
     {
         public static Boolean Finish = false;
         public static Int16 mProductID;
+
+        #region method
+        void LoadListDrink()     // Tra ve list mon
+        {
+
+            //int[] a = DAOTrangChu.Instance.LoadData();
+            //for (int i = 0; i < a.Length; i++)
+            //{
+            //    if (a[i] != 0)
+            //        Console.WriteLine(a[i]);
+            //}
+            //dataGridView1.DataSource = DAOTrangChu.Instance.LoadData();
+            List<DTOTrangChu> table = DAOTrangChu.Instance.LoadData();
+            foreach (DTOTrangChu item in table)
+            {
+                Console.WriteLine(item.ID + item.Size + item.TenMon + item.Gia + ' ' + item.KT_BanChay + ' ' + item.KT_DatBiet + item.LinkAnh);  //test
+            }
+
+        }
+
+        DTOTrangChu ShowDetail(int id)
+        {
+            List<DTOTrangChu> table = DAOTrangChu.Instance.LoadData();
+            DTOTrangChu temp=null;
+            foreach (DTOTrangChu item in table)
+            {
+                if (item.ID == id)
+                {
+                    Console.WriteLine(item.ID + item.TenMon + item.Gia + ' ' + item.KT_BanChay + ' ' + item.KT_DatBiet + item.LinkAnh);
+                    temp = item;
+                }
+            }
+            return temp;
+        }// tra ve thong tin cu the cua mon thong qua id
+        #endregion
+        #region event
         public fTrangChu()
         {
             InitializeComponent();
+           
+            //LoadListDrink(); // test danh sach mon bang console.writeline
+           ShowDetail(2); //test id mon  bang console.writeline
         }
-
+        
         private void fTrangChu_Load(object sender, EventArgs e)
         {
             Finish = false;
@@ -89,6 +130,12 @@ namespace QuanLyQuanTraSua
         }
 
         private void fLPSpecial_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        #endregion
+
+        private void BtnReport_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyQuanTraSua.DataAO;
+using QuanLyQuanTraSua.DataTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +14,35 @@ namespace QuanLyQuanTraSua
 {
     public partial class fTinhTrangKho : Form
     {
+        void loadListMaterial()
+        {
+            List<DTOTinhTrangKho> table = DAOTinhTrangKho.Instance.LoadData();
+            foreach (DTOTinhTrangKho item in table)
+            {
+                Console.WriteLine(item.ID +item.TenNguyenLieu + item.TinhTrang + item.NgayNhap + item.XuatXu + item.TinhTrang);
+            }
+        }
+        DTOTinhTrangKho getMaterialById(int id)
+        {
+            List<DTOTinhTrangKho> table = DAOTinhTrangKho.Instance.LoadData();
+            DTOTinhTrangKho temp = null;
+            foreach (DTOTinhTrangKho item in table)
+            {
+               if(item.ID==id)
+                {
+                    temp = item;
+                }
+            }
+            return temp;
+        }
         public fTinhTrangKho()
         {
             InitializeComponent();
+            loadListMaterial();
+            //Console.WriteLine(getMaterialById(1).TenNguyenLieu);
         }
 
+        //Thieu sua,xoa cho nguyen lieu
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -32,14 +58,19 @@ namespace QuanLyQuanTraSua
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
 
         private void button7_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            fThemNguyenLieu fThemNguyenLieu = new fThemNguyenLieu();
+            this.Hide();
+            fThemNguyenLieu.ShowDialog();
+            this.Show();
         }
     }
 }
