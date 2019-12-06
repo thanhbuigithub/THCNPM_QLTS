@@ -59,9 +59,9 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // lbTimkiem
-            // 
+            //
             this.lbTimkiem.AutoSize = true;
             this.lbTimkiem.BackColor = System.Drawing.SystemColors.Control;
             this.lbTimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -70,18 +70,18 @@
             this.lbTimkiem.Size = new System.Drawing.Size(132, 36);
             this.lbTimkiem.TabIndex = 0;
             this.lbTimkiem.Text = "Tìm kiếm";
-            // 
+            //
             // txtbSearch
-            // 
+            //
             this.txtbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbSearch.Location = new System.Drawing.Point(176, 26);
             this.txtbSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtbSearch.Name = "txtbSearch";
             this.txtbSearch.Size = new System.Drawing.Size(372, 41);
             this.txtbSearch.TabIndex = 1;
-            // 
+            //
             // panel1
-            // 
+            //
             this.panel1.Controls.Add(this.lbTimkiem);
             this.panel1.Controls.Add(this.txtbSearch);
             this.panel1.Location = new System.Drawing.Point(12, 12);
@@ -89,9 +89,9 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(979, 98);
             this.panel1.TabIndex = 2;
-            // 
+            //
             // panel2
-            // 
+            //
             this.panel2.Controls.Add(this.pictureBoxLogo);
             this.panel2.Controls.Add(this.btnReport);
             this.panel2.Controls.Add(this.btnProduct);
@@ -103,9 +103,9 @@
             this.panel2.Size = new System.Drawing.Size(333, 812);
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
+            //
             // pictureBoxLogo
-            // 
+            //
             this.pictureBoxLogo.Location = new System.Drawing.Point(3, 2);
             this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
@@ -113,9 +113,9 @@
             this.pictureBoxLogo.TabIndex = 1;
             this.pictureBoxLogo.TabStop = false;
             this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBoxLogo_Click);
-            // 
+            //
             // btnReport
-            // 
+            //
             this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.Location = new System.Drawing.Point(0, 526);
             this.btnReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -124,9 +124,10 @@
             this.btnReport.TabIndex = 0;
             this.btnReport.Text = "Báo Cáo";
             this.btnReport.UseVisualStyleBackColor = true;
-            // 
+            this.btnReport.Click += new System.EventHandler(this.BtnReport_Click_1);
+            //
             // btnProduct
-            // 
+            //
             this.btnProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduct.Location = new System.Drawing.Point(0, 418);
             this.btnProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -136,9 +137,9 @@
             this.btnProduct.Text = "Sản phẩm";
             this.btnProduct.UseVisualStyleBackColor = true;
             this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
-            // 
+            //
             // btnCustomer
-            // 
+            //
             this.btnCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomer.Location = new System.Drawing.Point(0, 314);
             this.btnCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -148,9 +149,9 @@
             this.btnCustomer.Text = "Khách hàng";
             this.btnCustomer.UseVisualStyleBackColor = true;
             this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
-            // 
+            //
             // btnOrder
-            // 
+            //
             this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrder.Location = new System.Drawing.Point(0, 212);
             this.btnOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -160,9 +161,9 @@
             this.btnOrder.Text = "Đặt hàng";
             this.btnOrder.UseVisualStyleBackColor = true;
             this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
-            // 
+            //
             // panel3
-            // 
+            //
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.btnOtherPrevious);
             this.panel3.Controls.Add(this.btnBSPrevious);
@@ -178,18 +179,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(985, 734);
             this.panel3.TabIndex = 6;
-            // 
+            //
             // panel4
-            // 
+            //
             this.panel4.Controls.Add(this.fLPSpecial);
             this.panel4.Location = new System.Drawing.Point(73, 61);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(830, 188);
             this.panel4.TabIndex = 5;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
+            //
             // fLPSpecial
-            // 
+            //
             this.fLPSpecial.AutoScroll = true;
             this.fLPSpecial.BackColor = System.Drawing.SystemColors.Control;
             this.fLPSpecial.Location = new System.Drawing.Point(0, 1);
@@ -199,9 +200,9 @@
             this.fLPSpecial.Size = new System.Drawing.Size(829, 188);
             this.fLPSpecial.TabIndex = 4;
             this.fLPSpecial.WrapContents = false;
-            // 
+            //
             // btnOtherPrevious
-            // 
+            //
             this.btnOtherPrevious.Location = new System.Drawing.Point(3, 562);
             this.btnOtherPrevious.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOtherPrevious.Name = "btnOtherPrevious";
@@ -209,9 +210,9 @@
             this.btnOtherPrevious.TabIndex = 3;
             this.btnOtherPrevious.Text = "button1";
             this.btnOtherPrevious.UseVisualStyleBackColor = true;
-            // 
+            //
             // btnBSPrevious
-            // 
+            //
             this.btnBSPrevious.Location = new System.Drawing.Point(3, 321);
             this.btnBSPrevious.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBSPrevious.Name = "btnBSPrevious";
@@ -219,9 +220,9 @@
             this.btnBSPrevious.TabIndex = 3;
             this.btnBSPrevious.Text = "button1";
             this.btnBSPrevious.UseVisualStyleBackColor = true;
-            // 
+            //
             // btnSpecPrevious
-            // 
+            //
             this.btnSpecPrevious.Location = new System.Drawing.Point(3, 70);
             this.btnSpecPrevious.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSpecPrevious.Name = "btnSpecPrevious";
@@ -230,9 +231,9 @@
             this.btnSpecPrevious.Text = "button1";
             this.btnSpecPrevious.UseVisualStyleBackColor = true;
             this.btnSpecPrevious.Click += new System.EventHandler(this.btnSpecPrevious_Click);
-            // 
+            //
             // btnOtherNext
-            // 
+            //
             this.btnOtherNext.Location = new System.Drawing.Point(909, 559);
             this.btnOtherNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOtherNext.Name = "btnOtherNext";
@@ -240,9 +241,9 @@
             this.btnOtherNext.TabIndex = 3;
             this.btnOtherNext.Text = "button1";
             this.btnOtherNext.UseVisualStyleBackColor = true;
-            // 
+            //
             // btnBSNext
-            // 
+            //
             this.btnBSNext.Location = new System.Drawing.Point(909, 318);
             this.btnBSNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBSNext.Name = "btnBSNext";
@@ -250,9 +251,9 @@
             this.btnBSNext.TabIndex = 3;
             this.btnBSNext.Text = "button1";
             this.btnBSNext.UseVisualStyleBackColor = true;
-            // 
+            //
             // btnSpecNext
-            // 
+            //
             this.btnSpecNext.Location = new System.Drawing.Point(909, 66);
             this.btnSpecNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSpecNext.Name = "btnSpecNext";
@@ -261,9 +262,9 @@
             this.btnSpecNext.Text = "button1";
             this.btnSpecNext.UseVisualStyleBackColor = true;
             this.btnSpecNext.Click += new System.EventHandler(this.btnSpecNext_Click);
-            // 
+            //
             // lbOtherMenu
-            // 
+            //
             this.lbOtherMenu.AutoSize = true;
             this.lbOtherMenu.BackColor = System.Drawing.SystemColors.Control;
             this.lbOtherMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -272,9 +273,9 @@
             this.lbOtherMenu.Size = new System.Drawing.Size(166, 36);
             this.lbOtherMenu.TabIndex = 1;
             this.lbOtherMenu.Text = "Menu Khác";
-            // 
+            //
             // lbBestSeller
-            // 
+            //
             this.lbBestSeller.AutoSize = true;
             this.lbBestSeller.BackColor = System.Drawing.SystemColors.Control;
             this.lbBestSeller.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -283,9 +284,9 @@
             this.lbBestSeller.Size = new System.Drawing.Size(205, 36);
             this.lbBestSeller.TabIndex = 1;
             this.lbBestSeller.Text = "Bán chạy nhất";
-            // 
+            //
             // lbSpecial
-            // 
+            //
             this.lbSpecial.AutoSize = true;
             this.lbSpecial.BackColor = System.Drawing.Color.MintCream;
             this.lbSpecial.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -295,9 +296,9 @@
             this.lbSpecial.Size = new System.Drawing.Size(271, 60);
             this.lbSpecial.TabIndex = 1;
             this.lbSpecial.Text = "Đặc biệt tuần này";
-            // 
+            //
             // imageList1
-            // 
+            //
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "Bronze_Emblem.png");
@@ -309,16 +310,16 @@
             this.imageList1.Images.SetKeyName(6, "Master_Emblem.png");
             this.imageList1.Images.SetKeyName(7, "Platinum_Emblem.png");
             this.imageList1.Images.SetKeyName(8, "Silver_Emblem.png");
-            // 
+            //
             // flowLayoutPanel1
-            // 
+            //
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
             this.flowLayoutPanel1.TabIndex = 0;
-            // 
+            //
             // fTrangChu
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1344, 897);
