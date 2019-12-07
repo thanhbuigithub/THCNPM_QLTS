@@ -45,9 +45,28 @@ namespace QuanLyQuanTraSua.DataA0
             foreach(DataRow item in data.Rows)
             {
                 DTOTrangChu table = new DTOTrangChu(item);
-                tableList.Add(table);
+                if (table.ID % 3 == 1)
+                    tableList.Add(table);
             }
             return tableList;
+        }
+        public List<DTOTrangChu> SearchData(string keyword)
+        {
+            List<DTOTrangChu> tableList = new List<DTOTrangChu>();
+            DataTable data = DataProvider.Instance.ExcuteQuery("EXEC USP_SearchProductByName @keyword", new object[]{keyword});  //Procedure in sql, also can use select *...
+            foreach (DataRow item in data.Rows)
+            {
+                DTOTrangChu table = new DTOTrangChu(item);
+                if (table.ID % 3 == 1)
+                    tableList.Add(table);
+            }
+            return tableList;
+        }
+
+        public DTOTrangChu getProductByID(int id)
+        {
+            DataTable data = DataProvider.Instance.ExcuteQuery("EXEC USP_GetDrinkByID @id", new object[] { id });  //Procedure in sql, also can use select *...
+            return new DTOTrangChu(data.Rows[0]);
         }
     }
 }

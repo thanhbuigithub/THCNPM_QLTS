@@ -269,3 +269,17 @@ END
  BEGIN
  SELECT KH.ID,KH.HoTen,KH.DiaChi,KH.SDT,L.LoaiKhachHang,KH.Email,KH.DiemTichLuy FROM KHACHHANG KH,LOAIKHACHHANG L WHERE KH.LoaiKH=L.ID
  END
+
+ --ADD
+CREATE PROC USP_SearchProductByName @keyword nvarchar(50)
+AS
+BEGIN
+SELECT * FROM MON WHERE TenMon LIKE '%' + @keyword + '%'
+END
+GO
+
+CREATE PROC USP_GetDrinkByID @id int
+AS
+BEGIN
+SELECT * FROM MON WHERE ID = @id
+END

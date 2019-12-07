@@ -9,31 +9,89 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace QuanLyQuanTraSua
 {
     public partial class fTrangChu : Form
     {
         public static Boolean Finish = false;
-        public static Int16 mProductID;
+        public static Int32 mProductID = -1;
+        private List<DTOTrangChu> table;
 
-        #region method
-        void LoadListDrink()     // Tra ve list mon
+        #region methodDatabase
+        void clearFLP(FlowLayoutPanel fLP)
         {
+            fLP.Controls.Clear();
+        }
 
-            //int[] a = DAOTrangChu.Instance.LoadData();
-            //for (int i = 0; i < a.Length; i++)
-            //{
-            //    if (a[i] != 0)
-            //        Console.WriteLine(a[i]);
-            //}
-            //dataGridView1.DataSource = DAOTrangChu.Instance.LoadData();
-            List<DTOTrangChu> table = DAOTrangChu.Instance.LoadData();
+        void populateSpecList()     // Tra ve list mon
+        {
+            clearFLP(fLPSpecial);
             foreach (DTOTrangChu item in table)
             {
-                Console.WriteLine(item.ID + item.Size + item.TenMon + item.Gia + ' ' + item.KT_BanChay + ' ' + item.KT_DatBiet + item.LinkAnh);  //test
-            }
+                //Console.WriteLine(item.ID + item.Size + item.TenMon + item.Gia + ' ' + item.KT_BanChay + ' ' + item.KT_DatBiet + item.LinkAnh);  //test
+                if (item.KT_DatBiet == 1)
+                {
+                    Product product = new Product();
+                    product.ProductName = item.TenMon;
+                    product.Image =
+                        Image.FromFile(@"E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\img\" +
+                                       item.LinkAnh);
+                    product.PictureBox.Click += product_Click;
+                    product.PictureBox.Tag = item;
+                    fLPSpecial.Controls.Add(product);
+                }
 
+            }
+        }
+
+        private void product_Click(object sender, EventArgs e)
+        {
+            mProductID = ((sender as PictureBox).Tag as DTOTrangChu).ID;
+            btnOrder_Click(sender, e);
+        }
+
+        void populateBSList()     // Tra ve list mon
+        {
+            clearFLP(fLPBestSeller);
+            foreach (DTOTrangChu item in table)
+            {
+                Product product = new Product();
+                //Console.WriteLine(item.ID + item.Size + item.TenMon + item.Gia + ' ' + item.KT_BanChay + ' ' + item.KT_DatBiet + item.LinkAnh);  //test
+                if (item.KT_BanChay == 1)
+                {
+                    product.ProductName = item.TenMon;
+                    product.Image =
+                        Image.FromFile(@"E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\img\" +
+                                       item.LinkAnh);
+                    product.PictureBox.Click += product_Click;
+                    product.PictureBox.Tag = item;
+                    fLPBestSeller.Controls.Add(product);
+                }
+
+            }
+        }
+
+        void populateOrtherList()     // Tra ve list mon
+        {
+            clearFLP(fLPOrther);
+            foreach (DTOTrangChu item in table)
+            {
+                Product product = new Product();
+                //Console.WriteLine(item.ID + item.Size + item.TenMon + item.Gia + ' ' + item.KT_BanChay + ' ' + item.KT_DatBiet + item.LinkAnh);  //test
+                if (item.KT_BanChay == 0 && item.KT_DatBiet==0)
+                {
+                    product.ProductName = item.TenMon;
+                    product.Image =
+                        Image.FromFile(@"E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\img\" +
+                                       item.LinkAnh);
+                    product.PictureBox.Click += product_Click;
+                    product.PictureBox.Tag = item;
+                    fLPOrther.Controls.Add(product);
+                }
+
+            }
         }
 
         DTOTrangChu ShowDetail(int id)
@@ -51,7 +109,8 @@ namespace QuanLyQuanTraSua
             return temp;
         }// tra ve thong tin cu the cua mon thong qua id
         #endregion
-        #region event
+
+        #region implement
         public fTrangChu()
         {
             InitializeComponent();
@@ -60,15 +119,25 @@ namespace QuanLyQuanTraSua
            ShowDetail(2); //test id mon  bang console.writeline
         }
 
+        private void populate()
+        {
+            populateSpecList();
+            populateBSList();
+            populateOrtherList();
+        }
+
         private void fTrangChu_Load(object sender, EventArgs e)
         {
             Finish = false;
-            populateItem();
-            int vertScrollWidth = SystemInformation.VerticalScrollBarWidth;
-            int hozScrollHeight = SystemInformation.HorizontalScrollBarHeight;
-            panel4.Height = panel4.Height - hozScrollHeight;
-            panel4.Width = panel4.Width - vertScrollWidth;
+            table = DAOTrangChu.Instance.LoadData();
+            populate();
+            hideAutoScroll(panelSpecList);
+            hideAutoScroll(panelBestSeller);
+            hideAutoScroll(panelOrther);
         }
+        #endregion
+
+        #region event
 
         private void btnOrder_Click(object sender, EventArgs e)
         {
@@ -94,6 +163,14 @@ namespace QuanLyQuanTraSua
             this.Show();
         }
 
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            fBaocao fBaocao = new fBaocao();
+            this.Hide();
+            fBaocao.ShowDialog();
+            this.Show();
+        }
+
         private void fTrangChu_Activated(object sender, EventArgs e)
         {
             Finish = false;
@@ -104,54 +181,53 @@ namespace QuanLyQuanTraSua
             int change = fLPSpecial.HorizontalScroll.Value + fLPSpecial.HorizontalScroll.SmallChange * 20;
             fLPSpecial.AutoScrollPosition = new Point(change, 0);
         }
+
         private void btnSpecPrevious_Click(object sender, EventArgs e)
         {
             int change = fLPSpecial.HorizontalScroll.Value - fLPSpecial.HorizontalScroll.SmallChange * 20;
             fLPSpecial.AutoScrollPosition = new Point(change, 0);
 
         }
-        private void btnReport_Click(object sender, EventArgs e)
+
+        private void btnBSNext_Click(object sender, EventArgs e)
         {
-            fBaocao fBaocao = new fBaocao();
-            this.Hide();
-            fBaocao.ShowDialog();
-            this.Show();
+            int change = fLPBestSeller.HorizontalScroll.Value + fLPBestSeller.HorizontalScroll.SmallChange * 20;
+            fLPBestSeller.AutoScrollPosition = new Point(change, 0);
         }
 
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void btnBSPrevious_Click(object sender, EventArgs e)
         {
-
+            int change = fLPBestSeller.HorizontalScroll.Value - fLPBestSeller.HorizontalScroll.SmallChange * 20;
+            fLPBestSeller.AutoScrollPosition = new Point(change, 0);
         }
 
-        private void populateItem()
+        private void btnOtherNext_Click(object sender, EventArgs e)
         {
-            Product[] product = new Product[20];
-            for (int i = 0; i < product.Length; i++)
-            {
-                product[i] = new Product();
-                product[i].ProductName = "SP " + i.ToString();
-                product[i].Image = Image.FromFile(@"E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\img\" + "pic.png");
-                fLPSpecial.Controls.Add(product[i]);
-            }
-        }
-        private void pictureBoxLogo_Click(object sender, EventArgs e)
-        {
-
+            int change = fLPOrther.HorizontalScroll.Value + fLPOrther.HorizontalScroll.SmallChange * 20;
+            fLPOrther.AutoScrollPosition = new Point(change, 0);
         }
 
-        private void fLPSpecial_Paint(object sender, PaintEventArgs e)
+        private void btnOtherPrevious_Click(object sender, EventArgs e)
         {
-
+            int change = fLPOrther.HorizontalScroll.Value - fLPOrther.HorizontalScroll.SmallChange * 20;
+            fLPOrther.AutoScrollPosition = new Point(change, 0);
         }
-        private void panel4_Paint(object sender, PaintEventArgs e)
+        private void txtbSearch_TextChanged(object sender, EventArgs e)
         {
+            table.Clear();
+            table = DAOTrangChu.Instance.SearchData(txtbSearch.Text);
+            populate();
         }
         #endregion
 
-        private void BtnReport_Click_1(object sender, EventArgs e)
+        #region helper
+        private void hideAutoScroll(Panel panel)
         {
-
+            int vertScrollWidth = SystemInformation.VerticalScrollBarWidth;
+            int hozScrollHeight = SystemInformation.HorizontalScrollBarHeight;
+            panel.Height = panel.Height - hozScrollHeight;
+            panel.Width = panel.Width - vertScrollWidth;
         }
+        #endregion
     }
 }

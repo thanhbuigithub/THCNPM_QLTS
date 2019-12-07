@@ -12,9 +12,11 @@ namespace QuanLyQuanTraSua
 {
     public partial class Product : UserControl
     {
+        public PictureBox PictureBox;
         public Product()
         {
             InitializeComponent();
+            PictureBox = picProduct;
         }
 
         #region Properties
@@ -43,5 +45,14 @@ namespace QuanLyQuanTraSua
 
         #endregion
 
+        private void Product_MouseEnter(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Silver;
+        }
+
+        private void Product_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = SystemColors.Control;
+        }
     }
 }

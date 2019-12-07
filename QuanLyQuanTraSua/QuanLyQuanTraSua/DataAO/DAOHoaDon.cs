@@ -34,13 +34,23 @@ namespace QuanLyQuanTraSua.DataAO
                 res[dem] = (int)i["ID"];
             }
             Console.WriteLine(res);
-            DAOChiTietHoaDon.Instance.DeleteDetailBill(res);
+            DAOChiTietHoaDon.Instance.DeleteAllDetailBillByIDCustomer(res);
             string query = "DELETE HOADON WHERE ID_KhachHang="+id;
             DataProvider.Instance.ExcuteQuery(query);
         }
 
+        public int InsertNewBill()
+        {
+            DataProvider.Instance.ExcuteNonQuery("INSERT INTO HOADON VALUES (NULL, NULL, NULL, NULL, NULL,NULL)");
+            DataTable table = DataProvider.Instance.ExcuteQuery("SELECT * FROM HOADON");
+            return (int) table.Rows[table.Rows.Count - 1]["ID"];
+        }
 
-       
+        public void DeleteBillByID(int id)
+        {
+            DAOChiTietHoaDon.Instance.DeleteAllDetailBillByIDBill(id);
+            DataProvider.Instance.ExcuteNonQuery("DELETE FROM HOADON WHERE ID= " + id);
+        }
 
     }
 }

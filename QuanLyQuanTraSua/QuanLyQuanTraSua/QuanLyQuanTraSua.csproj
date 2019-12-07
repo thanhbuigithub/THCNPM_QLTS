@@ -54,10 +54,17 @@
     <Compile Include="DataAO\DAOTrangChu.cs" />
     <Compile Include="DataAO\DataProvider.cs" />
     <Compile Include="DataTO\DTOBaoCao.cs" />
+    <Compile Include="DataTO\DTOChiTietHoaDon.cs" />
     <Compile Include="DataTO\DTOKhachHang.cs" />
     <Compile Include="DataTO\DTOSanPham.cs" />
     <Compile Include="DataTO\DTOTinhTrangKho.cs" />
     <Compile Include="DataTO\DTOTrangChu.cs" />
+    <Compile Include="DetailBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DetailBill.Designer.cs">
+      <DependentUpon>DetailBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="fBaocao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +175,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DetailBill.resx">
+      <DependentUpon>DetailBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fBaocao.resx">
       <DependentUpon>fBaocao.cs</DependentUpon>
     </EmbeddedResource>

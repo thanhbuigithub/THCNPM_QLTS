@@ -35,31 +35,37 @@
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.btnMangDi = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lvDonHang = new System.Windows.Forms.ListView();
             this.lbTongTien = new System.Windows.Forms.Label();
             this.lbIDDonHang = new System.Windows.Forms.Label();
             this.lbTimkiem = new System.Windows.Forms.Label();
             this.txtbSearch = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panelOrther = new System.Windows.Forms.Panel();
+            this.fLPOrther = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelBestSeller = new System.Windows.Forms.Panel();
+            this.fLPBestSeller = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelSpecList = new System.Windows.Forms.Panel();
+            this.fLPSpecial = new System.Windows.Forms.FlowLayoutPanel();
             this.btnOtherPrevious = new System.Windows.Forms.Button();
             this.btnBSPrevious = new System.Windows.Forms.Button();
             this.btnSpecPrevious = new System.Windows.Forms.Button();
             this.btnOtherNext = new System.Windows.Forms.Button();
             this.btnBSNext = new System.Windows.Forms.Button();
             this.btnSpecNext = new System.Windows.Forms.Button();
-            this.lvOther = new System.Windows.Forms.ListView();
-            this.lvBestSeller = new System.Windows.Forms.ListView();
-            this.lvSpecial = new System.Windows.Forms.ListView();
             this.lbOtherMenu = new System.Windows.Forms.Label();
             this.lbBestSeller = new System.Windows.Forms.Label();
             this.lbSpecial = new System.Windows.Forms.Label();
+            this.fLPHoaDon = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panelOrther.SuspendLayout();
+            this.panelBestSeller.SuspendLayout();
+            this.panelSpecList.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBoxLogo
@@ -128,7 +134,7 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.lvDonHang);
+            this.panel4.Controls.Add(this.fLPHoaDon);
             this.panel4.Controls.Add(this.lbTongTien);
             this.panel4.Controls.Add(this.lbIDDonHang);
             this.panel4.Location = new System.Drawing.Point(3, 76);
@@ -136,16 +142,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(316, 625);
             this.panel4.TabIndex = 2;
-            // 
-            // lvDonHang
-            // 
-            this.lvDonHang.HideSelection = false;
-            this.lvDonHang.Location = new System.Drawing.Point(0, 60);
-            this.lvDonHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lvDonHang.Name = "lvDonHang";
-            this.lvDonHang.Size = new System.Drawing.Size(312, 506);
-            this.lvDonHang.TabIndex = 1;
-            this.lvDonHang.UseCompatibleStateImageBehavior = false;
             // 
             // lbTongTien
             // 
@@ -190,6 +186,7 @@
             this.txtbSearch.Name = "txtbSearch";
             this.txtbSearch.Size = new System.Drawing.Size(372, 41);
             this.txtbSearch.TabIndex = 1;
+            this.txtbSearch.TextChanged += new System.EventHandler(this.txtbSearch_TextChanged);
             // 
             // panel1
             // 
@@ -203,23 +200,83 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.panelOrther);
+            this.panel3.Controls.Add(this.panelBestSeller);
+            this.panel3.Controls.Add(this.panelSpecList);
             this.panel3.Controls.Add(this.btnOtherPrevious);
             this.panel3.Controls.Add(this.btnBSPrevious);
             this.panel3.Controls.Add(this.btnSpecPrevious);
             this.panel3.Controls.Add(this.btnOtherNext);
             this.panel3.Controls.Add(this.btnBSNext);
             this.panel3.Controls.Add(this.btnSpecNext);
-            this.panel3.Controls.Add(this.lvOther);
-            this.panel3.Controls.Add(this.lvBestSeller);
-            this.panel3.Controls.Add(this.lvSpecial);
             this.panel3.Controls.Add(this.lbOtherMenu);
             this.panel3.Controls.Add(this.lbBestSeller);
             this.panel3.Controls.Add(this.lbSpecial);
-            this.panel3.Location = new System.Drawing.Point(12, 100);
+            this.panel3.Location = new System.Drawing.Point(20, 100);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(991, 804);
+            this.panel3.Size = new System.Drawing.Size(985, 734);
             this.panel3.TabIndex = 7;
+            // 
+            // panelOrther
+            // 
+            this.panelOrther.Controls.Add(this.fLPOrther);
+            this.panelOrther.Location = new System.Drawing.Point(72, 544);
+            this.panelOrther.Name = "panelOrther";
+            this.panelOrther.Size = new System.Drawing.Size(830, 188);
+            this.panelOrther.TabIndex = 5;
+            // 
+            // fLPOrther
+            // 
+            this.fLPOrther.AutoScroll = true;
+            this.fLPOrther.BackColor = System.Drawing.SystemColors.Control;
+            this.fLPOrther.Location = new System.Drawing.Point(0, 1);
+            this.fLPOrther.Margin = new System.Windows.Forms.Padding(4);
+            this.fLPOrther.Name = "fLPOrther";
+            this.fLPOrther.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.fLPOrther.Size = new System.Drawing.Size(829, 188);
+            this.fLPOrther.TabIndex = 4;
+            this.fLPOrther.WrapContents = false;
+            // 
+            // panelBestSeller
+            // 
+            this.panelBestSeller.Controls.Add(this.fLPBestSeller);
+            this.panelBestSeller.Location = new System.Drawing.Point(72, 304);
+            this.panelBestSeller.Name = "panelBestSeller";
+            this.panelBestSeller.Size = new System.Drawing.Size(830, 188);
+            this.panelBestSeller.TabIndex = 5;
+            // 
+            // fLPBestSeller
+            // 
+            this.fLPBestSeller.AutoScroll = true;
+            this.fLPBestSeller.BackColor = System.Drawing.SystemColors.Control;
+            this.fLPBestSeller.Location = new System.Drawing.Point(0, 1);
+            this.fLPBestSeller.Margin = new System.Windows.Forms.Padding(4);
+            this.fLPBestSeller.Name = "fLPBestSeller";
+            this.fLPBestSeller.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.fLPBestSeller.Size = new System.Drawing.Size(829, 188);
+            this.fLPBestSeller.TabIndex = 4;
+            this.fLPBestSeller.WrapContents = false;
+            // 
+            // panelSpecList
+            // 
+            this.panelSpecList.Controls.Add(this.fLPSpecial);
+            this.panelSpecList.Location = new System.Drawing.Point(73, 61);
+            this.panelSpecList.Name = "panelSpecList";
+            this.panelSpecList.Size = new System.Drawing.Size(830, 188);
+            this.panelSpecList.TabIndex = 5;
+            // 
+            // fLPSpecial
+            // 
+            this.fLPSpecial.AutoScroll = true;
+            this.fLPSpecial.BackColor = System.Drawing.SystemColors.Control;
+            this.fLPSpecial.Location = new System.Drawing.Point(0, 1);
+            this.fLPSpecial.Margin = new System.Windows.Forms.Padding(4);
+            this.fLPSpecial.Name = "fLPSpecial";
+            this.fLPSpecial.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.fLPSpecial.Size = new System.Drawing.Size(829, 188);
+            this.fLPSpecial.TabIndex = 4;
+            this.fLPSpecial.WrapContents = false;
             // 
             // btnOtherPrevious
             // 
@@ -230,6 +287,7 @@
             this.btnOtherPrevious.TabIndex = 3;
             this.btnOtherPrevious.Text = "button1";
             this.btnOtherPrevious.UseVisualStyleBackColor = true;
+            this.btnOtherPrevious.Click += new System.EventHandler(this.btnOtherPrevious_Click);
             // 
             // btnBSPrevious
             // 
@@ -240,6 +298,7 @@
             this.btnBSPrevious.TabIndex = 3;
             this.btnBSPrevious.Text = "button1";
             this.btnBSPrevious.UseVisualStyleBackColor = true;
+            this.btnBSPrevious.Click += new System.EventHandler(this.btnBSPrevious_Click);
             // 
             // btnSpecPrevious
             // 
@@ -250,6 +309,7 @@
             this.btnSpecPrevious.TabIndex = 3;
             this.btnSpecPrevious.Text = "button1";
             this.btnSpecPrevious.UseVisualStyleBackColor = true;
+            this.btnSpecPrevious.Click += new System.EventHandler(this.btnSpecPrevious_Click);
             // 
             // btnOtherNext
             // 
@@ -260,6 +320,7 @@
             this.btnOtherNext.TabIndex = 3;
             this.btnOtherNext.Text = "button1";
             this.btnOtherNext.UseVisualStyleBackColor = true;
+            this.btnOtherNext.Click += new System.EventHandler(this.btnOtherNext_Click);
             // 
             // btnBSNext
             // 
@@ -270,6 +331,7 @@
             this.btnBSNext.TabIndex = 3;
             this.btnBSNext.Text = "button1";
             this.btnBSNext.UseVisualStyleBackColor = true;
+            this.btnBSNext.Click += new System.EventHandler(this.btnBSNext_Click);
             // 
             // btnSpecNext
             // 
@@ -280,36 +342,7 @@
             this.btnSpecNext.TabIndex = 3;
             this.btnSpecNext.Text = "button1";
             this.btnSpecNext.UseVisualStyleBackColor = true;
-            // 
-            // lvOther
-            // 
-            this.lvOther.HideSelection = false;
-            this.lvOther.Location = new System.Drawing.Point(72, 544);
-            this.lvOther.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lvOther.Name = "lvOther";
-            this.lvOther.Size = new System.Drawing.Size(832, 169);
-            this.lvOther.TabIndex = 2;
-            this.lvOther.UseCompatibleStateImageBehavior = false;
-            // 
-            // lvBestSeller
-            // 
-            this.lvBestSeller.HideSelection = false;
-            this.lvBestSeller.Location = new System.Drawing.Point(72, 303);
-            this.lvBestSeller.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lvBestSeller.Name = "lvBestSeller";
-            this.lvBestSeller.Size = new System.Drawing.Size(832, 178);
-            this.lvBestSeller.TabIndex = 2;
-            this.lvBestSeller.UseCompatibleStateImageBehavior = false;
-            // 
-            // lvSpecial
-            // 
-            this.lvSpecial.HideSelection = false;
-            this.lvSpecial.Location = new System.Drawing.Point(72, 52);
-            this.lvSpecial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lvSpecial.Name = "lvSpecial";
-            this.lvSpecial.Size = new System.Drawing.Size(832, 174);
-            this.lvSpecial.TabIndex = 2;
-            this.lvSpecial.UseCompatibleStateImageBehavior = false;
+            this.btnSpecNext.Click += new System.EventHandler(this.btnSpecNext_Click);
             // 
             // lbOtherMenu
             // 
@@ -336,13 +369,21 @@
             // lbSpecial
             // 
             this.lbSpecial.AutoSize = true;
-            this.lbSpecial.BackColor = System.Drawing.SystemColors.Control;
+            this.lbSpecial.BackColor = System.Drawing.Color.MintCream;
             this.lbSpecial.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSpecial.Location = new System.Drawing.Point(24, 16);
+            this.lbSpecial.Location = new System.Drawing.Point(24, -2);
             this.lbSpecial.Name = "lbSpecial";
-            this.lbSpecial.Size = new System.Drawing.Size(245, 36);
+            this.lbSpecial.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.lbSpecial.Size = new System.Drawing.Size(271, 60);
             this.lbSpecial.TabIndex = 1;
             this.lbSpecial.Text = "Đặc biệt tuần này";
+            // 
+            // fLPHoaDon
+            // 
+            this.fLPHoaDon.Location = new System.Drawing.Point(0, 56);
+            this.fLPHoaDon.Name = "fLPHoaDon";
+            this.fLPHoaDon.Size = new System.Drawing.Size(312, 512);
+            this.fLPHoaDon.TabIndex = 1;
             // 
             // fDatHang
             // 
@@ -367,6 +408,9 @@
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panelOrther.ResumeLayout(false);
+            this.panelBestSeller.ResumeLayout(false);
+            this.panelSpecList.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -383,21 +427,24 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.Button btnMangDi;
-        private System.Windows.Forms.ListView lvDonHang;
         private System.Windows.Forms.Label lbTongTien;
         private System.Windows.Forms.Label lbIDDonHang;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelOrther;
+        private System.Windows.Forms.FlowLayoutPanel fLPOrther;
+        private System.Windows.Forms.Panel panelBestSeller;
+        private System.Windows.Forms.FlowLayoutPanel fLPBestSeller;
+        private System.Windows.Forms.Panel panelSpecList;
+        private System.Windows.Forms.FlowLayoutPanel fLPSpecial;
         private System.Windows.Forms.Button btnOtherPrevious;
         private System.Windows.Forms.Button btnBSPrevious;
         private System.Windows.Forms.Button btnSpecPrevious;
         private System.Windows.Forms.Button btnOtherNext;
         private System.Windows.Forms.Button btnBSNext;
         private System.Windows.Forms.Button btnSpecNext;
-        private System.Windows.Forms.ListView lvOther;
-        private System.Windows.Forms.ListView lvBestSeller;
-        private System.Windows.Forms.ListView lvSpecial;
         private System.Windows.Forms.Label lbOtherMenu;
         private System.Windows.Forms.Label lbBestSeller;
         private System.Windows.Forms.Label lbSpecial;
+        private System.Windows.Forms.FlowLayoutPanel fLPHoaDon;
     }
 }
