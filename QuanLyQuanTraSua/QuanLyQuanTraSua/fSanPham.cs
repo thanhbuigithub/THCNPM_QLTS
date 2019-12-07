@@ -36,7 +36,6 @@ namespace QuanLyQuanTraSua
         private void btnAddProduct_Click_1(object sender, EventArgs e)
         {
             fSanPham_ChinhSua_Them fSanPham_ChinhSua_Them = new fSanPham_ChinhSua_Them();
-            this.Hide();
             fSanPham_ChinhSua_Them.ShowDialog();
             this.Show();
         }

@@ -29,8 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnBack2 = new ePOSOne.btnProduct.ButtonModified();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.btnAdd = new ePOSOne.btnProduct.ButtonModified();
+            this.btnDone = new ePOSOne.btnProduct.ButtonModified();
+            this.btnXoa = new ePOSOne.btnProduct.ButtonModified();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtbSizeL = new System.Windows.Forms.TextBox();
             this.txtbSizeM = new System.Windows.Forms.TextBox();
@@ -50,19 +55,15 @@
             this.btnStatusProduct = new ePOSOne.btnProduct.ButtonModified();
             this.btnAddProduct = new ePOSOne.btnProduct.ButtonModified();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btnDone = new ePOSOne.btnProduct.ButtonModified();
-            this.btnXoa = new ePOSOne.btnProduct.ButtonModified();
-            this.btnBack2 = new ePOSOne.btnProduct.ButtonModified();
-            this.btnAdd = new ePOSOne.btnProduct.ButtonModified();
+            this.buttonModified1 = new ePOSOne.btnProduct.ButtonModified();
             this.panel1.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -73,16 +74,9 @@
             this.panel1.Size = new System.Drawing.Size(739, 717);
             this.panel1.TabIndex = 12;
             // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.btnBack2);
-            this.panel7.Location = new System.Drawing.Point(2, 3);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(726, 62);
-            this.panel7.TabIndex = 12;
-            // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.buttonModified1);
             this.panel3.Controls.Add(this.panel7);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel5);
@@ -98,6 +92,84 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(733, 713);
             this.panel3.TabIndex = 7;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.btnBack2);
+            this.panel7.Location = new System.Drawing.Point(2, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(726, 62);
+            this.panel7.TabIndex = 12;
+            // 
+            // btnBack2
+            // 
+            this.btnBack2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnBack2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBack2.FlatAppearance.BorderSize = 3;
+            this.btnBack2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack2.Location = new System.Drawing.Point(-1, 6);
+            this.btnBack2.Name = "btnBack2";
+            this.btnBack2.Size = new System.Drawing.Size(164, 43);
+            this.btnBack2.TabIndex = 21;
+            this.btnBack2.Text = "Quay lại";
+            this.btnBack2.UseVisualStyleBackColor = false;
+            this.btnBack2.Click += new System.EventHandler(this.btnBack2_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.btnAdd);
+            this.panel6.Controls.Add(this.btnDone);
+            this.panel6.Controls.Add(this.btnXoa);
+            this.panel6.Location = new System.Drawing.Point(2, 643);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(728, 67);
+            this.panel6.TabIndex = 38;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAdd.FlatAppearance.BorderSize = 3;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(596, 22);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(129, 37);
+            this.btnAdd.TabIndex = 22;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
+            // 
+            // btnDone
+            // 
+            this.btnDone.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnDone.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnDone.FlatAppearance.BorderSize = 3;
+            this.btnDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDone.Location = new System.Drawing.Point(863, 22);
+            this.btnDone.Name = "btnDone";
+            this.btnDone.Size = new System.Drawing.Size(133, 37);
+            this.btnDone.TabIndex = 21;
+            this.btnDone.Text = "Thêm";
+            this.btnDone.UseVisualStyleBackColor = false;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BackColor = System.Drawing.Color.Red;
+            this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnXoa.FlatAppearance.BorderSize = 3;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Location = new System.Drawing.Point(10, 22);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(116, 37);
+            this.btnXoa.TabIndex = 6;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // panel5
             // 
@@ -312,96 +384,42 @@
             this.pictureBoxLogo.TabIndex = 2;
             this.pictureBoxLogo.TabStop = false;
             // 
-            // panel6
+            // buttonModified1
             // 
-            this.panel6.Controls.Add(this.btnAdd);
-            this.panel6.Controls.Add(this.btnDone);
-            this.panel6.Controls.Add(this.btnXoa);
-            this.panel6.Location = new System.Drawing.Point(2, 643);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(728, 67);
-            this.panel6.TabIndex = 38;
-            // 
-            // btnDone
-            // 
-            this.btnDone.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnDone.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnDone.FlatAppearance.BorderSize = 3;
-            this.btnDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDone.Location = new System.Drawing.Point(863, 22);
-            this.btnDone.Name = "btnDone";
-            this.btnDone.Size = new System.Drawing.Size(133, 37);
-            this.btnDone.TabIndex = 21;
-            this.btnDone.Text = "Thêm";
-            this.btnDone.UseVisualStyleBackColor = false;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.BackColor = System.Drawing.Color.Red;
-            this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnXoa.FlatAppearance.BorderSize = 3;
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(10, 22);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(116, 37);
-            this.btnXoa.TabIndex = 6;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnBack2
-            // 
-            this.btnBack2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnBack2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnBack2.FlatAppearance.BorderSize = 3;
-            this.btnBack2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack2.Location = new System.Drawing.Point(-1, 6);
-            this.btnBack2.Name = "btnBack2";
-            this.btnBack2.Size = new System.Drawing.Size(164, 43);
-            this.btnBack2.TabIndex = 21;
-            this.btnBack2.Text = "Quay lại";
-            this.btnBack2.UseVisualStyleBackColor = false;
-            this.btnBack2.Click += new System.EventHandler(this.btnBack2_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnAdd.FlatAppearance.BorderSize = 3;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(596, 22);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(129, 37);
-            this.btnAdd.TabIndex = 22;
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
+            this.buttonModified1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.buttonModified1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonModified1.FlatAppearance.BorderSize = 3;
+            this.buttonModified1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonModified1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModified1.Location = new System.Drawing.Point(553, 594);
+            this.buttonModified1.Name = "buttonModified1";
+            this.buttonModified1.Size = new System.Drawing.Size(164, 43);
+            this.buttonModified1.TabIndex = 22;
+            this.buttonModified1.Text = "Hoàn tất";
+            this.buttonModified1.UseVisualStyleBackColor = false;
+            this.buttonModified1.Click += new System.EventHandler(this.buttonModified1_Click);
             // 
             // fSanPham_ChinhSua_Them
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 730);
+            this.ClientSize = new System.Drawing.Size(752, 661);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "fSanPham_ChinhSua_Them";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fSanPham_ChinhSua_Them";
             this.panel1.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
-            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -435,5 +453,6 @@
         private ePOSOne.btnProduct.ButtonModified btnXoa;
         private ePOSOne.btnProduct.ButtonModified btnBack2;
         private ePOSOne.btnProduct.ButtonModified btnAdd;
+        private ePOSOne.btnProduct.ButtonModified buttonModified1;
     }
 }

@@ -66,7 +66,7 @@
             // 
             this.txtbAccumulatedPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.txtbAccumulatedPoints.Location = new System.Drawing.Point(173, 407);
-            this.txtbAccumulatedPoints.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbAccumulatedPoints.Margin = new System.Windows.Forms.Padding(2);
             this.txtbAccumulatedPoints.Multiline = true;
             this.txtbAccumulatedPoints.Name = "txtbAccumulatedPoints";
             this.txtbAccumulatedPoints.Size = new System.Drawing.Size(777, 33);
@@ -89,7 +89,7 @@
             this.dtpDateImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.dtpDateImport.Location = new System.Drawing.Point(173, 240);
             this.dtpDateImport.Name = "dtpDateImport";
-            this.dtpDateImport.Size = new System.Drawing.Size(777, 32);
+            this.dtpDateImport.Size = new System.Drawing.Size(557, 32);
             this.dtpDateImport.TabIndex = 25;
             this.dtpDateImport.Value = new System.DateTime(2019, 11, 14, 0, 0, 0, 0);
             // 
@@ -109,10 +109,10 @@
             // 
             this.txtbAddressImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.txtbAddressImport.Location = new System.Drawing.Point(173, 148);
-            this.txtbAddressImport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbAddressImport.Margin = new System.Windows.Forms.Padding(2);
             this.txtbAddressImport.Multiline = true;
             this.txtbAddressImport.Name = "txtbAddressImport";
-            this.txtbAddressImport.Size = new System.Drawing.Size(777, 34);
+            this.txtbAddressImport.Size = new System.Drawing.Size(557, 34);
             this.txtbAddressImport.TabIndex = 21;
             // 
             // lbPhone
@@ -130,10 +130,10 @@
             // 
             this.txtbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.txtbName.Location = new System.Drawing.Point(173, 63);
-            this.txtbName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtbName.Margin = new System.Windows.Forms.Padding(2);
             this.txtbName.Multiline = true;
             this.txtbName.Name = "txtbName";
-            this.txtbName.Size = new System.Drawing.Size(777, 34);
+            this.txtbName.Size = new System.Drawing.Size(557, 34);
             this.txtbName.TabIndex = 19;
             // 
             // lbName
@@ -175,10 +175,11 @@
             // 
             this.panel2.Controls.Add(this.btnDone);
             this.panel2.Controls.Add(this.btnXoa);
-            this.panel2.Location = new System.Drawing.Point(10, 465);
+            this.panel2.Location = new System.Drawing.Point(10, 473);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1005, 67);
+            this.panel2.Size = new System.Drawing.Size(730, 69);
             this.panel2.TabIndex = 40;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnDone
             // 
@@ -187,7 +188,7 @@
             this.btnDone.FlatAppearance.BorderSize = 3;
             this.btnDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDone.Location = new System.Drawing.Point(863, 22);
+            this.btnDone.Location = new System.Drawing.Point(597, 22);
             this.btnDone.Name = "btnDone";
             this.btnDone.Size = new System.Drawing.Size(133, 37);
             this.btnDone.TabIndex = 21;
@@ -202,7 +203,7 @@
             this.btnXoa.FlatAppearance.BorderSize = 3;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(10, 22);
+            this.btnXoa.Location = new System.Drawing.Point(24, 22);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(116, 37);
@@ -215,12 +216,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 545);
+            this.ClientSize = new System.Drawing.Size(752, 561);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fThemNguyenLieu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fThemNguyenLieu";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();

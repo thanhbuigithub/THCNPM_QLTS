@@ -29,11 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbTimkiem = new System.Windows.Forms.Label();
             this.txtbSearch = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnBack = new ePOSOne.btnProduct.ButtonModified();
+            this.btnStatusProduct = new ePOSOne.btnProduct.ButtonModified();
+            this.btnAddProduct = new ePOSOne.btnProduct.ButtonModified();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lbOtherMenu = new ePOSOne.btnProduct.RoundLabel();
             this.lbBestSeller = new ePOSOne.btnProduct.RoundLabel();
@@ -47,13 +50,10 @@
             this.lvOther = new System.Windows.Forms.ListView();
             this.lvBestSeller = new System.Windows.Forms.ListView();
             this.lvSpecial = new System.Windows.Forms.ListView();
-            this.btnAddProduct = new ePOSOne.btnProduct.ButtonModified();
-            this.btnStatusProduct = new ePOSOne.btnProduct.ButtonModified();
-            this.btnBack = new ePOSOne.btnProduct.ButtonModified();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,29 +67,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1008, 730);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel2.Controls.Add(this.btnBack);
-            this.panel2.Controls.Add(this.btnStatusProduct);
-            this.panel2.Controls.Add(this.btnAddProduct);
-            this.panel2.Controls.Add(this.pictureBoxLogo);
-            this.panel2.Location = new System.Drawing.Point(756, 2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 726);
-            this.panel2.TabIndex = 10;
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Location = new System.Drawing.Point(4, 2);
-            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(235, 165);
-            this.pictureBoxLogo.TabIndex = 2;
-            this.pictureBoxLogo.TabStop = false;
-            this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBoxLogo_Click);
             // 
             // panel3
             // 
@@ -122,6 +99,74 @@
             this.txtbSearch.Name = "txtbSearch";
             this.txtbSearch.Size = new System.Drawing.Size(280, 35);
             this.txtbSearch.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel2.Controls.Add(this.btnBack);
+            this.panel2.Controls.Add(this.btnStatusProduct);
+            this.panel2.Controls.Add(this.btnAddProduct);
+            this.panel2.Controls.Add(this.pictureBoxLogo);
+            this.panel2.Location = new System.Drawing.Point(756, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(250, 726);
+            this.panel2.TabIndex = 10;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBack.FlatAppearance.BorderSize = 3;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(0, 513);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(252, 87);
+            this.btnBack.TabIndex = 6;
+            this.btnBack.Text = "Quay lại";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
+            // 
+            // btnStatusProduct
+            // 
+            this.btnStatusProduct.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnStatusProduct.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnStatusProduct.FlatAppearance.BorderSize = 3;
+            this.btnStatusProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStatusProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnStatusProduct.Location = new System.Drawing.Point(0, 391);
+            this.btnStatusProduct.Name = "btnStatusProduct";
+            this.btnStatusProduct.Size = new System.Drawing.Size(252, 87);
+            this.btnStatusProduct.TabIndex = 5;
+            this.btnStatusProduct.Text = "Tình trạng";
+            this.btnStatusProduct.UseVisualStyleBackColor = false;
+            this.btnStatusProduct.Click += new System.EventHandler(this.btnStatusProduct_Click_1);
+            // 
+            // btnAddProduct
+            // 
+            this.btnAddProduct.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAddProduct.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddProduct.FlatAppearance.BorderSize = 3;
+            this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnAddProduct.Location = new System.Drawing.Point(0, 278);
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.btnAddProduct.Size = new System.Drawing.Size(252, 87);
+            this.btnAddProduct.TabIndex = 4;
+            this.btnAddProduct.Text = "Thêm";
+            this.btnAddProduct.UseVisualStyleBackColor = false;
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click_1);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Location = new System.Drawing.Point(4, 2);
+            this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(235, 165);
+            this.pictureBoxLogo.TabIndex = 2;
+            this.pictureBoxLogo.TabStop = false;
+            this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBoxLogo_Click);
             // 
             // panel4
             // 
@@ -296,51 +341,6 @@
             this.lvSpecial.TabIndex = 2;
             this.lvSpecial.UseCompatibleStateImageBehavior = false;
             // 
-            // btnAddProduct
-            // 
-            this.btnAddProduct.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnAddProduct.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnAddProduct.FlatAppearance.BorderSize = 3;
-            this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.btnAddProduct.Location = new System.Drawing.Point(0, 278);
-            this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(252, 87);
-            this.btnAddProduct.TabIndex = 4;
-            this.btnAddProduct.Text = "Thêm";
-            this.btnAddProduct.UseVisualStyleBackColor = false;
-            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click_1);
-            // 
-            // btnStatusProduct
-            // 
-            this.btnStatusProduct.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnStatusProduct.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnStatusProduct.FlatAppearance.BorderSize = 3;
-            this.btnStatusProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatusProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.btnStatusProduct.Location = new System.Drawing.Point(0, 391);
-            this.btnStatusProduct.Name = "btnStatusProduct";
-            this.btnStatusProduct.Size = new System.Drawing.Size(252, 87);
-            this.btnStatusProduct.TabIndex = 5;
-            this.btnStatusProduct.Text = "Tình trạng";
-            this.btnStatusProduct.UseVisualStyleBackColor = false;
-            this.btnStatusProduct.Click += new System.EventHandler(this.btnStatusProduct_Click_1);
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnBack.FlatAppearance.BorderSize = 3;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(0, 513);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(252, 87);
-            this.btnBack.TabIndex = 6;
-            this.btnBack.Text = "Quay lại";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
-            // 
             // fSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -348,13 +348,14 @@
             this.ClientSize = new System.Drawing.Size(1008, 730);
             this.Controls.Add(this.panel1);
             this.Name = "fSanPham";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fSanPham";
             this.Activated += new System.EventHandler(this.fSanPham_Activated);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);

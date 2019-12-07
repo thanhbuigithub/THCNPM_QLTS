@@ -34,14 +34,12 @@ namespace QuanLyQuanTraSua
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
-
-        private void btnXoa_Click(object sender, EventArgs e)
+        private void buttonModified1_Click(object sender, EventArgs e)
         {
-            fTrangChu.Finish = true;
             this.Close();
+            fTrangChu.Finish = true;
         }
-
     }
 }

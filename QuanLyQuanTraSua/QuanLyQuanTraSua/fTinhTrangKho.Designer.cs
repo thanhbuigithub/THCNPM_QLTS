@@ -30,15 +30,15 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAdd = new ePOSOne.btnProduct.ButtonModified();
+            this.lbSearch = new System.Windows.Forms.Label();
+            this.txtbSeach = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lbSearch = new System.Windows.Forms.Label();
-            this.txtbSeach = new System.Windows.Forms.TextBox();
             this.btnBack = new ePOSOne.btnProduct.ButtonModified();
-            this.btnAdd = new ePOSOne.btnProduct.ButtonModified();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +64,43 @@
             this.panel1.Size = new System.Drawing.Size(984, 70);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAdd.FlatAppearance.BorderSize = 3;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(806, 8);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(164, 43);
+            this.btnAdd.TabIndex = 28;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // lbSearch
+            // 
+            this.lbSearch.AutoSize = true;
+            this.lbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSearch.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lbSearch.Location = new System.Drawing.Point(35, 22);
+            this.lbSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbSearch.Name = "lbSearch";
+            this.lbSearch.Size = new System.Drawing.Size(128, 29);
+            this.lbSearch.TabIndex = 26;
+            this.lbSearch.Text = "Tìm kiếm:";
+            // 
+            // txtbSeach
+            // 
+            this.txtbSeach.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+            this.txtbSeach.Location = new System.Drawing.Point(177, 22);
+            this.txtbSeach.Margin = new System.Windows.Forms.Padding(2);
+            this.txtbSeach.Multiline = true;
+            this.txtbSeach.Name = "txtbSeach";
+            this.txtbSeach.Size = new System.Drawing.Size(358, 27);
+            this.txtbSeach.TabIndex = 27;
             // 
             // dataGridView1
             // 
@@ -107,28 +144,6 @@
             this.Column4.Name = "Column4";
             this.Column4.Width = 175;
             // 
-            // lbSearch
-            // 
-            this.lbSearch.AutoSize = true;
-            this.lbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSearch.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lbSearch.Location = new System.Drawing.Point(35, 22);
-            this.lbSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbSearch.Name = "lbSearch";
-            this.lbSearch.Size = new System.Drawing.Size(128, 29);
-            this.lbSearch.TabIndex = 26;
-            this.lbSearch.Text = "Tìm kiếm:";
-            // 
-            // txtbSeach
-            // 
-            this.txtbSeach.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
-            this.txtbSeach.Location = new System.Drawing.Point(177, 22);
-            this.txtbSeach.Margin = new System.Windows.Forms.Padding(2);
-            this.txtbSeach.Multiline = true;
-            this.txtbSeach.Name = "txtbSeach";
-            this.txtbSeach.Size = new System.Drawing.Size(358, 27);
-            this.txtbSeach.TabIndex = 27;
-            // 
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -144,31 +159,17 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnAdd.FlatAppearance.BorderSize = 3;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(806, 8);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(164, 43);
-            this.btnAdd.TabIndex = 28;
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // fTinhTrangKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 717);
+            this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBack);
             this.Name = "fTinhTrangKho";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fTinhTrangKho";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

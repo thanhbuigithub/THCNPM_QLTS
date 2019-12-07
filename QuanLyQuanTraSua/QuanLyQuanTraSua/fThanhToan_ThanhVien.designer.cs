@@ -81,7 +81,7 @@
             this.btnTiep.Name = "btnTiep";
             this.btnTiep.Size = new System.Drawing.Size(164, 43);
             this.btnTiep.TabIndex = 19;
-            this.btnTiep.Text = "tiếp";
+            this.btnTiep.Text = "Thanh Toán";
             this.btnTiep.UseVisualStyleBackColor = false;
             this.btnTiep.Click += new System.EventHandler(this.btnTiep_Click);
             // 

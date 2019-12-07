@@ -58,18 +58,12 @@ namespace QuanLyQuanTraSua
             if (normalCustomer)
             {
                 fThanhToan_Thuong fThanhToan_thuong = new fThanhToan_Thuong();
-                this.Close();
                 fThanhToan_thuong.ShowDialog();
-                fTrangChu.Finish = true;
-                this.Close();
             }
             else
             {
                 fThanhToan_ThanhVien fThanhToan_thanhvien = new fThanhToan_ThanhVien();
-                this.Close();
                 fThanhToan_thanhvien.ShowDialog();
-                fTrangChu.Finish = true;
-                this.Close();
             }
         }
 

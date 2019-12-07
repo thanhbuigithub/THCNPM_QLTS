@@ -60,15 +60,13 @@ namespace QuanLyQuanTraSua
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
 
         private void btnTiep_Click(object sender, EventArgs e)
         {
-            fThanhToan_Thuong fThanhToan_Thuong = new fThanhToan_Thuong();
-            this.Hide();
-            fThanhToan_Thuong.ShowDialog();
-            this.Show();
+            this.Close();
+            fTrangChu.Finish = true;
         }
     }
 }
