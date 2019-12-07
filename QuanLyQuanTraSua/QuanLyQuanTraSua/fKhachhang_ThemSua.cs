@@ -24,12 +24,12 @@ namespace QuanLyQuanTraSua
 
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void btnBack_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnDone_Click(object sender, EventArgs e)
+        private void btnDone_Click_1(object sender, EventArgs e)
         {
             string name = txtbName.Text.ToString();
             string sdt = txtbPhone.Text.ToString();
@@ -50,9 +50,9 @@ namespace QuanLyQuanTraSua
                 this.Close();
 
             }
-        }// sau khi diem xong click "OK" se them vao
+        }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnXoa_Click(object sender, EventArgs e)
         {
             this.Close();
         }

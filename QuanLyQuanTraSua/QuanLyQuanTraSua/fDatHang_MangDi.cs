@@ -22,12 +22,23 @@ namespace QuanLyQuanTraSua
             btnMangDi.Enabled = false;
         }
 
-        private void btnThanhToan_Click(object sender, EventArgs e)
+        private void fDatHang_MangDi_Activated(object sender, EventArgs e)
         {
+            if (fTrangChu.Finish)
+                this.Close();
         }
 
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
 
-        private void btnBenThu3_Click(object sender, EventArgs e)
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBenThu3_Click_1(object sender, EventArgs e)
         {
             fDatHang_MangDi_BenThu3 fDatHangMangDiBenThu3 = new fDatHang_MangDi_BenThu3();
             this.Hide();
@@ -43,33 +54,10 @@ namespace QuanLyQuanTraSua
             this.Show();
         }
 
-        private void fDatHang_MangDi_Activated(object sender, EventArgs e)
+        private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (fTrangChu.Finish)
-                this.Close();
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnMangDi_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnXoa_Click_1(object sender, EventArgs e)
-        {
-
             fTrangChu.Finish = true; //
             this.Close(); //
-
         }
     }
 }

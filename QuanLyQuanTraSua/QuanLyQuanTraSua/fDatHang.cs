@@ -145,14 +145,14 @@ namespace QuanLyQuanTraSua
             this.Show();
         }
 
-        private void btnThanhToan_Click(object sender, EventArgs e)
+        private void btnThanhToan_Click_1(object sender, EventArgs e)
         {
             fThanhToan fThanhToan = new fThanhToan();
             fThanhToan.ShowDialog();
             this.Show();
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+        private void btnXoa_Click_1(object sender, EventArgs e)
         {
             DAOHoaDon.Instance.DeleteBillByID(fDatHang.mBillID);
             this.Close(); //

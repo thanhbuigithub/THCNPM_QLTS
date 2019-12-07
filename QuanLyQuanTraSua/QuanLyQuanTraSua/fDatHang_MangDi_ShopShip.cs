@@ -17,28 +17,10 @@ namespace QuanLyQuanTraSua
             InitializeComponent();
         }
 
-        private void btnTiep_Click(object sender, EventArgs e)
+        private void fDatHang_MangDi_ShopShip_Activated(object sender, EventArgs e)
         {
-            fDatHang fDatHang = new fDatHang();
-            this.Hide();
-            fDatHang.ShowDialog();
-            this.Show();
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnThanhToan_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            fTrangChu.Finish = true; 
-            this.Close(); //
+            if (fTrangChu.Finish)
+                this.Close();
         }
 
         private void fDatHang_MangDi_ShopShip_Load(object sender, EventArgs e)
@@ -46,10 +28,28 @@ namespace QuanLyQuanTraSua
             btnMangDi.Enabled = false;
         }
 
-        private void fDatHang_MangDi_ShopShip_Activated(object sender, EventArgs e)
+        private void btnNext_Click(object sender, EventArgs e)
         {
-            if (fTrangChu.Finish)
-                this.Close();
+            fDatHang fDatHang = new fDatHang();
+            this.Hide();
+            fDatHang.ShowDialog();
+            fTrangChu.Finish = true;
+            this.Close();
         }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnXoa_Click_1(object sender, EventArgs e)
+        {
+            fTrangChu.Finish = true;
+            this.Close(); //
+        }
+
+
+
+
     }
 }

@@ -3,7 +3,6 @@ E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQua
 D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
 D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe
 D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.pdb
-D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csprojResolveAssemblyReference.cache
 D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang.resources
 D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_ChinhSua.resources
 D:\android\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_MangDi.resources
@@ -44,7 +43,6 @@ E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQua
 C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
 C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.exe
 C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.pdb
-C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csprojResolveAssemblyReference.cache
 C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fBaocao.resources
 C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang.resources
 C:\Users\cn822\OneDrive\Documents\GitHub\THCNPM_QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fDatHang_ChinhSua.resources

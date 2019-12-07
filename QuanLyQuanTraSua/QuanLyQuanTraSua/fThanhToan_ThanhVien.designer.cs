@@ -30,9 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.btnTiep = new ePOSOne.btnProduct.ButtonModified();
             this.panel4 = new System.Windows.Forms.Panel();
             this.rbtnNo = new System.Windows.Forms.RadioButton();
             this.rbtnYes = new System.Windows.Forms.RadioButton();
@@ -45,17 +43,19 @@
             this.lbPhone = new System.Windows.Forms.Label();
             this.txtbName = new System.Windows.Forms.TextBox();
             this.lbName = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnBack = new ePOSOne.btnProduct.ButtonModified();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -64,42 +64,26 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnNext);
-            this.panel2.Location = new System.Drawing.Point(533, 587);
+            this.panel2.Controls.Add(this.btnTiep);
+            this.panel2.Location = new System.Drawing.Point(551, 600);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(193, 75);
-            this.panel2.TabIndex = 36;
+            this.panel2.Size = new System.Drawing.Size(185, 61);
+            this.panel2.TabIndex = 39;
             // 
-            // btnNext
+            // btnTiep
             // 
-            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(67, 22);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(2);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(124, 40);
-            this.btnNext.TabIndex = 16;
-            this.btnNext.Text = "Tiếp";
-            this.btnNext.UseVisualStyleBackColor = true;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnBack);
-            this.panel3.Location = new System.Drawing.Point(27, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(185, 61);
-            this.panel3.TabIndex = 35;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(7, 9);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(124, 40);
-            this.btnBack.TabIndex = 17;
-            this.btnBack.Text = "Quay lại";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnTiep.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnTiep.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnTiep.FlatAppearance.BorderSize = 3;
+            this.btnTiep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTiep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTiep.Location = new System.Drawing.Point(18, 5);
+            this.btnTiep.Name = "btnTiep";
+            this.btnTiep.Size = new System.Drawing.Size(164, 43);
+            this.btnTiep.TabIndex = 19;
+            this.btnTiep.Text = "Thanh Toán";
+            this.btnTiep.UseVisualStyleBackColor = false;
+            this.btnTiep.Click += new System.EventHandler(this.btnTiep_Click);
             // 
             // panel4
             // 
@@ -243,6 +227,29 @@
             this.lbName.TabIndex = 15;
             this.lbName.Text = "Tên:";
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnBack);
+            this.panel3.Location = new System.Drawing.Point(13, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(185, 61);
+            this.panel3.TabIndex = 38;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBack.FlatAppearance.BorderSize = 3;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(3, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(164, 43);
+            this.btnBack.TabIndex = 19;
+            this.btnBack.Text = "Quay lại";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // fThanhToan_ThanhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,9 +262,9 @@
             this.Load += new System.EventHandler(this.fThanhToan_ThanhVien_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -265,10 +272,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.RadioButton rbtnNo;
         private System.Windows.Forms.RadioButton rbtnYes;
@@ -281,6 +284,10 @@
         private System.Windows.Forms.Label lbPhone;
         private System.Windows.Forms.TextBox txtbName;
         private System.Windows.Forms.Label lbName;
+        private System.Windows.Forms.Panel panel2;
+        private ePOSOne.btnProduct.ButtonModified btnTiep;
+        private System.Windows.Forms.Panel panel3;
+        private ePOSOne.btnProduct.ButtonModified btnBack;
 
     }
 }

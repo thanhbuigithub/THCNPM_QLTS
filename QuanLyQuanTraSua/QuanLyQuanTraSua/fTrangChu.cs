@@ -115,8 +115,8 @@ namespace QuanLyQuanTraSua
         {
             InitializeComponent();
 
-            //LoadListDrink(); // test danh sach mon bang console.writeline
-           ShowDetail(2); //test id mon  bang console.writeline
+            LoadListDrink(); // test danh sach mon bang console.writeline
+          // ShowDetail(2); //test id mon  bang console.writeline
         }
 
         private void populate()
@@ -139,28 +139,27 @@ namespace QuanLyQuanTraSua
 
         #region event
 
-        private void btnOrder_Click(object sender, EventArgs e)
+        private void fTrangChu_Activated(object sender, EventArgs e)
         {
-            fDatHang fDatHang = new fDatHang();
-            this.Hide();
-            fDatHang.ShowDialog();
-            this.Show();
+            Finish = false;
         }
 
-        private void btnCustomer_Click(object sender, EventArgs e)
+        private void populateItem()
         {
-            fKhachHang fKhachHang = new fKhachHang();
-            this.Hide();
-            fKhachHang.ShowDialog();
-            this.Show();
+            Product[] product = new Product[20];
+            for (int i = 0; i < product.Length; i++)
+            {
+                product[i] = new Product();
+                product[i].ProductName = "SP " + i.ToString();
+                product[i].Image = Image.FromFile(@"E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\img\" + "pic.png");
+                fLPSpecial.Controls.Add(product[i]);
+            }
         }
 
-        private void btnProduct_Click(object sender, EventArgs e)
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
-            fSanPham fSanPham = new fSanPham();
-            this.Hide();
-            fSanPham.ShowDialog();
-            this.Show();
+
         }
 
         private void btnReport_Click(object sender, EventArgs e)
@@ -173,20 +172,16 @@ namespace QuanLyQuanTraSua
 
         private void fTrangChu_Activated(object sender, EventArgs e)
         {
-            Finish = false;
+
         }
 
-        private void btnSpecNext_Click(object sender, EventArgs e)
+        private void fLPSpecial_Paint(object sender, PaintEventArgs e)
         {
-            int change = fLPSpecial.HorizontalScroll.Value + fLPSpecial.HorizontalScroll.SmallChange * 20;
-            fLPSpecial.AutoScrollPosition = new Point(change, 0);
+
         }
 
         private void btnSpecPrevious_Click(object sender, EventArgs e)
         {
-            int change = fLPSpecial.HorizontalScroll.Value - fLPSpecial.HorizontalScroll.SmallChange * 20;
-            fLPSpecial.AutoScrollPosition = new Point(change, 0);
-
         }
 
         private void btnBSNext_Click(object sender, EventArgs e)

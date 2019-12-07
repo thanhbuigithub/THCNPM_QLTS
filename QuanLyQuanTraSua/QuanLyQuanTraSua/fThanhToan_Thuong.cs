@@ -18,17 +18,28 @@ namespace QuanLyQuanTraSua
             InitializeComponent();
         }
 
-        private void btnNext_Click(object sender, EventArgs e)
-        {
-
-            fTrangChu.Finish = true;
-            this.Close();
-        }
-
         private void rbtnCast_CheckedChanged(object sender, EventArgs e)
         {
             thanhtoanThe = false;
         }
 
+        private void btnTiep_Click(object sender, EventArgs e)
+        {
+            fDatHang fDatHang = new fDatHang();
+            this.Hide();
+            fDatHang.ShowDialog();
+            fTrangChu.Finish = true;
+            this.Close();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+        private void buttonModified1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            fTrangChu.Finish = true;
+        }
     }
 }
