@@ -105,7 +105,6 @@
             this.panel2.Controls.Add(this.btnReport);
             this.panel2.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel2.Controls.Add(this.btnProduct);
-            this.panel2.Controls.Add(this.btnReport);
             this.panel2.Controls.Add(this.btnCustomer);
             this.panel2.Controls.Add(this.btnOrder);
             this.panel2.Controls.Add(this.pictureBoxLogo);
@@ -124,64 +123,15 @@
             this.pictureBoxLogo.Size = new System.Drawing.Size(235, 165);
             this.pictureBoxLogo.TabIndex = 1;
             this.pictureBoxLogo.TabStop = false;
-            this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBoxLogo_Click);
-            //
-            // btnReport
-            //
-            this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReport.Location = new System.Drawing.Point(0, 526);
-            this.btnReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(319, 81);
-            this.btnReport.TabIndex = 0;
-            this.btnReport.Text = "Báo Cáo";
-            this.btnReport.UseVisualStyleBackColor = true;
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
-            //
-            // btnProduct
-            //
-            this.btnProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProduct.Location = new System.Drawing.Point(0, 418);
-            this.btnProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Size = new System.Drawing.Size(319, 81);
-            this.btnProduct.TabIndex = 0;
-            this.btnProduct.Text = "Sản phẩm";
-            this.btnProduct.UseVisualStyleBackColor = true;
-            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
-            //
-            // btnCustomer
-            //
-            this.btnCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomer.Location = new System.Drawing.Point(0, 314);
-            this.btnCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCustomer.Name = "btnCustomer";
-            this.btnCustomer.Size = new System.Drawing.Size(319, 81);
-            this.btnCustomer.TabIndex = 0;
-            this.btnCustomer.Text = "Khách hàng";
-            this.btnCustomer.UseVisualStyleBackColor = true;
-            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
-            //
-            // btnOrder
-            //
-            this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrder.Location = new System.Drawing.Point(0, 212);
-            this.btnOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(319, 81);
-            this.btnOrder.TabIndex = 0;
-            this.btnOrder.Text = "Đặt hàng";
-            this.btnOrder.UseVisualStyleBackColor = true;
-            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             //
             // panel3
             //
             this.panel3.Controls.Add(this.panelOrther);
             this.panel3.Controls.Add(this.panelBestSeller);
             this.panel3.Controls.Add(this.panelSpecList);
-this.panel3.Controls.Add(this.lbOtherMenu);
-this.panel3.Controls.Add(this.lbBestSeller);
-this.panel3.Controls.Add(this.lbSpecial);
+            this.panel3.Controls.Add(this.lbOtherMenu);
+            this.panel3.Controls.Add(this.lbBestSeller);
+            this.panel3.Controls.Add(this.lbSpecial);
             this.panel3.Controls.Add(this.btnOtherPrevious);
             this.panel3.Controls.Add(this.btnBSPrevious);
             this.panel3.Controls.Add(this.btnOtherNext);
@@ -242,16 +192,6 @@ this.panel3.Controls.Add(this.lbSpecial);
             this.panelSpecList.Name = "panelSpecList";
             this.panelSpecList.Size = new System.Drawing.Size(830, 188);
             this.panelSpecList.TabIndex = 5;
-//
-// panel4
-//
-this.panel4.Controls.Add(this.fLPSpecial);
-this.panel4.Location = new System.Drawing.Point(55, 50);
-this.panel4.Margin = new System.Windows.Forms.Padding(2);
-this.panel4.Name = "panel4";
-this.panel4.Size = new System.Drawing.Size(622, 153);
-this.panel4.TabIndex = 5;
-this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             //
             // fLPSpecial
             //
@@ -378,13 +318,6 @@ this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Pain
             this.imageList1.Images.SetKeyName(7, "Platinum_Emblem.png");
             this.imageList1.Images.SetKeyName(8, "Silver_Emblem.png");
             //
-            // flowLayoutPanel1
-            //
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.flowLayoutPanel1.TabIndex = 0;
-            //
             // lbOtherMenu
             //
             this.lbOtherMenu.AutoSize = true;
@@ -492,7 +425,7 @@ this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Pain
             this.btnSpecPrevious.TabIndex = 7;
             this.btnSpecPrevious.Text = "<";
             this.btnSpecPrevious.UseVisualStyleBackColor = false;
-            this.btnSpecPrevious.Click += new System.EventHandler(this.btnSpecPrevious_Click_1);
+            this.btnSpecPrevious.Click += new System.EventHandler(this.btnSpecPrevious_Click);
             //
             // btnSpecNext
             //
@@ -508,7 +441,6 @@ this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Pain
             this.btnSpecNext.TabIndex = 6;
             this.btnSpecNext.Text = ">";
             this.btnSpecNext.UseVisualStyleBackColor = false;
-            this.btnSpecNext.Click += new System.EventHandler(this.btnSpecNext_Click_1);
             //
             // btnProduct
             //
@@ -523,7 +455,6 @@ this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Pain
             this.btnProduct.TabIndex = 5;
             this.btnProduct.Text = "Sản phẩm";
             this.btnProduct.UseVisualStyleBackColor = false;
-            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click_1);
             //
             // btnReport
             //
@@ -538,7 +469,7 @@ this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Pain
             this.btnReport.TabIndex = 4;
             this.btnReport.Text = "Báo cáo";
             this.btnReport.UseVisualStyleBackColor = false;
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click_1);
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             //
             // btnCustomer
             //
@@ -553,7 +484,6 @@ this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Pain
             this.btnCustomer.TabIndex = 3;
             this.btnCustomer.Text = "Khách hàng";
             this.btnCustomer.UseVisualStyleBackColor = false;
-            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click_1);
             //
             // btnOrder
             //
@@ -568,15 +498,11 @@ this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Pain
             this.btnOrder.TabIndex = 2;
             this.btnOrder.Text = "Đặt hàng";
             this.btnOrder.UseVisualStyleBackColor = false;
-            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click_1);
+
             //
             // fTrangChu
             //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-//
-// fTrangChu
-//
-this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 717);
             this.Controls.Add(this.panel3);

@@ -21,10 +21,6 @@ namespace QuanLyQuanTraSua
         {
             InitializeComponent();
         }
-        private void fDatHang_ChinhSua_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void fDatHang_ChinhSua_Activated(object sender, EventArgs e)
         {

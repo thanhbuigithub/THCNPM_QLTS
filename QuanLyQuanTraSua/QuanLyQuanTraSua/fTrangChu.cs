@@ -52,6 +52,14 @@ namespace QuanLyQuanTraSua
             btnOrder_Click(sender, e);
         }
 
+        private void btnOrder_Click(object sender, EventArgs eventArgs)
+        {
+            fDatHang f = new fDatHang();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
         void populateBSList()     // Tra ve list mon
         {
             clearFLP(fLPBestSeller);
@@ -115,7 +123,7 @@ namespace QuanLyQuanTraSua
         {
             InitializeComponent();
 
-            LoadListDrink(); // test danh sach mon bang console.writeline
+            //LoadListDrink(); // test danh sach mon bang console.writeline
           // ShowDetail(2); //test id mon  bang console.writeline
         }
 
@@ -168,11 +176,6 @@ namespace QuanLyQuanTraSua
             this.Hide();
             fBaocao.ShowDialog();
             this.Show();
-        }
-
-        private void fTrangChu_Activated(object sender, EventArgs e)
-        {
-
         }
 
         private void fLPSpecial_Paint(object sender, PaintEventArgs e)

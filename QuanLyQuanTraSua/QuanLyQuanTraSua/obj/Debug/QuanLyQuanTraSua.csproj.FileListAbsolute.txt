@@ -73,4 +73,3 @@ E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQua
 E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.fThemNguyenLieu.resources
 E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csproj.CoreCompileInputs.cache
 E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.DetailBill.resources
-E:\Hoc_Tap\Nam_3\CNPM\QLTS\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.csprojAssemblyReference.cache

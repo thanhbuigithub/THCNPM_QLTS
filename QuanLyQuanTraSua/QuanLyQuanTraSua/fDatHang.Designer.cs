@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -51,20 +52,20 @@
             this.lbBestSeller = new System.Windows.Forms.Label();
             this.lbSpecial = new System.Windows.Forms.Label();
             this.fLPHoaDon = new System.Windows.Forms.FlowLayoutPanel();
-this.lbTimkiem = new System.Windows.Forms.Label();
-this.txtbSearch = new System.Windows.Forms.TextBox();
-this.lbOtherMenu = new ePOSOne.btnProduct.RoundLabel();
-this.lbBestSeller = new ePOSOne.btnProduct.RoundLabel();
-this.lbSpecial = new ePOSOne.btnProduct.RoundLabel();
-this.btnOtherPrevious = new ePOSOne.btnProduct.ButtonModified();
-this.btnBSPrevious = new ePOSOne.btnProduct.ButtonModified();
-this.btnOtherNext = new ePOSOne.btnProduct.ButtonModified();
-this.btnBSNext = new ePOSOne.btnProduct.ButtonModified();
-this.btnSpecPrevious = new ePOSOne.btnProduct.ButtonModified();
-this.btnSpecNext = new ePOSOne.btnProduct.ButtonModified();
-this.btnMangDi = new ePOSOne.btnProduct.ButtonModified();
-this.btnThanhToan = new ePOSOne.btnProduct.ButtonModified();
-this.btnXoa = new ePOSOne.btnProduct.ButtonModified();
+            this.lbTimkiem = new System.Windows.Forms.Label();
+            this.txtbSearch = new System.Windows.Forms.TextBox();
+            this.lbOtherMenu = new ePOSOne.btnProduct.RoundLabel();
+            this.lbBestSeller = new ePOSOne.btnProduct.RoundLabel();
+            this.lbSpecial = new ePOSOne.btnProduct.RoundLabel();
+            this.btnOtherPrevious = new ePOSOne.btnProduct.ButtonModified();
+            this.btnBSPrevious = new ePOSOne.btnProduct.ButtonModified();
+            this.btnOtherNext = new ePOSOne.btnProduct.ButtonModified();
+            this.btnBSNext = new ePOSOne.btnProduct.ButtonModified();
+            this.btnSpecPrevious = new ePOSOne.btnProduct.ButtonModified();
+            this.btnSpecNext = new ePOSOne.btnProduct.ButtonModified();
+            this.btnMangDi = new ePOSOne.btnProduct.ButtonModified();
+            this.btnThanhToan = new ePOSOne.btnProduct.ButtonModified();
+            this.btnXoa = new ePOSOne.btnProduct.ButtonModified();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -490,7 +491,7 @@ this.btnXoa = new ePOSOne.btnProduct.ButtonModified();
             this.btnMangDi.TabIndex = 1;
             this.btnMangDi.Text = "Mang đi";
             this.btnMangDi.UseVisualStyleBackColor = false;
-            this.btnMangDi.Click += new System.EventHandler(this.btnMangDi_Click_1);
+            this.btnMangDi.Click += new System.EventHandler(this.btnMangDi_Click);
             //
             // btnThanhToan
             //
@@ -524,13 +525,13 @@ this.btnXoa = new ePOSOne.btnProduct.ButtonModified();
             this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click_1);
 
-//
-// fLPHoaDon
-//
-this.fLPHoaDon.Location = new System.Drawing.Point(0, 56);
-this.fLPHoaDon.Name = "fLPHoaDon";
-this.fLPHoaDon.Size = new System.Drawing.Size(312, 512);
-this.fLPHoaDon.TabIndex = 1;
+            //
+            // fLPHoaDon
+            //
+            this.fLPHoaDon.Location = new System.Drawing.Point(0, 56);
+            this.fLPHoaDon.Name = "fLPHoaDon";
+            this.fLPHoaDon.Size = new System.Drawing.Size(312, 512);
+            this.fLPHoaDon.TabIndex = 1;
             //
             // fDatHang
             //
@@ -556,8 +557,8 @@ this.fLPHoaDon.TabIndex = 1;
             this.panelOrther.ResumeLayout(false);
             this.panelBestSeller.ResumeLayout(false);
             this.panelSpecList.ResumeLayout(false);
-this.panel1.ResumeLayout(false);
-this.panel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -590,24 +591,17 @@ this.panel1.PerformLayout();
         private System.Windows.Forms.Label lbBestSeller;
         private System.Windows.Forms.Label lbSpecial;
         private System.Windows.Forms.FlowLayoutPanel fLPHoaDon;
-private System.Windows.Forms.ListView lvDonHang;
-private System.Windows.Forms.Label lbTongTien;
-private System.Windows.Forms.Label lbIDDonHang;
-private System.Windows.Forms.Panel panel3;
-private System.Windows.Forms.Panel panel1;
-private System.Windows.Forms.Label lbTimkiem;
-private System.Windows.Forms.TextBox txtbSearch;
-private ePOSOne.btnProduct.ButtonModified btnXoa;
-private ePOSOne.btnProduct.ButtonModified btnThanhToan;
-private ePOSOne.btnProduct.ButtonModified btnMangDi;
-private ePOSOne.btnProduct.RoundLabel lbOtherMenu;
-private ePOSOne.btnProduct.RoundLabel lbBestSeller;
-private ePOSOne.btnProduct.RoundLabel lbSpecial;
-private ePOSOne.btnProduct.ButtonModified btnOtherPrevious;
-private ePOSOne.btnProduct.ButtonModified btnBSPrevious;
-private ePOSOne.btnProduct.ButtonModified btnOtherNext;
-private ePOSOne.btnProduct.ButtonModified btnBSNext;
-private ePOSOne.btnProduct.ButtonModified btnSpecPrevious;
-private ePOSOne.btnProduct.ButtonModified btnSpecNext;
+        private System.Windows.Forms.ListView lvDonHang;
+
+
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbTimkiem;
+        private System.Windows.Forms.TextBox txtbSearch;
+
+
+
+
+
     }
 }

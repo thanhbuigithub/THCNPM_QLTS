@@ -88,13 +88,13 @@
             //
             // panel4
             //
-            this.panel4.Controls.Add(this.btnAdd);
-            this.panel4.Controls.Add(this.btnBack);
-            this.panel4.Location = new System.Drawing.Point(24, 640);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(960, 55);
-            this.panel4.TabIndex = 7;
+            //this.panel4.Controls.Add(this.btnAdd);
+            //this.panel4.Controls.Add(this.btnBack);
+            //this.panel4.Location = new System.Drawing.Point(24, 640);
+            //this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            //this.panel4.Name = "panel4";
+            //this.panel4.Size = new System.Drawing.Size(960, 55);
+            //this.panel4.TabIndex = 7;
             //
             // btnAdd
             //
@@ -118,7 +118,6 @@
             this.btnBack.TabIndex = 0;
             this.btnBack.Text = "Quay lại";
             this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             //
             // panel3
             //
@@ -511,7 +510,6 @@
             this.btnBack.TabIndex = 2;
             this.btnBack.Text = "Quay lại";
             this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             //
             // fDatHang_ChinhSua
             //
