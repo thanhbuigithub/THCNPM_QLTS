@@ -18,46 +18,17 @@ namespace QuanLyQuanTraSua
             InitializeComponent();
         }
 
-        private void btnHuy_Click(object sender, EventArgs e)
+        private void fDatHang_MangDi_BenThu3_Load(object sender, EventArgs e)
         {
-            this.Close();
+            btnMangDi.Enabled = false;
         }
 
-        private void btnTiep_Click(object sender, EventArgs e)
+        private void fDatHang_MangDi_BenThu3_Activated(object sender, EventArgs e)
         {
-            
-            this.Close();
+            if (fTrangChu.Finish)
+                this.Close();
         }
 
-        private void btnVato_Click(object sender, EventArgs e)
-        {
-            doiTac = "Vato";
-        }
-
-        private void btnGrab_Click(object sender, EventArgs e)
-        {
-            doiTac = "Grab";
-        }
-
-        private void btnGoViet_Click(object sender, EventArgs e)
-        {
-            doiTac = "GoViet";
-        }
-
-        private void btnBeamin_Click(object sender, EventArgs e)
-        {
-            doiTac = "Baemin";
-            fDatHang fDatHang = new fDatHang();
-            this.Hide();
-            fDatHang.ShowDialog();
-            this.Show();
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            fTrangChu.Finish = true; //
-            this.Close(); //
-        }
 
         private void btnMangDi_Click(object sender, EventArgs e)
         {
@@ -69,20 +40,46 @@ namespace QuanLyQuanTraSua
 
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void btnXoa_Click_1(object sender, EventArgs e)
+        {
+            fTrangChu.Finish = true; //
+            this.Close(); //
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            fDatHang fDatHang = new fDatHang();
+            this.Hide();
+            fDatHang.ShowDialog();
+            fTrangChu.Finish = true;
+            this.Close();
+        }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void fDatHang_MangDi_BenThu3_Load(object sender, EventArgs e)
+        private void btnGrab_Click_1(object sender, EventArgs e)
         {
-            btnMangDi.Enabled = false;
+            doiTac = "Grab";
         }
 
-        private void fDatHang_MangDi_BenThu3_Activated(object sender, EventArgs e)
+        private void btnGoViet_Click_1(object sender, EventArgs e)
         {
-            if (fTrangChu.Finish)
-                this.Close();
+            doiTac = "GoViet";
         }
+
+        private void btnBeamin_Click_1(object sender, EventArgs e)
+        {
+            doiTac = "Baemin";
+        }
+
+        private void btnVato_Click_1(object sender, EventArgs e)
+        {
+            doiTac = "Vato";
+        }
+
+
     }
 }

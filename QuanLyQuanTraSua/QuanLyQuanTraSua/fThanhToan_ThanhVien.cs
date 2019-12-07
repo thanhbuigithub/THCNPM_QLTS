@@ -38,12 +38,6 @@ namespace QuanLyQuanTraSua
 
         }
 
-        private void btnNext_Click(object sender, EventArgs e)
-        {
-            fTrangChu.Finish = true;
-            this.Close();
-        }
-
         private void rbtnYes_CheckedChanged_1(object sender, EventArgs e)
         {
             Point = true;
@@ -57,6 +51,24 @@ namespace QuanLyQuanTraSua
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnTiep_Click(object sender, EventArgs e)
+        {
+            fThanhToan_Thuong fThanhToan_Thuong = new fThanhToan_Thuong();
+            this.Hide();
+            fThanhToan_Thuong.ShowDialog();
+            this.Show();
         }
     }
 }

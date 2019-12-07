@@ -18,67 +18,6 @@ namespace QuanLyQuanTraSua
             InitializeComponent();
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void rbtnNormalCustomer_CheckedChanged(object sender, EventArgs e)
-        {
-            normalCustomer = true;
-        }
-
-        private void btnCloseCuctomer_Click(object sender, EventArgs e)
-        {
-            fThanhToan_ThanhVien fThanhToan_ThanhVien = new fThanhToan_ThanhVien();
-            this.Hide();
-            fThanhToan_ThanhVien.ShowDialog();
-            this.Show();
-        }
-
-        private void btnMangDi_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnThanhToan_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void rbtnNormalCustomer_CheckedChanged_1(object sender, EventArgs e)
-        {
-            normalCustomer = false;
-        }
-
-        private void btnTiep_Click(object sender, EventArgs e)
-        {
-            if (normalCustomer)
-            {
-                fThanhToan_Thuong fThanhToan_thuong = new fThanhToan_Thuong();
-                this.Close();
-                fThanhToan_thuong.ShowDialog();
-                this.Show();
-            }
-            else
-            {
-                fThanhToan_ThanhVien fThanhToan_thanhvien = new fThanhToan_ThanhVien();
-                this.Close();
-                fThanhToan_thanhvien.ShowDialog();
-                this.Show();
-            }
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            fTrangChu.Finish = true; 
-            this.Close(); //
-        }
-
         private void fThanhToan_Load(object sender, EventArgs e)
         {
             btnThanhToan.Enabled = false;
@@ -90,9 +29,54 @@ namespace QuanLyQuanTraSua
                 this.Close();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void btnCloseCuctomer_Click(object sender, EventArgs e)
+        {
+            fThanhToan_ThanhVien fThanhToan_ThanhVien = new fThanhToan_ThanhVien();
+            this.Hide();
+            fThanhToan_ThanhVien.ShowDialog();
+            this.Show();
+        }
+
+
+        private void btnBack_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnCloseCuctomer_Click_1(object sender, EventArgs e)
+        {
+            normalCustomer = false;
+        }
+
+        private void buttonModified1_Click(object sender, EventArgs e)
+        {
+            normalCustomer = true;
+        }
+
+        private void btnTiep_Click(object sender, EventArgs e)
+        {
+            if (normalCustomer)
+            {
+                fThanhToan_Thuong fThanhToan_thuong = new fThanhToan_Thuong();
+                this.Close();
+                fThanhToan_thuong.ShowDialog();
+                fTrangChu.Finish = true;
+                this.Close();
+            }
+            else
+            {
+                fThanhToan_ThanhVien fThanhToan_thanhvien = new fThanhToan_ThanhVien();
+                this.Close();
+                fThanhToan_thanhvien.ShowDialog();
+                fTrangChu.Finish = true;
+                this.Close();
+            }
+        }
+
+        private void btnXoa_Click_1(object sender, EventArgs e)
+        {
+            fTrangChu.Finish = true;
+            this.Close(); //
         }
 
 

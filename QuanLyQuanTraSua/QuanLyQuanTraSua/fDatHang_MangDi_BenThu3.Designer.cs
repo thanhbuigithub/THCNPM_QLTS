@@ -29,37 +29,37 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnThanhToan = new System.Windows.Forms.Button();
-            this.btnMangDi = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnBack = new ePOSOne.btnProduct.ButtonModified();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnXoa = new ePOSOne.btnProduct.ButtonModified();
+            this.btnThanhToan = new ePOSOne.btnProduct.ButtonModified();
+            this.btnMangDi = new ePOSOne.btnProduct.ButtonModified();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.lvDonHang = new System.Windows.Forms.ListView();
             this.lbTongTien = new System.Windows.Forms.Label();
             this.lbIDDonHang = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.btnVato = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnTiep = new System.Windows.Forms.Button();
-            this.btnBeamin = new System.Windows.Forms.Button();
-            this.btnGoViet = new System.Windows.Forms.Button();
-            this.btnGrab = new System.Windows.Forms.Button();
+            this.btnNext = new ePOSOne.btnProduct.ButtonModified();
+            this.btnVato = new ePOSOne.btnProduct.ButtonModified();
+            this.btnBeamin = new ePOSOne.btnProduct.ButtonModified();
+            this.btnGoViet = new ePOSOne.btnProduct.ButtonModified();
+            this.btnGrab = new ePOSOne.btnProduct.ButtonModified();
             this.lbSpecial = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -67,71 +67,126 @@
             this.panel1.Size = new System.Drawing.Size(1008, 730);
             this.panel1.TabIndex = 0;
             // 
-            // panel4
+            // panel3
             // 
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.pictureBoxLogo);
-            this.panel4.Location = new System.Drawing.Point(750, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(247, 724);
-            this.panel4.TabIndex = 10;
+            this.panel3.Controls.Add(this.btnVato);
+            this.panel3.Controls.Add(this.btnBeamin);
+            this.panel3.Controls.Add(this.btnGoViet);
+            this.panel3.Controls.Add(this.btnGrab);
+            this.panel3.Controls.Add(this.lbSpecial);
+            this.panel3.Controls.Add(this.btnBack);
+            this.panel3.Controls.Add(this.panel2);
+            this.panel3.Location = new System.Drawing.Point(11, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(735, 717);
+            this.panel3.TabIndex = 8;
             // 
-            // panel5
+            // panel2
             // 
-            this.panel5.Controls.Add(this.btnXoa);
-            this.panel5.Controls.Add(this.btnThanhToan);
-            this.panel5.Controls.Add(this.btnMangDi);
-            this.panel5.Location = new System.Drawing.Point(2, 574);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(235, 135);
-            this.panel5.TabIndex = 3;
+            this.panel2.Controls.Add(this.btnNext);
+            this.panel2.Location = new System.Drawing.Point(2, 655);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(731, 49);
+            this.panel2.TabIndex = 9;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBack.FlatAppearance.BorderSize = 3;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(3, 2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(171, 60);
+            this.btnBack.TabIndex = 10;
+            this.btnBack.Text = "Quay lại";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Controls.Add(this.panel8);
+            this.panel6.Controls.Add(this.pictureBoxLogo);
+            this.panel6.Location = new System.Drawing.Point(753, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(253, 737);
+            this.panel6.TabIndex = 14;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.btnXoa);
+            this.panel7.Controls.Add(this.btnThanhToan);
+            this.panel7.Controls.Add(this.btnMangDi);
+            this.panel7.Location = new System.Drawing.Point(2, 574);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(249, 161);
+            this.panel7.TabIndex = 3;
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(0, 105);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXoa.BackColor = System.Drawing.Color.Red;
+            this.btnXoa.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnXoa.FlatAppearance.BorderSize = 3;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Location = new System.Drawing.Point(136, 106);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(112, 28);
-            this.btnXoa.TabIndex = 0;
-            this.btnXoa.Text = "Xoá";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            this.btnXoa.Size = new System.Drawing.Size(108, 39);
+            this.btnXoa.TabIndex = 3;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click_1);
             // 
             // btnThanhToan
             // 
-            this.btnThanhToan.Location = new System.Drawing.Point(2, 48);
-            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThanhToan.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnThanhToan.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnThanhToan.FlatAppearance.BorderSize = 3;
+            this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThanhToan.Location = new System.Drawing.Point(3, 56);
+            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(166, 28);
-            this.btnThanhToan.TabIndex = 0;
+            this.btnThanhToan.Size = new System.Drawing.Size(161, 39);
+            this.btnThanhToan.TabIndex = 2;
             this.btnThanhToan.Text = "Thanh toán";
-            this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnThanhToan.UseVisualStyleBackColor = false;
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // btnMangDi
             // 
-            this.btnMangDi.Location = new System.Drawing.Point(2, 15);
-            this.btnMangDi.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMangDi.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnMangDi.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMangDi.FlatAppearance.BorderSize = 3;
+            this.btnMangDi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMangDi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMangDi.Location = new System.Drawing.Point(3, 7);
+            this.btnMangDi.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.btnMangDi.Name = "btnMangDi";
-            this.btnMangDi.Size = new System.Drawing.Size(166, 28);
-            this.btnMangDi.TabIndex = 0;
+            this.btnMangDi.Size = new System.Drawing.Size(161, 39);
+            this.btnMangDi.TabIndex = 1;
             this.btnMangDi.Text = "Mang đi";
-            this.btnMangDi.UseVisualStyleBackColor = true;
+            this.btnMangDi.UseVisualStyleBackColor = false;
             this.btnMangDi.Click += new System.EventHandler(this.btnMangDi_Click);
             // 
-            // panel6
+            // panel8
             // 
-            this.panel6.Controls.Add(this.lvDonHang);
-            this.panel6.Controls.Add(this.lbTongTien);
-            this.panel6.Controls.Add(this.lbIDDonHang);
-            this.panel6.Location = new System.Drawing.Point(2, 62);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(237, 508);
-            this.panel6.TabIndex = 2;
+            this.panel8.Controls.Add(this.lvDonHang);
+            this.panel8.Controls.Add(this.lbTongTien);
+            this.panel8.Controls.Add(this.lbIDDonHang);
+            this.panel8.Location = new System.Drawing.Point(2, 60);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(249, 510);
+            this.panel8.TabIndex = 2;
             // 
             // lvDonHang
             // 
@@ -139,7 +194,7 @@
             this.lvDonHang.Location = new System.Drawing.Point(0, 49);
             this.lvDonHang.Margin = new System.Windows.Forms.Padding(2);
             this.lvDonHang.Name = "lvDonHang";
-            this.lvDonHang.Size = new System.Drawing.Size(235, 412);
+            this.lvDonHang.Size = new System.Drawing.Size(247, 412);
             this.lvDonHang.TabIndex = 1;
             this.lvDonHang.UseCompatibleStateImageBehavior = false;
             // 
@@ -147,11 +202,11 @@
             // 
             this.lbTongTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbTongTien.AutoSize = true;
-            this.lbTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTongTien.Location = new System.Drawing.Point(68, 463);
+            this.lbTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTongTien.Location = new System.Drawing.Point(68, 464);
             this.lbTongTien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTongTien.Name = "lbTongTien";
-            this.lbTongTien.Size = new System.Drawing.Size(100, 37);
+            this.lbTongTien.Size = new System.Drawing.Size(106, 37);
             this.lbTongTien.TabIndex = 0;
             this.lbTongTien.Text = "label1";
             this.lbTongTien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -160,11 +215,11 @@
             // 
             this.lbIDDonHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbIDDonHang.AutoSize = true;
-            this.lbIDDonHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIDDonHang.Location = new System.Drawing.Point(68, 9);
+            this.lbIDDonHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIDDonHang.Location = new System.Drawing.Point(68, 10);
             this.lbIDDonHang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbIDDonHang.Name = "lbIDDonHang";
-            this.lbIDDonHang.Size = new System.Drawing.Size(100, 37);
+            this.lbIDDonHang.Size = new System.Drawing.Size(106, 37);
             this.lbIDDonHang.TabIndex = 0;
             this.lbIDDonHang.Text = "label1";
             this.lbIDDonHang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -178,112 +233,92 @@
             this.pictureBoxLogo.TabIndex = 1;
             this.pictureBoxLogo.TabStop = false;
             // 
-            // panel3
+            // btnNext
             // 
-            this.panel3.Controls.Add(this.btnBack);
-            this.panel3.Controls.Add(this.btnVato);
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Controls.Add(this.btnBeamin);
-            this.panel3.Controls.Add(this.btnGoViet);
-            this.panel3.Controls.Add(this.btnGrab);
-            this.panel3.Controls.Add(this.lbSpecial);
-            this.panel3.Location = new System.Drawing.Point(11, 2);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(735, 717);
-            this.panel3.TabIndex = 8;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(22, 9);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(106, 44);
-            this.btnBack.TabIndex = 10;
-            this.btnBack.Text = "Quay Lại";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.btnNext.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnNext.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnNext.FlatAppearance.BorderSize = 3;
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Location = new System.Drawing.Point(564, 3);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(164, 43);
+            this.btnNext.TabIndex = 17;
+            this.btnNext.Text = "Tiếp";
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnVato
             // 
-            this.btnVato.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVato.Location = new System.Drawing.Point(43, 497);
-            this.btnVato.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVato.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnVato.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnVato.FlatAppearance.BorderSize = 3;
+            this.btnVato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVato.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnVato.Location = new System.Drawing.Point(48, 447);
             this.btnVato.Name = "btnVato";
-            this.btnVato.Size = new System.Drawing.Size(652, 67);
-            this.btnVato.TabIndex = 5;
+            this.btnVato.Size = new System.Drawing.Size(640, 70);
+            this.btnVato.TabIndex = 19;
             this.btnVato.Text = "Vato";
-            this.btnVato.UseVisualStyleBackColor = true;
-            this.btnVato.Click += new System.EventHandler(this.btnVato_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnTiep);
-            this.panel2.Location = new System.Drawing.Point(2, 655);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(731, 49);
-            this.panel2.TabIndex = 9;
-            // 
-            // btnTiep
-            // 
-            this.btnTiep.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTiep.Location = new System.Drawing.Point(650, 3);
-            this.btnTiep.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTiep.Name = "btnTiep";
-            this.btnTiep.Size = new System.Drawing.Size(69, 44);
-            this.btnTiep.TabIndex = 0;
-            this.btnTiep.Text = "Tiếp";
-            this.btnTiep.UseVisualStyleBackColor = true;
-            this.btnTiep.Click += new System.EventHandler(this.btnTiep_Click);
+            this.btnVato.UseVisualStyleBackColor = false;
+            this.btnVato.Click += new System.EventHandler(this.btnVato_Click_1);
             // 
             // btnBeamin
             // 
-            this.btnBeamin.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBeamin.Location = new System.Drawing.Point(43, 384);
-            this.btnBeamin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBeamin.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnBeamin.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBeamin.FlatAppearance.BorderSize = 3;
+            this.btnBeamin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBeamin.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnBeamin.Location = new System.Drawing.Point(48, 355);
             this.btnBeamin.Name = "btnBeamin";
-            this.btnBeamin.Size = new System.Drawing.Size(652, 67);
-            this.btnBeamin.TabIndex = 5;
+            this.btnBeamin.Size = new System.Drawing.Size(640, 70);
+            this.btnBeamin.TabIndex = 18;
             this.btnBeamin.Text = "Beamin";
-            this.btnBeamin.UseVisualStyleBackColor = true;
-            this.btnBeamin.Click += new System.EventHandler(this.btnBeamin_Click);
+            this.btnBeamin.UseVisualStyleBackColor = false;
+            this.btnBeamin.Click += new System.EventHandler(this.btnBeamin_Click_1);
             // 
             // btnGoViet
             // 
-            this.btnGoViet.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGoViet.Location = new System.Drawing.Point(43, 275);
-            this.btnGoViet.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGoViet.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnGoViet.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnGoViet.FlatAppearance.BorderSize = 3;
+            this.btnGoViet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGoViet.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnGoViet.Location = new System.Drawing.Point(48, 252);
             this.btnGoViet.Name = "btnGoViet";
-            this.btnGoViet.Size = new System.Drawing.Size(652, 67);
-            this.btnGoViet.TabIndex = 5;
-            this.btnGoViet.Text = "GoViet";
-            this.btnGoViet.UseVisualStyleBackColor = true;
-            this.btnGoViet.Click += new System.EventHandler(this.btnGoViet_Click);
+            this.btnGoViet.Size = new System.Drawing.Size(640, 70);
+            this.btnGoViet.TabIndex = 17;
+            this.btnGoViet.Text = "Go viet";
+            this.btnGoViet.UseVisualStyleBackColor = false;
+            this.btnGoViet.Click += new System.EventHandler(this.btnGoViet_Click_1);
             // 
             // btnGrab
             // 
-            this.btnGrab.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrab.Location = new System.Drawing.Point(43, 163);
-            this.btnGrab.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGrab.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnGrab.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnGrab.FlatAppearance.BorderSize = 3;
+            this.btnGrab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGrab.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnGrab.Location = new System.Drawing.Point(48, 154);
             this.btnGrab.Name = "btnGrab";
-            this.btnGrab.Size = new System.Drawing.Size(652, 67);
-            this.btnGrab.TabIndex = 5;
+            this.btnGrab.Size = new System.Drawing.Size(640, 70);
+            this.btnGrab.TabIndex = 16;
             this.btnGrab.Text = "Grab";
-            this.btnGrab.UseVisualStyleBackColor = true;
-            this.btnGrab.Click += new System.EventHandler(this.btnGrab_Click);
+            this.btnGrab.UseVisualStyleBackColor = false;
+            this.btnGrab.Click += new System.EventHandler(this.btnGrab_Click_1);
             // 
             // lbSpecial
             // 
             this.lbSpecial.AutoSize = true;
             this.lbSpecial.BackColor = System.Drawing.SystemColors.Control;
             this.lbSpecial.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSpecial.Location = new System.Drawing.Point(14, 91);
+            this.lbSpecial.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lbSpecial.Location = new System.Drawing.Point(7, 106);
             this.lbSpecial.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbSpecial.Name = "lbSpecial";
             this.lbSpecial.Size = new System.Drawing.Size(277, 44);
-            this.lbSpecial.TabIndex = 4;
+            this.lbSpecial.TabIndex = 15;
             this.lbSpecial.Text = "Bên giao thứ 3";
             // 
             // fDatHang_MangDi_BenThu3
@@ -299,14 +334,14 @@
             this.Activated += new System.EventHandler(this.fDatHang_MangDi_BenThu3_Activated);
             this.Load += new System.EventHandler(this.fDatHang_MangDi_BenThu3_Load);
             this.panel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -315,24 +350,24 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnTiep;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnVato;
-        private System.Windows.Forms.Button btnBeamin;
-        private System.Windows.Forms.Button btnGoViet;
-        private System.Windows.Forms.Button btnGrab;
-        private System.Windows.Forms.Label lbSpecial;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnThanhToan;
-        private System.Windows.Forms.Button btnMangDi;
+        private ePOSOne.btnProduct.ButtonModified btnBack;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private ePOSOne.btnProduct.ButtonModified btnXoa;
+        private ePOSOne.btnProduct.ButtonModified btnThanhToan;
+        private ePOSOne.btnProduct.ButtonModified btnMangDi;
+        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.ListView lvDonHang;
         private System.Windows.Forms.Label lbTongTien;
         private System.Windows.Forms.Label lbIDDonHang;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
-        private System.Windows.Forms.Button btnBack;
+        private ePOSOne.btnProduct.ButtonModified btnVato;
+        private ePOSOne.btnProduct.ButtonModified btnBeamin;
+        private ePOSOne.btnProduct.ButtonModified btnGoViet;
+        private ePOSOne.btnProduct.ButtonModified btnGrab;
+        private System.Windows.Forms.Label lbSpecial;
+        private ePOSOne.btnProduct.ButtonModified btnNext;
 
     }
 }

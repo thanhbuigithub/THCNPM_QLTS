@@ -16,6 +16,17 @@ namespace QuanLyQuanTraSua
         {
             InitializeComponent();
         }
+        private void fDatHang_ChinhSua_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fDatHang_ChinhSua_Activated(object sender, EventArgs e)
+        {
+            if (fTrangChu.Finish)
+                this.Close();
+        }
+
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -27,27 +38,16 @@ namespace QuanLyQuanTraSua
             this.Close();
         }
 
-        private void fDatHang_ChinhSua_Load(object sender, EventArgs e)
-        {
-        }
 
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-
-            fTrangChu.Finish = true; //
-            this.Close(); //
-        }
-
-        private void btnMangDi_Click(object sender, EventArgs e)
+        private void btnMangDi_Click_1(object sender, EventArgs e)
         {
             fDatHang_MangDi fDatHangMangDi = new fDatHang_MangDi();
             this.Hide();
             fDatHangMangDi.ShowDialog();
-            this.Show();
-           
+            this.Show();  
         }
 
-        private void btnThanhToan_Click(object sender, EventArgs e)
+        private void btnThanhToan_Click_1(object sender, EventArgs e)
         {
             fThanhToan fThanhToan = new fThanhToan();
             this.Hide();
@@ -55,10 +55,10 @@ namespace QuanLyQuanTraSua
             this.Show();
         }
 
-        private void fDatHang_ChinhSua_Activated(object sender, EventArgs e)
+        private void btnXoa_Click_1(object sender, EventArgs e)
         {
-            if (fTrangChu.Finish)
-                this.Close();
+            fTrangChu.Finish = true; //
+            this.Close(); //
         }
     }
 }

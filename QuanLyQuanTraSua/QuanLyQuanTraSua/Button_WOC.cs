@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using System.ComponentModel;
 
 
+
 namespace ePOSOne.btnProduct
 {
    
@@ -120,6 +121,37 @@ public class RoundLabel : Label
         path.CloseAllFigures();
         return path;
     }
+}
+
+public class RoundedPanel : Panel
+{
+    public int Radius { get; set; }
+    public Color BorderColor { get; set; }
+    public Color FillColor { get; set; }
+    public bool Fill { get; set; }
+    public bool AntiAlias { get; set; }
+
+    public RoundedPanel()
+        : base()
+    {
+        BackColor = Color.White;
+        FillColor = Color.Transparent;
+        Fill = false;
+        AntiAlias = true;
+        DoubleBuffered = true;
+        Radius = 18;
+    }
+
+//    protected override void OnPaint(PaintEventArgs e)
+//    {
+//        GraphicsPath path = RoundedRectangle.Create(0, 0, Width - 1, Height - 1, Radius);
+//        e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+//        e.Graphics.DrawPath(new Pen(BorderColor, 1f), path);
+//        if (Fill)
+//        {
+//            e.Graphics.FillPath(new SolidBrush(FillColor), path);
+//        }
+//    }
 }
 
 }

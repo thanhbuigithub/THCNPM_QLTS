@@ -56,72 +56,23 @@ namespace QuanLyQuanTraSua
         {
             InitializeComponent();
 
-            //LoadListDrink(); // test danh sach mon bang console.writeline
-           ShowDetail(2); //test id mon  bang console.writeline
+            LoadListDrink(); // test danh sach mon bang console.writeline
+          // ShowDetail(2); //test id mon  bang console.writeline
         }
 
         private void fTrangChu_Load(object sender, EventArgs e)
         {
-            Finish = false;
-            populateItem();
-            int vertScrollWidth = SystemInformation.VerticalScrollBarWidth;
-            int hozScrollHeight = SystemInformation.HorizontalScrollBarHeight;
-            panel4.Height = panel4.Height - hozScrollHeight;
-            panel4.Width = panel4.Width - vertScrollWidth;
-        }
-
-        private void btnOrder_Click(object sender, EventArgs e)
-        {
-            fDatHang fDatHang = new fDatHang();
-            this.Hide();
-            fDatHang.ShowDialog();
-            this.Show();
-        }
-
-        private void btnCustomer_Click(object sender, EventArgs e)
-        {
-            fKhachHang fKhachHang = new fKhachHang();
-            this.Hide();
-            fKhachHang.ShowDialog();
-            this.Show();
-        }
-
-        private void btnProduct_Click(object sender, EventArgs e)
-        {
-            fSanPham fSanPham = new fSanPham();
-            this.Hide();
-            fSanPham.ShowDialog();
-            this.Show();
+            //Finish = false;
+            //populateItem();
+            //int vertScrollWidth = SystemInformation.VerticalScrollBarWidth;
+            //int hozScrollHeight = SystemInformation.HorizontalScrollBarHeight;
+            //panel4.Height = panel4.Height - hozScrollHeight;
+            //panel4.Width = panel4.Width - vertScrollWidth;
         }
 
         private void fTrangChu_Activated(object sender, EventArgs e)
         {
             Finish = false;
-        }
-
-        private void btnSpecNext_Click(object sender, EventArgs e)
-        {
-            int change = fLPSpecial.HorizontalScroll.Value + fLPSpecial.HorizontalScroll.SmallChange * 20;
-            fLPSpecial.AutoScrollPosition = new Point(change, 0);
-        }
-        private void btnSpecPrevious_Click(object sender, EventArgs e)
-        {
-            int change = fLPSpecial.HorizontalScroll.Value - fLPSpecial.HorizontalScroll.SmallChange * 20;
-            fLPSpecial.AutoScrollPosition = new Point(change, 0);
-
-        }
-        private void btnReport_Click(object sender, EventArgs e)
-        {
-            fBaocao fBaocao = new fBaocao();
-            this.Hide();
-            fBaocao.ShowDialog();
-            this.Show();
-        }
-
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void populateItem()
@@ -135,6 +86,13 @@ namespace QuanLyQuanTraSua
                 fLPSpecial.Controls.Add(product[i]);
             }
         }
+
+      
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void pictureBoxLogo_Click(object sender, EventArgs e)
         {
 
@@ -147,11 +105,52 @@ namespace QuanLyQuanTraSua
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
         }
+
+        private void btnOrder_Click_1(object sender, EventArgs e)
+        {
+            fDatHang fDatHang = new fDatHang();
+            this.Hide();
+            fDatHang.ShowDialog();
+            this.Show();
+        }
+
+        private void btnCustomer_Click_1(object sender, EventArgs e)
+        {
+            fKhachHang fKhachHang = new fKhachHang();
+            this.Hide();
+            fKhachHang.ShowDialog();
+            this.Show();
+        }
+
+        private void btnReport_Click_1(object sender, EventArgs e)
+        {
+            fBaocao fBaocao = new fBaocao();
+            this.Hide();
+            fBaocao.ShowDialog();
+            this.Show();
+        }
+
+        private void btnProduct_Click_1(object sender, EventArgs e)
+        {
+            fSanPham fSanPham = new fSanPham();
+            this.Hide();
+            fSanPham.ShowDialog();
+            this.Show();
+        }
+
+        private void btnSpecNext_Click_1(object sender, EventArgs e)
+        {
+            int change = fLPSpecial.HorizontalScroll.Value + fLPSpecial.HorizontalScroll.SmallChange * 20;
+            fLPSpecial.AutoScrollPosition = new Point(change, 0);
+        }
+
+        private void btnSpecPrevious_Click_1(object sender, EventArgs e)
+        {
+            int change = fLPSpecial.HorizontalScroll.Value - fLPSpecial.HorizontalScroll.SmallChange * 20;
+            fLPSpecial.AutoScrollPosition = new Point(change, 0);
+        }
         #endregion
 
-        private void BtnReport_Click_1(object sender, EventArgs e)
-        {
 
-        }
     }
 }

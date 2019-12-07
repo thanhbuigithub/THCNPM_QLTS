@@ -33,12 +33,17 @@ namespace QuanLyQuanTraSua
 
         }
 
-        private void BtnDone_Click(object sender, EventArgs e)
+        private void btnBack_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnDone_Click_1(object sender, EventArgs e)
         {
             string name = txtbName.Text.ToString();
             string address = txtbAddressImport.Text.ToString();
             DateTime date = dtpDateImport.Value.Date;
-            if (DAOTinhTrangKho.Instance.insertMaterial(name,address,date,"Còn hàng"))
+            if (DAOTinhTrangKho.Instance.insertMaterial(name, address, date, "Còn hàng"))
             {
                 MessageBox.Show("Thêm nguyên liệu thành công");
 
@@ -50,10 +55,9 @@ namespace QuanLyQuanTraSua
                 this.Close();
 
             }
-
         }
 
-        private void BtnBack_Click(object sender, EventArgs e)
+        private void btnXoa_Click(object sender, EventArgs e)
         {
             this.Close();
         }

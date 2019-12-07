@@ -58,19 +58,17 @@ namespace QuanLyQuanTraSua
 
         }
 
-        
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             fThemNguyenLieu fThemNguyenLieu = new fThemNguyenLieu();
             this.Hide();
             fThemNguyenLieu.ShowDialog();
             this.Show();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

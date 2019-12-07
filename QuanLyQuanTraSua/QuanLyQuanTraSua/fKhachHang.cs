@@ -49,12 +49,17 @@ namespace QuanLyQuanTraSua
             //Console.WriteLine(GetCustomerById(2).HoTen);// In ra ho ten cua khach hang co id la 2
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void fKhachHang_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnAddCloseCustomer_Click(object sender, EventArgs e)
+        private void btnAddCloseCustomer_Click_1(object sender, EventArgs e)
         {
             fKhachhang_ThemSua fKhachHang_themsua = new fKhachhang_ThemSua();
             this.Hide();
@@ -62,10 +67,6 @@ namespace QuanLyQuanTraSua
             this.Show();
         }
 
-        private void fKhachHang_Load(object sender, EventArgs e)
-        {
-
-        }
         #endregion
 
         private void Button1_Click(object sender, EventArgs e)// Chinh du lieu de sua
@@ -101,5 +102,7 @@ namespace QuanLyQuanTraSua
                 this.Close();
             }
         }
+
+       
     }
 }
